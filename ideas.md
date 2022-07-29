@@ -7,7 +7,7 @@ Collectible around the map.
 
 ![](https://res.plexion.dev/minecraft/item/golden_apple.png) **Health**
 - Apple *(+2)*
-- Golden Apple *(+6)*
+- Golden Apple *(+4)*
 - Regen Potion *(+10)*
 
 ![](https://res.plexion.dev/minecraft/item/enchanted_book.png) **Enchants**
