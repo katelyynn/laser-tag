@@ -6,7 +6,8 @@
 Given automatically.
 
 ![](https://res.plexion.dev/minecraft/item/crossbow_standby.png) **Crossbow**
-- Crossbow *(3s)*
+- Crossbow *(1s)*
+- Harming Crossbow? *(4s)*
 
 ### Items
 Collectible around the map.
