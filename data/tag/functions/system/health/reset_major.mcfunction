@@ -1,5 +1,5 @@
 # LASERTAG health
-## reset hunger (account for saturation points)
+## reset hunger (boost saturation to restore sprint)
 
 
-effect give @s minecraft:hunger 2 255 true
+effect give @s minecraft:saturation 1 2 true

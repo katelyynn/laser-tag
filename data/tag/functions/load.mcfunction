@@ -8,6 +8,9 @@ scoreboard objectives add internal dummy
 # world
 gamerule naturalRegeneration false
 
+# track player hunger
+scoreboard objectives add health.hunger food
+
 # systems
 ## health
 scoreboard objectives add health.apple minecraft.used:minecraft.apple
