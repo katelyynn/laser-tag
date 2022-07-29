@@ -2,6 +2,9 @@
 
 ## main stuff
 
+### Weapons
+Given automatically.
+
 ### Items
 Collectible around the map.
 

@@ -16,6 +16,13 @@ scoreboard objectives add health.hunger food
 scoreboard objectives add player.death deathCount
 
 # systems
+## crossbow
+scoreboard objectives add crossbow.time dummy
+scoreboard objectives add crossbow.time_s dummy
+scoreboard objectives add crossbow.slot dummy
+scoreboard objectives add crossbow.slot_temp dummy
+scoreboard objectives add crossbow.shoot minecraft.used:minecraft.crossbow
+scoreboard players set crossbow_recharge internal 3
 ## health
 scoreboard objectives add health.apple minecraft.used:minecraft.apple
 scoreboard objectives add health.golden_apple minecraft.used:minecraft.golden_apple
