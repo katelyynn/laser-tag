@@ -7,9 +7,13 @@ scoreboard objectives add internal dummy
 
 # world
 gamerule naturalRegeneration false
+gamerule doImmediateRespawn true
 
 # track player hunger
 scoreboard objectives add health.hunger food
+
+# track deaths
+scoreboard objectives add player.death deathCount
 
 # systems
 ## health
