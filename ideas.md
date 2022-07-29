@@ -5,6 +5,9 @@
 ### Weapons
 Given automatically.
 
+![](https://res.plexion.dev/minecraft/item/crossbow_standby.png) **Crossbow**
+- Crossbow *(3s)*
+
 ### Items
 Collectible around the map.
 
