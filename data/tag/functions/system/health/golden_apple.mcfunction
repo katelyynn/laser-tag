@@ -11,4 +11,4 @@ effect clear @s regeneration
 effect clear @s absorption
 
 scoreboard players reset @s health.golden_apple
-function tag:system/health/reset
+function tag:system/health/reset_major

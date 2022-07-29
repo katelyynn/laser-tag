@@ -1,8 +1,6 @@
 # LASERTAG health
 
 
-function tag:system/health/reset
-
 ## apple
 execute if score @s health.apple matches 1.. run function tag:system/health/apple
 ## golden apple
