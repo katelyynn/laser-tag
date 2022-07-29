@@ -2,7 +2,7 @@
 
 
 # track hunger
-execute if score @s health.hunger matches ..12 run function tag:system/health/reset_up
+execute if score @s health.hunger matches ..10 run function tag:system/health/reset_up
 
 # items
 ## apple
