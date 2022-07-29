@@ -32,6 +32,3 @@ execute if score @s crossbow.slot_temp matches 1.. run scoreboard players set @s
 ## slot 8
 execute store result score @s crossbow.slot_temp run data get entity @s {Inventory:[{id:"minecraft:crossbow",Slot:8b}]}
 execute if score @s crossbow.slot_temp matches 1.. run scoreboard players set @s crossbow.slot 8
-
-# no crossbow
-execute unless score @s crossbow.slot_temp matches 1.. run function tag:system/crossbow/give
