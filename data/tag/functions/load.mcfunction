@@ -20,12 +20,19 @@ scoreboard objectives add player.score dummy
 
 # systems
 ## crossbow
-scoreboard objectives add crossbow.time dummy
-scoreboard objectives add crossbow.time_s dummy
-scoreboard objectives add crossbow.slot dummy
-scoreboard objectives add crossbow.slot_temp dummy
-scoreboard objectives add crossbow.shoot minecraft.used:minecraft.crossbow
-scoreboard players set crossbow_recharge internal 1
+## NORMAL
+scoreboard objectives add crossbow_normal.time dummy
+scoreboard objectives add crossbow_normal.time_s dummy
+scoreboard objectives add crossbow_normal.slot dummy
+scoreboard objectives add crossbow_normal.slot_temp dummy
+scoreboard players set crossbow_normal.recharge internal 20
+## MACHINE
+scoreboard objectives add crossbow_machine.time dummy
+scoreboard objectives add crossbow_machine.time_s dummy
+scoreboard objectives add crossbow_machine.slot dummy
+scoreboard objectives add crossbow_machine.slot_temp dummy
+scoreboard players set crossbow_machine.recharge internal 2
+
 ## health
 scoreboard objectives add health.apple minecraft.used:minecraft.apple
 scoreboard objectives add health.golden_apple minecraft.used:minecraft.golden_apple
