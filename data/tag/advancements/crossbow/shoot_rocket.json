@@ -5,7 +5,7 @@
       "conditions": {
         "item": {
           "item": "minecraft:crossbow",
-          "nbt": "{crossbow_type:\"machine\"}"
+          "nbt": "{crossbow_type:\"rocket\"}"
         }
       },
       "trigger": "minecraft:shot_crossbow"
@@ -20,14 +20,14 @@
     "hidden": true,
     "icon": {
       "item": "minecraft:crossbow",
-      "nbt": "{crossbow_type:\"machine\"}"
+      "nbt": "{crossbow_type:\"rocket\"}"
     },
     "show_toast": false,
     "title": {
-      "text": "Machine Crossbow"
+      "text": "Rocket Crossbow"
     }
   },
   "rewards": {
-    "function": "tag:system/crossbow/machine/reset"
+    "function": "tag:system/crossbow/rocket/reset"
   }
 }

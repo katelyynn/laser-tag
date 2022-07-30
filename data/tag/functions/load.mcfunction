@@ -38,6 +38,15 @@ scoreboard objectives add crossbow_machine.shots_remaining dummy
 scoreboard players set crossbow_machine.delay internal 1
 scoreboard players set crossbow_machine.ammo internal 22
 scoreboard players set crossbow_machine.recharge internal 90
+## ROCKET
+scoreboard objectives add crossbow_rocket.time dummy
+scoreboard objectives add crossbow_rocket.slot dummy
+scoreboard objectives add crossbow_rocket.slot_temp dummy
+scoreboard objectives add crossbow_rocket.shots dummy
+scoreboard objectives add crossbow_rocket.shots_remaining dummy
+scoreboard players set crossbow_rocket.delay internal 16
+scoreboard players set crossbow_rocket.ammo internal 2
+scoreboard players set crossbow_rocket.recharge internal 150
 
 ## health
 scoreboard objectives add health.apple minecraft.used:minecraft.apple
