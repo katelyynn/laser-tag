@@ -1,1 +1,1 @@
-give @s crossbow{ChargedProjectiles:[{id:"minecraft:arrow",Count:1b}],Charged:1b,crossbow_type:"machine",Enchantments:[]}
+give @s crossbow{display:{Name:'[{"text":"Machine Crossbow","italic":false}]'},ChargedProjectiles:[{id:"minecraft:arrow",Count:1b}],Charged:1b,crossbow_type:"machine",Enchantments:[]}
