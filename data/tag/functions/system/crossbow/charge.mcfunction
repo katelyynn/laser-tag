@@ -2,6 +2,9 @@
 ## re-charge
 
 
+# announce
+title @s actionbar ["",{"text":"RECHARGED","color":"green","bold":true}]
+
 function tag:system/crossbow/locate
 
 # sfx
