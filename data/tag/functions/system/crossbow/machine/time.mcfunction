@@ -4,7 +4,7 @@
 
 
 # announce
-execute if score @s crossbow_machine.shots >= crossbow_machine.ammo internal run title @s[nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"machine"}}}] actionbar ["",{"score":{"objective":"crossbow_machine.time","name":"@s"},"color":"gold","bold":true}]
+execute if score @s crossbow_machine.shots >= crossbow_machine.ammo internal run title @s[nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"machine"}}}] actionbar ["",{"text":"Reloading!"}]
 
 scoreboard players add @s crossbow_machine.time 1
 

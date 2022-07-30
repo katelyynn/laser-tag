@@ -4,7 +4,7 @@
 
 
 # announce
-execute if score @s crossbow_normal.shots >= crossbow_normal.ammo internal run title @s[nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"normal"}}}] actionbar ["",{"score":{"objective":"crossbow_normal.time","name":"@s"},"color":"gold","bold":true}]
+execute if score @s crossbow_normal.shots >= crossbow_normal.ammo internal run title @s[nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"normal"}}}] actionbar ["",{"text":"Reloading!"}]
 
 scoreboard players add @s crossbow_normal.time 1
 
