@@ -5,9 +5,6 @@
 
 advancement revoke @s only tag:crossbow/shoot_normal
 
-# announce
-title @s actionbar ["",{"text":"RECHARGED CROSSBOW","color":"green","bold":true}]
-
 function tag:system/crossbow/normal/locate
 
 # sfx

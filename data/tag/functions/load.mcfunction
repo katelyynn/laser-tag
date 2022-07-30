@@ -24,16 +24,18 @@ scoreboard objectives add player.score dummy
 scoreboard objectives add crossbow_normal.time dummy
 scoreboard objectives add crossbow_normal.slot dummy
 scoreboard objectives add crossbow_normal.slot_temp dummy
-scoreboard players set crossbow_normal.delay internal 12
-scoreboard players set crossbow_normal.ammo internal 20
+scoreboard objectives add crossbow_normal.shots dummy
+scoreboard players set crossbow_normal.delay internal 8
+scoreboard players set crossbow_normal.ammo internal 30
 scoreboard players set crossbow_normal.recharge internal 40
 ## MACHINE
 scoreboard objectives add crossbow_machine.time dummy
 scoreboard objectives add crossbow_machine.slot dummy
 scoreboard objectives add crossbow_machine.slot_temp dummy
+scoreboard objectives add crossbow_machine.shots dummy
 scoreboard players set crossbow_machine.delay internal 1
-scoreboard players set crossbow_machine.ammo internal 25
-scoreboard players set crossbow_machine.recharge internal 100
+scoreboard players set crossbow_machine.ammo internal 22
+scoreboard players set crossbow_machine.recharge internal 90
 
 ## health
 scoreboard objectives add health.apple minecraft.used:minecraft.apple

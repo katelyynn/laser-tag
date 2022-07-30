@@ -1,14 +1,16 @@
 # LASERTAG crossbow
 ## MACHINE
-## re-charge
+## reload
 
 
 advancement revoke @s only tag:crossbow/shoot_machine
 
-function tag:system/crossbow/machine/locate
-
+# announce
+tellraw @s ["",{"text":"Reloaded Machine Crossbow!","color":"green"}]
 # sfx
 playsound minecraft:item.crossbow.loading_end player @s
+
+function tag:system/crossbow/machine/locate
 
 # depend on slot
 ## slot 0
@@ -35,3 +37,4 @@ clear @s crossbow{ChargedProjectiles:[],crossbow_type:"machine"}
 
 # disable timer until shot
 scoreboard players set @s crossbow_machine.time -1
+scoreboard players set @s crossbow_machine.shots 0
