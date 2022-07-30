@@ -44,7 +44,7 @@ scoreboard objectives add crossbow_rocket.slot dummy
 scoreboard objectives add crossbow_rocket.slot_temp dummy
 scoreboard objectives add crossbow_rocket.shots dummy
 scoreboard objectives add crossbow_rocket.shots_remaining dummy
-scoreboard players set crossbow_rocket.delay internal 20
+scoreboard players set crossbow_rocket.delay internal 30
 scoreboard players set crossbow_rocket.ammo internal 2
 scoreboard players set crossbow_rocket.recharge internal 200
 
