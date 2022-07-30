@@ -15,6 +15,9 @@ scoreboard objectives add health.hunger food
 # track deaths
 scoreboard objectives add player.death deathCount
 
+# score
+scoreboard objectives add player.score dummy
+
 # systems
 ## crossbow
 scoreboard objectives add crossbow.time dummy
