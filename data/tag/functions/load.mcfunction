@@ -22,13 +22,11 @@ scoreboard objectives add player.score dummy
 ## crossbow
 ## NORMAL
 scoreboard objectives add crossbow_normal.time dummy
-scoreboard objectives add crossbow_normal.time_s dummy
 scoreboard objectives add crossbow_normal.slot dummy
 scoreboard objectives add crossbow_normal.slot_temp dummy
 scoreboard players set crossbow_normal.recharge internal 20
 ## MACHINE
 scoreboard objectives add crossbow_machine.time dummy
-scoreboard objectives add crossbow_machine.time_s dummy
 scoreboard objectives add crossbow_machine.slot dummy
 scoreboard objectives add crossbow_machine.slot_temp dummy
 scoreboard players set crossbow_machine.recharge internal 2
