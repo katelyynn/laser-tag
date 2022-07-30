@@ -30,6 +30,9 @@ execute if score @s crossbow.slot matches 7 run item replace entity @s hotbar.7 
 ## slot 8
 execute if score @s crossbow.slot matches 8 run item replace entity @s hotbar.8 with minecraft:crossbow{ChargedProjectiles:[{id:"minecraft:arrow",Count:1b}],Charged:1b}
 
+# clear unloaded
+clear @s crossbow{ChargedProjectiles:[]}
+
 # disable timer until shot
 scoreboard players set @s crossbow.time -1
 scoreboard players set @s crossbow.time_s 0
