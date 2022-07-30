@@ -38,4 +38,3 @@ clear @s crossbow{ChargedProjectiles:[],crossbow_type:"normal"}
 
 # disable timer until shot
 scoreboard players set @s crossbow_normal.time -1
-scoreboard players set @s crossbow_normal.time_s 0
