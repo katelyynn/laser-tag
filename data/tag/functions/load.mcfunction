@@ -29,7 +29,7 @@ scoreboard players set crossbow_normal.recharge internal 20
 scoreboard objectives add crossbow_machine.time dummy
 scoreboard objectives add crossbow_machine.slot dummy
 scoreboard objectives add crossbow_machine.slot_temp dummy
-scoreboard players set crossbow_machine.recharge internal 2
+scoreboard players set crossbow_machine.recharge internal 1
 
 ## health
 scoreboard objectives add health.apple minecraft.used:minecraft.apple
