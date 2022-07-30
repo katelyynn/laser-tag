@@ -11,7 +11,7 @@ effect give @s minecraft:regeneration 1 3 true
 playsound entity.arrow.hit_player player @s
 playsound block.brewing_stand.brew player @s
 
-particle minecraft:heart ^ ^1 ^0.7 0 0 0 0 4
+particle minecraft:heart ^ ^1 ^0.7 0.2 0.2 0.2 0 6
 
 scoreboard players reset @s health.golden_apple
 function tag:system/health/reset_major
