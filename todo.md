@@ -17,5 +17,13 @@
 - - [ ] Win at amount of points
 - - [ ] Reset on game end
 
+### Weapon systems
+- [x] Implement Crossbow
+- [x] Implement Machine Crossbow
+
+- [x] Implement re-charging
+- [x] Implement reloading
+- [ ] Implement overheating for Machine Crossbow?
+
 ### Game setup
 - [ ] Create setup-flow, either physically or via /trigger
