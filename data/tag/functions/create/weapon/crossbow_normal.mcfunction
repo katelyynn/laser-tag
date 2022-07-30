@@ -1,0 +1,1 @@
+give @s crossbow{crossbow_type:"normal",display:{Name:'[{"text":"","italic":false},{"text":"Apple"},{"text":" +2","color":"green","bold":true}]'}}
