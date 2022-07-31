@@ -6,9 +6,10 @@
 Given automatically.
 
 ![](https://res.plexion.dev/minecraft/item/crossbow_standby.png) **Crossbow**
-- Crossbow *(12 ticks, 20 shots, 40 ticks reload)*
-- Machine Crossbow *(1 tick, 25 shots, 100 ticks reload)*
-- Harming Crossbow? *(4s)*
+- Crossbow
+- Machine Crossbow
+- Rocket Crossbow
+- Harming Crossbow?
 
 ### Items
 Collectible around the map.
