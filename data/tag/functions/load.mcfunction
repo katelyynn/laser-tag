@@ -51,3 +51,7 @@ scoreboard players set crossbow_rocket.recharge internal 200
 ## health
 scoreboard objectives add health.apple minecraft.used:minecraft.apple
 scoreboard objectives add health.golden_apple minecraft.used:minecraft.golden_apple
+
+
+# defaults
+execute unless score defaults internal matches 1.. run function tag:defaults
