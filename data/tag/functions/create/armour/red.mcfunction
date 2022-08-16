@@ -1,0 +1,2 @@
+## helmet
+item replace entity @s armor.head with leather_helmet{CustomModelData:1,display:{Name:'{"text":"","italic":false}',color:16471124},HideFlags:71,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
