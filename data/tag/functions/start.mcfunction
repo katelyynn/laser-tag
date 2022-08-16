@@ -2,11 +2,17 @@
 
 
 scoreboard players set can_start internal 0
+scoreboard players set can_start_players internal 0
+scoreboard players set can_start_period internal 0
 
-# player checks
+# player check
 ## TODO: implement player checks later on
-scoreboard players set can_start internal 1
+## for now, just auto-bypass check
+scoreboard players set can_start_players internal 1
+# period check
+execute if score period internal matches -1 run scoreboard players set can_start_period internal 1
 
+execute if score can_start_players internal matches 1.. if score can_start_period internal matches 1.. run scoreboard players set can_start internal 1
 
 # can start?
 ## yes, proceed to main start
