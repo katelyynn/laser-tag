@@ -2,10 +2,11 @@
 
 ### General game flow
 - [ ] Implement game period
-- - **-1**: Pre-game, lobby
-- - **0**: Countdown?
-- - **1**: Game in-progress
-- - **2**: Game over, victory screen
+- - [x] **-1**: Pre-game, lobby
+- - [x] **0**: Countdown
+- - [x] **1**: Game in-progress
+- - [ ] **2**: Game pause/countdown
+- - [ ] **3**: Game over, victory screen
 
 - [ ] Implement game clock
 - - Integrate with ***p!f***
