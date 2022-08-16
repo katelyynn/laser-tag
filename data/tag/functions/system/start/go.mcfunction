@@ -12,6 +12,7 @@ scoreboard players set map global 1
 
 
 # countdown
+## delayed to account for map & spawn locations
 schedule function tag:system/start/count/5 1s
 schedule function tag:system/start/count/4 2s
 schedule function tag:system/start/count/3 3s
