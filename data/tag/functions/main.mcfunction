@@ -16,6 +16,9 @@ execute as @a at @s run function tag:system/crossbow/main
 execute as @a at @s run function tag:system/health/main
 
 
+# set score
+execute as @a unless score @s player.score matches 0.. run scoreboard players set @s player.score 0
+
 # gameplay
 ## period -1
 execute if score period internal matches -1 run setworldspawn 0 150 0
