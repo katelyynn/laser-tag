@@ -17,5 +17,6 @@ execute as @a at @s run function tag:system/health/main
 
 
 # gameplay
-execute if score period internal matches -1 run setworldspawn 0 100 0
-execute if score period internal matches -1 run spawnpoint @a 0 100 0
+## period -1
+execute if score period internal matches -1 run setworldspawn 0 150 0
+execute if score period internal matches -1 run spawnpoint @a 0 150 0
