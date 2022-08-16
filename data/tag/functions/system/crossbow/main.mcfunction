@@ -14,4 +14,4 @@ execute unless score @s crossbow_rocket.time matches -1 run function tag:system/
 execute if score @s crossbow_rocket.time matches -1..0 run function tag:system/crossbow/rocket/display
 
 # clear actionbar
-execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"machine"}}},nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"normal"}}},nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"rocket"}}}] run title @s actionbar ""
+execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"machine"}}},nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"normal"}}},nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"rocket"}}}] run title @s actionbar ["",{"text":"Score: "},{"score":{"name":"@s","objective":"player.score"},"color":"yellow"}]
