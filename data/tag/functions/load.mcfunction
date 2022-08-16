@@ -17,6 +17,8 @@ scoreboard objectives add player.death deathCount
 
 # track kills
 scoreboard objectives add player.kills playerKillCount
+# track kill event
+scoreboard objectives add player.kill playerKillCount
 
 # track score
 scoreboard objectives add player.score dummy "Score"
