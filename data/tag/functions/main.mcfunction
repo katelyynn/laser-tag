@@ -27,6 +27,7 @@ execute as @a unless score @s player.score matches 0.. run scoreboard players se
 ## period -1
 execute if score period internal matches -1 run setworldspawn 0 150 0
 execute if score period internal matches -1 run spawnpoint @a 0 150 0
+execute if score period internal matches -1 run effect give @a resistance 1 255 true
 execute if score period internal matches -1 run scoreboard objectives setdisplay sidebar
 ## period 0
 execute if score period internal matches 0..3 run scoreboard objectives setdisplay sidebar player.score
