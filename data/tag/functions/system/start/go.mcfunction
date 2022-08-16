@@ -6,6 +6,8 @@
 tag @a remove playing
 tag @a[gamemode=adventure] add playing
 
+scoreboard players reset @a[tag=playing] player.score
+
 
 # map
 ## TODO: pick random?
