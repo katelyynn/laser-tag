@@ -8,7 +8,7 @@ advancement revoke @s only tag:crossbow/shoot_rocket
 # announce
 tellraw @s ["",{"text":"Reloaded Rocket Crossbow!","color":"green"}]
 # sfx
-playsound minecraft:item.crossbow.loading_end player @s
+function tag:sfx/reload
 
 function tag:system/crossbow/rocket/locate
 

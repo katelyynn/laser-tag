@@ -8,7 +8,7 @@ advancement revoke @s only tag:crossbow/shoot_normal
 # announce
 tellraw @s ["",{"text":"Reloaded Crossbow!","color":"green"}]
 # sfx
-playsound minecraft:item.crossbow.loading_end player @s
+function tag:sfx/reload
 
 function tag:system/crossbow/normal/locate
 
