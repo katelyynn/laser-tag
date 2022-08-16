@@ -3,6 +3,9 @@
 ## when countdown has ended
 
 
+effect clear @a[tag=playing] resistance
+
+
 # announce
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Let the games begin!","color":"yellow"}]
 title @a title {"text":"GO!","color":"green","bold":true}
