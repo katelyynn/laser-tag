@@ -5,7 +5,7 @@
 
 # announce
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Let the games begin!","color":"yellow"}]
-title @a title {"text":"GO!","color":"green"}
+title @a title {"text":"GO!","color":"green","bold":true}
 # sfx
 execute as @a at @s run playsound entity.arrow.hit_player player @s
 
