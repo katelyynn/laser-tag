@@ -19,7 +19,7 @@ scoreboard objectives add player.death deathCount
 scoreboard objectives add player.kills playerKillCount
 
 # track score
-scoreboard objectives add player.score dummy
+scoreboard objectives add player.score dummy "Score"
 
 # systems
 ## crossbow

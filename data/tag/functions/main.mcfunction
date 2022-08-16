@@ -20,3 +20,6 @@ execute as @a at @s run function tag:system/health/main
 ## period -1
 execute if score period internal matches -1 run setworldspawn 0 150 0
 execute if score period internal matches -1 run spawnpoint @a 0 150 0
+execute if score period internal matches -1 run scoreboard objectives setdisplay sidebar
+## period 0
+execute if score period internal matches 0..3 run scoreboard objectives setdisplay sidebar player.score
