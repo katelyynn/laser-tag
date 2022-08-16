@@ -6,7 +6,7 @@
 advancement revoke @s only tag:crossbow/shoot_machine
 
 # announce
-tellraw @s ["",{"text":"Reloaded Machine Crossbow!","color":"green"}]
+tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"♦","color":"green"},{"text":"] ","color":"dark_gray"},{"text":"Reloaded Machine Crossbow!","color":"green"}]
 # sfx
 function tag:sfx/reload
 
