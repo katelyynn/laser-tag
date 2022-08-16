@@ -18,5 +18,5 @@ execute if score can_start_players internal matches 1.. if score can_start_perio
 ## yes, proceed to main start
 execute if score can_start internal matches 1.. run function tag:system/start/go
 ## no, ineligible
-execute unless score can_start internal matches 1.. run tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"X","color":"red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Cannot start, at least 2 players required.","color":"red"}]
-execute unless score can_start internal matches 1.. run playsound minecraft:block.note_block.bass player @s
+execute unless score can_start internal matches 1.. run tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"X","color":"red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Cannot start, at least 2 players required.","color":"red"}]
+execute unless score can_start internal matches 1.. run playsound minecraft:block.note_block.bass player @a
