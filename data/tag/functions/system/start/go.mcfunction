@@ -2,9 +2,22 @@
 ## if eligible
 
 
+# mark players
+tag @a remove playing
+tag @a[gamemode=adventure] add playing
+
+
 # map
 ## TODO: pick random?
-scoreboard players set map global 1
+## -1: test
+##  0: default
+scoreboard players set map global -1
+
+# teleport players
+## -1: test
+execute if score map global matches -1 run tp @a[tag=playing] -200 150 -200
+##  0: default
+execute if score map global matches 0 run tp @a[tag=playing] 200 150 200
 
 # pick random spawn locations
 ## TODO: create stands that mark random locations
