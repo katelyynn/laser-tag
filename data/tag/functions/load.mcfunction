@@ -15,6 +15,14 @@ scoreboard players set 5 internal 5
 gamerule naturalRegeneration false
 gamerule doImmediateRespawn true
 
+# teams
+## red
+team add red
+team modify red color red
+## blue
+team add blue
+team modify blue color blue
+
 # track player hunger
 scoreboard objectives add health.hunger food
 
