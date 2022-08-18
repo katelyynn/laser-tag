@@ -9,6 +9,11 @@ scoreboard players reset @a player.death
 execute as @a at @s if score @s player.kill matches 1.. run function tag:system/kill/go
 scoreboard players reset @a player.kill
 
+# win
+## win score
+execute as @a if score win_goal global matches 0 if score @s player.score >= win_score global run tag @s add win
+execute as @a at @s if score win_goal global matches 0 if score @s player.score >= win_score global run function tag:system/win/go
+
 # kill arrows
 execute as @e[type=arrow,nbt={inGround:1b}] at @s run particle block gravel ~ ~ ~ 0 0 0 0 10
 kill @e[type=arrow,nbt={inGround:1b}]

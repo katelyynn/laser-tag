@@ -6,17 +6,17 @@
 - - [x] **0**: Countdown
 - - [x] **1**: Game in-progress
 - - [ ] **2**: Game pause/countdown
-- - [ ] **3**: Game over, victory screen
+- - [x] **3**: Game over, victory screen
 
 - [ ] Implement game clock
 - - Integrate with ***p!f***
 
 - [ ] Implement score
 - - [x] Create scoreboard
-- - [ ] Increment upon kill
-- - [ ] Decrease upon death?
+- - [x] Increment upon kill
+- - [x] Decrease upon death?
 - - [ ] Win at amount of points
-- - [ ] Reset on game end
+- - [x] Reset on game end
 
 ### Weapon systems
 - [x] Implement Crossbow
