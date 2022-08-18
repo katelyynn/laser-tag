@@ -15,6 +15,11 @@ execute if score period internal matches 1 as @a if score win_goal global matche
 execute if score period internal matches 1 as @a at @s if score win_goal global matches 0 if score @s player.score >= win_score global run function tag:system/win/go
 
 # mode
+## 0: solo
+## 1: teams
+## spawn display
+execute if score mode global matches 0 run setblock 3 151 15 spruce_wall_sign{Color:"black",Text3:'{"text":"SOLOS"}',Text2:'{"text":"MODE:"}',GlowingText:1b}
+execute if score mode global matches 1 run setblock 3 151 15 spruce_wall_sign{Color:"black",Text3:'{"text":"TEAMS"}',Text2:'{"text":"MODE:"}',GlowingText:1b}
 ## range check
 execute if score mode global matches ..-1 run scoreboard players set mode global 0
 execute if score mode global matches 2.. run scoreboard players set mode global 1
