@@ -23,4 +23,4 @@ effect give @a[tag=win] glowing 9999 255 true
 
 
 # transition back to lobby
-schedule function tag:system/win/lobby 3s
+schedule function tag:system/win/lobby 5s
