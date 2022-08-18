@@ -9,6 +9,8 @@ effect clear @a glowing
 tag @a remove playing
 tag @a remove win
 
+tp @a 0 150 0
+
 # announce
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Game over!","color":"yellow"}]
 # sfx
