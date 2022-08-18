@@ -1,0 +1,1 @@
+give @s bat_spawn_egg{display:{Name:'{"text":"button_reset","italic":false}'},EntityTag:{id:"minecraft:area_effect_cloud",Particle:"block air",Radius:0f,Age:2147483647,Tags:["button_reset"]}} 1

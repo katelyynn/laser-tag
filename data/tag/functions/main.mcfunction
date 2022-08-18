@@ -24,6 +24,11 @@ execute if score mode global matches 1 run data merge block 3 151 15 {Color:"bla
 execute if score mode global matches ..-1 run scoreboard players set mode global 0
 execute if score mode global matches 2.. run scoreboard players set mode global 1
 
+# button reset
+execute as @e[tag=button_reset] at @s if block ~ ~ ~ oak_button[powered=true] run setblock ~ ~ ~ oak_button[powered=false]
+execute as @e[tag=button_reset] at @s if block ~ ~ ~ spruce_button[powered=true] run setblock ~ ~ ~ spruce_button[powered=false]
+execute as @e[tag=button_reset] at @s if block ~ ~ ~ birch_button[powered=true] run setblock ~ ~ ~ birch_button[powered=false]
+
 # kill arrows
 execute as @e[type=arrow,nbt={inGround:1b}] at @s run particle block gravel ~ ~ ~ 0 0 0 0 10
 kill @e[type=arrow,nbt={inGround:1b}]
