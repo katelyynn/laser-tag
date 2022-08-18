@@ -5,6 +5,12 @@
 scoreboard objectives add global dummy
 scoreboard objectives add internal dummy
 
+scoreboard players set 1 internal 1
+scoreboard players set 2 internal 2
+scoreboard players set 3 internal 3
+scoreboard players set 4 internal 4
+scoreboard players set 5 internal 5
+
 # world
 gamerule naturalRegeneration false
 gamerule doImmediateRespawn true
@@ -19,6 +25,8 @@ scoreboard objectives add player.death deathCount
 scoreboard objectives add player.kills playerKillCount
 # track kill event
 scoreboard objectives add player.kill playerKillCount
+# track kill-streak
+scoreboard objectives add player.killstreak dummy
 
 # track score
 scoreboard objectives add player.score dummy "Score"

@@ -11,3 +11,8 @@ scoreboard players operation @s player.score += score.kill global
 tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"+","color":"green","bold":true},{"score":{"name":"score.kill","objective":"global"},"color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"You got a kill!","color":"yellow"}]
 # sfx
 function tag:sfx/kill
+
+# increment killstreak
+scoreboard players operation @s player.killstreak += 1 internal
+# announce
+function tag:system/kill/streak
