@@ -31,6 +31,8 @@ scoreboard objectives add player.killstreak dummy
 
 # track score
 scoreboard objectives add player.score dummy "Score"
+# track wins
+scoreboard objectives add player.wins dummy
 
 # systems
 ## crossbow

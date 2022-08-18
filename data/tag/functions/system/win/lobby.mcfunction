@@ -4,8 +4,10 @@
 
 scoreboard players reset @a[tag=playing] player.score
 clear @a[tag=playing]
+effect clear @a glowing
 
 tag @a remove playing
+tag @a remove win
 
 # announce
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Game over!","color":"yellow"}]

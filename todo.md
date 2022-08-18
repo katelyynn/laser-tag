@@ -11,11 +11,11 @@
 - [ ] Implement game clock
 - - Integrate with ***p!f***
 
-- [ ] Implement score
+- [x] Implement score
 - - [x] Create scoreboard
 - - [x] Increment upon kill
 - - [x] Decrease upon death?
-- - [ ] Win at amount of points
+- - [x] Win at amount of points
 - - [x] Reset on game end
 
 ### Weapon systems
