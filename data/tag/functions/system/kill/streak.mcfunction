@@ -13,3 +13,5 @@ execute if score @s player.killstreak matches 2 run function tag:system/kill/str
 execute if score @s player.killstreak matches 3 run function tag:system/kill/streak/3
 ## 4 kills
 execute if score @s player.killstreak matches 4 run function tag:system/kill/streak/4
+## 5 kills+
+execute if score @s player.killstreak matches 5.. run function tag:system/kill/streak/5
