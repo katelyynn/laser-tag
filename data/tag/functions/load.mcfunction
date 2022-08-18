@@ -25,7 +25,8 @@ scoreboard objectives add player.death deathCount
 scoreboard objectives add player.kills playerKillCount
 # track kill event
 scoreboard objectives add player.kill playerKillCount
-# track kill-streak
+# track killstreak
+## TODO: range check killstreak
 scoreboard objectives add player.killstreak dummy
 
 # track score

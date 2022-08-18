@@ -4,6 +4,7 @@
 
 
 effect clear @a[tag=playing] resistance
+## TODO: give default crossbow on spawn & death
 
 
 # announce
