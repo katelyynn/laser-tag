@@ -3,7 +3,7 @@
 
 # scoring
 ## score earned from getting a kill
-scoreboard players set score.kill global 5
+scoreboard players set score.kill global 2
 ## score taken from death
 scoreboard players set score.death global -1
 
