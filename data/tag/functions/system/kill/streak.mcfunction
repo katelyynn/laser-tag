@@ -2,4 +2,5 @@
 
 
 ## TODO: send announcement message based on amount of kills
-## eg. "RAMPAGE"
+## (if eg. >= 2)
+## eg. "RAMPAGE" if 5 kills
