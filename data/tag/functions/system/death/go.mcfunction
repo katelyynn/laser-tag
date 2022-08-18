@@ -9,6 +9,13 @@ tellraw @s ["",{"text":"[","color":"dark_gray"},{"score":{"name":"score.death","
 # sfx
 function tag:sfx/death
 
+# end killstreak
+# announce
+tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"You lost your ","color":"red"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"dark_red","bold":true},{"text":" killstreak!","color":"red"}]
+# sfx
+## TODO: add sfx for losing killstreak
+scoreboard players set @s player.killstreak 0
+
 
 # reset hunger
 function tag:system/health/reset
