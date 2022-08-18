@@ -12,6 +12,13 @@ clear @a[tag=playing]
 ## TODO: reload silently on start
 
 
+# reset scoreboards
+## accounts for offline players
+## probably a better way so please tell me lmao
+scoreboard objectives remove player.score
+scoreboard objectives add player.score dummy "Score"
+
+
 # map
 ## TODO: pick random?
 ## -1: test
