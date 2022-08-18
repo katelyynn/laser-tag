@@ -19,11 +19,11 @@ scoreboard objectives remove player.score
 scoreboard objectives add player.score dummy "Score"
 
 
-# map
-## TODO: pick random?
-## -1: test
-##  0: default
-scoreboard players set map global -1
+# mode
+## 0: solos
+## 1: teams
+execute if score mode global matches 1 as @a[team=red] run function tag:create/armour/red
+execute if score mode global matches 1 as @a[team=blue] run function tag:create/armour/blue
 
 # teleport players
 ## -1: test
