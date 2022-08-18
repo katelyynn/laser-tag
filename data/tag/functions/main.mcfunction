@@ -28,8 +28,8 @@ execute if score mode global matches 2.. run scoreboard players set mode global 
 ## -1: test
 ##  0: default
 ## spawn display
-execute if score map global matches -1 run data merge block 3 151 15 {Color:"black",Text3:'{"text":"TEST","color":"light_purple"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
-execute if score map global matches 0 run data merge block 3 151 15 {Color:"black",Text3:'{"text":"DEFAULT (WIP)"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
+execute if score map global matches -1 run data merge block -3 151 15 {Color:"black",Text3:'{"text":"TEST","color":"light_purple"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
+execute if score map global matches 0 run data merge block -3 151 15 {Color:"black",Text3:'{"text":"DEFAULT (WIP)"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
 ## range check
 execute if score map global matches ..-2 run scoreboard players set map global -1
 execute if score map global matches 1.. run scoreboard players set map global 0
