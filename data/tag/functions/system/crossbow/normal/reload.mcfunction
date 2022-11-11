@@ -5,8 +5,6 @@
 
 advancement revoke @s only tag:crossbow/shoot_normal
 
-# announce
-tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"♦","color":"green"},{"text":"] ","color":"dark_gray"},{"text":"Reloaded Crossbow!","color":"green"}]
 # sfx
 function tag:sfx/reload
 
