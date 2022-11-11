@@ -24,6 +24,9 @@ team modify red prefix "① "
 team add blue "Blue"
 team modify blue color blue
 team modify blue prefix "① "
+## display
+scoreboard objectives add team.displayed_red dummy
+scoreboard objectives add team.displayed_blue dummy
 
 # track player hunger
 scoreboard objectives add health.hunger food

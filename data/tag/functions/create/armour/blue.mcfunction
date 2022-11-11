@@ -6,3 +6,7 @@ item replace entity @s armor.chest with leather_chestplate{CustomModelData:2,dis
 item replace entity @s armor.legs with leather_leggings{CustomModelData:2,display:{Name:'{"text":"","italic":false}',color:5526779},HideFlags:71,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 ## boots
 item replace entity @s armor.feet with leather_boots{CustomModelData:2,display:{Name:'{"text":"","italic":false}',color:5526779},HideFlags:71,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
+
+# reset
+scoreboard players reset @s team.displayed_red
+scoreboard players set @s team.displayed_blue 1
