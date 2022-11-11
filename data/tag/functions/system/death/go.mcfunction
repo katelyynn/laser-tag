@@ -5,13 +5,15 @@
 scoreboard players operation @s player.score += score.death global
 
 # announce
-tellraw @s ["",{"text":"[","color":"dark_gray"},{"score":{"name":"score.death","objective":"global"},"color":"red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"You died..","color":"red"}]
+tellraw @s ["",{"text":"[","color":"red"},{"text":"☠","color":"gray"},{"text":"] ","color":"red"},{"text":"You died!","color":"red"}]
+title @s title ""
+title @s subtitle {"text":"You died!","color":"red"}
 # sfx
 function tag:sfx/death
 
 # end killstreak
 # announce
-tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"You lost your ","color":"red"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"dark_red","bold":true},{"text":" killstreak!","color":"red"}]
+tellraw @s ["",{"text":"[","color":"red"},{"text":"!","color":"red","bold":true},{"text":"] ","color":"red"},{"text":"You lost your ","color":"red"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"dark_red","bold":true},{"text":" killstreak!","color":"red"}]
 # sfx
 ## TODO: add sfx for losing killstreak
 scoreboard players set @s player.killstreak 0
