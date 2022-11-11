@@ -5,7 +5,7 @@
 scoreboard players operation @s player.score += score.death global
 
 # announce
-tellraw @s ["",{"text":"[","color":"red"},{"text":"☠","color":"dark_red"},{"text":"] ","color":"dark_gray"},{"text":"You died!","color":"red"}]
+tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"☠","color":"dark_red"},{"text":"] ","color":"dark_gray"},{"text":"You died!","color":"red"}]
 title @s title ""
 title @s subtitle {"text":"You died!","color":"red"}
 # sfx
