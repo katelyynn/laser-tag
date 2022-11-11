@@ -34,7 +34,7 @@ Collectible around the map.
 - [ ] Mining Fatigue/Weakness? - could custom-code if it doesn't work very well natively
 - [ ] Slowness
 
-![](https://res.plexion.dev/minecraft/item/potion.png) **Lingering Potions**
+![](https://res.plexion.dev/minecraft/item/lingering_potion.png) **Lingering Potions**
 - [ ] Instant Harming
 - [ ] Weakness
 - [ ] Poison? - could be too annoying
