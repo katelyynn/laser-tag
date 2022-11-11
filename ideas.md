@@ -1,37 +1,43 @@
 # note to self
 
 ## main stuff
+Can take some inspiration from MCC Island, had a good experience of the closed beta so far.
 
 ### Weapons
 Given automatically.
 
 ![](https://res.plexion.dev/minecraft/item/crossbow_standby.png) **Crossbow**
-- Crossbow
-- Machine Crossbow
-- Rocket Crossbow
-- Harming Crossbow?
+- [x] Crossbow
+- [x] Machine Crossbow
+- [x] Rocket Crossbow
+- [ ] Harming Crossbow?
 
 ### Items
 Collectible around the map.
 
 ![](https://res.plexion.dev/minecraft/item/golden_apple.png) **Health**
-- Apple *(+2)*
-- Golden Apple *(+6)*
-- Regen Potion *(+10)*
+- [x] Apple *(+2)*
+- [x] Golden Apple *(+6)*
+- [ ] Regen Potion *(+10)*
 
 ![](https://res.plexion.dev/minecraft/item/enchanted_book.png) **Enchants**
-- Quick Charge
-- Multishot?
+- [ ] Quick Charge
+- [ ] Multishot?
 
 ![](https://res.plexion.dev/minecraft/item/arrow.png) **Arrows**
-- Fireworks (explosion)
-- Poison
-- Instant Harming
+- [ ] Fireworks (explosion)
+- [ ] Poison
+- [ ] Instant Harming
 
 ![](https://res.plexion.dev/minecraft/item/potion.png) **Potions**
-- Instant Harming (OP)
-- Mining Fatigue/Weakness? - could custom-code if it doesn't work very well natively
-- Slowness
+- [x] Instant Harming (OP)
+- [ ] Mining Fatigue/Weakness? - could custom-code if it doesn't work very well natively
+- [ ] Slowness
+
+![](https://res.plexion.dev/minecraft/item/potion.png) **Lingering Potions**
+- [ ] Instant Harming
+- [ ] Weakness
+- [ ] Poison? - could be too annoying
 
 ### Upgrades
 Points earned after a game is completed. Can be spent on upgrades.
