@@ -13,7 +13,7 @@ function tag:sfx/death
 
 # end killstreak
 # announce
-tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"dark_red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"You lost your ","color":"red"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"dark_red","bold":true},{"text":" killstreak!","color":"red"}]
+execute if score @s player.killstreak matches 2.. run tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"dark_red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"You lost your ","color":"red"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"dark_red","bold":true},{"text":" killstreak!","color":"red"}]
 # sfx
 ## TODO: add sfx for losing killstreak
 scoreboard players set @s player.killstreak 0
