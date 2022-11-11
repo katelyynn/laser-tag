@@ -49,6 +49,9 @@ execute as @a at @s run function tag:system/crossbow/main
 ## health
 execute as @a at @s run function tag:system/health/main
 
+# teams
+execute as @a run function tag:system/team/main
+
 
 # set score
 execute as @a unless score @s player.score matches 0.. run scoreboard players set @s player.score 0
