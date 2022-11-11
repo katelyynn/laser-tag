@@ -17,11 +17,13 @@ gamerule doImmediateRespawn true
 
 # teams
 ## red
-team add red
+team add red "Red"
 team modify red color red
+team modify red prefix "① "
 ## blue
-team add blue
+team add blue "Blue"
 team modify blue color blue
+team modify blue prefix "① "
 
 # track player hunger
 scoreboard objectives add health.hunger food
