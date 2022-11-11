@@ -6,10 +6,17 @@ Can take some inspiration from MCC Island, had a good experience of the closed b
 ### Weapons
 Given automatically.
 
-![](https://res.plexion.dev/minecraft/item/crossbow_standby.png) **Crossbow**
+![](https://res.plexion.dev/minecraft/item/iron_sword.png) **Melee**
+- [ ] Knife
+  - Does low attack damage, used as a secondary weapon. Could increase movement speed or counter possible speed impariment from crossbows? (similar to cs:go etc.)
+
+![](https://res.plexion.dev/minecraft/item/crossbow_standby.png) **Ranged**
 - [x] Crossbow
+  - Minor (or no) speed reduction.
 - [x] Machine Crossbow
+  - Could apply heavy speed reduce?
 - [x] Rocket Crossbow
+  - Similar speed reduce to machine?
 - [ ] Harming Crossbow?
 
 ### Items
