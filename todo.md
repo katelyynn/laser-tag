@@ -47,7 +47,8 @@
 - [ ] Create setup-flow, either physically or via /trigger
 - [ ] Swap out slow buttons with a faster, more intiutive replacement
   - They are very annoying to use right now
-- [ ] Display current map and mode on actionbar when no item is held
+- [ ] ~~Display current map and mode on actionbar when no item is held~~
+  - Replaced by player statistics
   - Currently displaying the same static `Score: 0`
 
 - [ ] Add user-specific options
