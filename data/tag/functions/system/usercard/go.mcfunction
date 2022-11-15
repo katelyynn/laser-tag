@@ -2,6 +2,9 @@
 ## /trigger profile
 
 
+# sfx
+playsound minecraft:ui.toast.in player @s
+
 # tellraw
 ## header
 tellraw @s ["",{"text":"\n[","color":"dark_gray"},{"text":"⑥"},{"text":"] ","color":"dark_gray"},{"selector":"@s"},{"text":"\n"}]

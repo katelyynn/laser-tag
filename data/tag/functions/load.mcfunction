@@ -28,6 +28,10 @@ team modify blue prefix "① "
 scoreboard objectives add team.displayed_red dummy
 scoreboard objectives add team.displayed_blue dummy
 
+# open profile
+## /trigger profile
+scoreboard objectives add profile trigger
+
 # track player hunger
 scoreboard objectives add health.hunger food
 
