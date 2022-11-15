@@ -23,6 +23,9 @@
   - [x] Wins `leaderboard.wins`
   - [x] Deaths `leaderboard.deaths`
   - [x] Score `leaderboard.score`
+- [x] Allow player to view their statistics
+  - [x] Profile menu (`/trigger profile`)
+  - [x] Shown on lobby actionbar
 
 #### Gameplay
 - [x] Implement killstreak system
