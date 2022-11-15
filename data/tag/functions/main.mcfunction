@@ -52,7 +52,6 @@ execute as @a at @s run function tag:system/health/main
 ## profile
 scoreboard players enable @a profile
 execute as @a at @s if score @s profile matches 1.. run function tag:system/usercard/go
-scoreboard players reset @a profile
 
 # teams
 execute as @a run function tag:system/team/main
