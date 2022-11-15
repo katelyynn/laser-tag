@@ -8,6 +8,7 @@ scoreboard players reset @a player.kill
 # death
 execute as @a at @s if score @s player.death matches 1.. run function tag:system/death/go
 scoreboard players reset @a player.death
+scoreboard players reset @a player.direct_death
 
 # win
 ## win score

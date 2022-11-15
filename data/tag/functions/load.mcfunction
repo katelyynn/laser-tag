@@ -33,6 +33,8 @@ scoreboard objectives add health.hunger food
 
 # track deaths
 scoreboard objectives add player.death deathCount
+# track direct death from player
+scoreboard objectives add player.direct_death killed_by:player
 
 # track kills
 scoreboard objectives add player.kills playerKillCount
@@ -41,12 +43,6 @@ scoreboard objectives add player.kill playerKillCount
 # track killstreak
 ## TODO: range check killstreak
 scoreboard objectives add player.killstreak dummy
-
-# track kill and death assignment
-## used to track who killed who
-## very bodge but the only way afaik
-scoreboard objectives add assign_player.kill playerKillCount
-scoreboard objectives add assign_player.death deathCount
 
 # track score
 scoreboard objectives add player.score dummy "Score"

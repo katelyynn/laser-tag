@@ -10,7 +10,8 @@ scoreboard players operation @s player.score += score.kill global
 # announce
 tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"+","color":"green","bold":true},{"score":{"name":"score.kill","objective":"global"},"color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"You got a kill!","color":"yellow"}]
 title @s title ""
-title @s subtitle ["",{"text":"🗡"}]
+## detect who killed who
+title @s subtitle [{"text":"🗡 ","color":"#FB7C3F"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"}]
 # sfx
 function tag:sfx/kill
 
