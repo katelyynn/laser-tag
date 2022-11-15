@@ -23,6 +23,14 @@
   - [ ] Wins
   - [ ] Deaths
 
+#### Gameplay
+- [x] Implement killstreak system
+  - [x] Cool names?
+  - [ ] Make the names cooler
+
+- [x] Track player name kills (who killed who)
+  - [x] Display on subtitle
+
 ### Weapon systems
 - [x] Implement Crossbow
 - [x] Implement Machine Crossbow
