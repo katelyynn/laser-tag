@@ -42,6 +42,12 @@ scoreboard objectives add player.kill playerKillCount
 ## TODO: range check killstreak
 scoreboard objectives add player.killstreak dummy
 
+# track kill and death assignment
+## used to track who killed who
+## very bodge but the only way afaik
+scoreboard objectives add assign_player.kill playerKillCount
+scoreboard objectives add assign_player.death deathCount
+
 # track score
 scoreboard objectives add player.score dummy "Score"
 # track wins
