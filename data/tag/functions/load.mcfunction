@@ -33,6 +33,8 @@ scoreboard objectives add health.hunger food
 
 # track deaths
 scoreboard objectives add player.death deathCount
+# track direct death from player
+scoreboard objectives add player.direct_death killed_by:player
 
 # track kills
 scoreboard objectives add player.kills playerKillCount
