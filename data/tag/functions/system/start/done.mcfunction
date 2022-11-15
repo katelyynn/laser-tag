@@ -9,8 +9,6 @@ effect clear @a[tag=playing] resistance
 
 # announce
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Let the games begin!","color":"yellow"}]
-title @a title ""
-title @a subtitle ""
 ## default timings
 title @a times 20 60 20
 # sfx
