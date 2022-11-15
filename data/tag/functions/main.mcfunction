@@ -44,6 +44,12 @@ execute as @e[tag=button_reset] at @s if block ~ ~ ~ birch_button[powered=true] 
 execute as @e[type=arrow,nbt={inGround:1b}] at @s run particle block gravel ~ ~ ~ 0 0 0 0 10
 kill @e[type=arrow,nbt={inGround:1b}]
 
+# range check leaderboard
+execute as @a unless score @s leaderboard.score matches 0.. run scoreboard players set @s leaderboard.score 0
+execute as @a unless score @s leaderboard.wins matches 0.. run scoreboard players set @s leaderboard.wins 0
+execute as @a unless score @s leaderboard.deaths matches 0.. run scoreboard players set @s leaderboard.deaths 0
+execute as @a unless score @s leaderboard.kills matches 0.. run scoreboard players set @s leaderboard.kills 0
+
 # systems
 ## crossbow
 execute as @a at @s run function tag:system/crossbow/main
