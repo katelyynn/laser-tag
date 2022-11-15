@@ -45,5 +45,6 @@
 - [ ] Flesh out game status updates in chat
   - [ ] Replace icons with more descriptive ones (rather than everything being `[!]`)
   - Take inspiration from MCC Island
+  - Also use cooler custom colours
 - [ ] Use titles/subtitles for some game status updates
   - aka. for kills on the subtitle layer
