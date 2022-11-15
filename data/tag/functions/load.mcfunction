@@ -30,7 +30,7 @@ scoreboard objectives add team.displayed_blue dummy
 
 # open profile
 ## /trigger profile
-scoreboard objectives add profile trigger
+scoreboard objectives add profile trigger "Open profile"
 
 # track player hunger
 scoreboard objectives add health.hunger food
