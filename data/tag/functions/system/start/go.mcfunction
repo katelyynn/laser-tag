@@ -37,6 +37,7 @@ execute if score map global matches 0 run tp @a[tag=playing] 200 150 200
 
 
 # countdown
+title @a times 20 120 20
 ## delayed to account for map & spawn locations
 schedule function tag:system/start/count/5 1s
 schedule function tag:system/start/count/4 2s
