@@ -19,3 +19,7 @@ function tag:sfx/kill
 scoreboard players operation @s player.killstreak += 1 internal
 # announce
 function tag:system/kill/streak
+
+
+# save to leaderboards
+scoreboard players operation @s leaderboard.kills += 1 internal

@@ -19,6 +19,10 @@ execute if score @s player.killstreak matches 2.. run tellraw @s ["",{"text":"["
 scoreboard players set @s player.killstreak 0
 
 
+# save to leaderboards
+scoreboard players operation @s leaderboard.deaths += 1 internal
+
+
 # reset hunger
 function tag:system/health/reset
 # reset ammo
