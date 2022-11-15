@@ -45,9 +45,17 @@ scoreboard objectives add player.kill playerKillCount
 scoreboard objectives add player.killstreak dummy
 
 # track score
+## singular game
 scoreboard objectives add player.score dummy "Score"
-# track wins
-scoreboard objectives add player.wins dummy
+
+
+# leaderboards
+## total score from all games
+scoreboard objectives add leaderboard.score dummy "Score"
+scoreboard objectives add leaderboard.wins dummy
+scoreboard objectives add leaderboard.deaths dummy
+scoreboard objectives add leaderboard.kills dummy
+
 
 # systems
 ## crossbow

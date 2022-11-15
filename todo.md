@@ -18,10 +18,11 @@
   - [x] Win at amount of points
   - [x] Reset on game end
 
-- [ ] Track player general statistics
-  - [ ] Kills
-  - [ ] Wins
-  - [ ] Deaths
+- [x] Track player general statistics
+  - [x] Kills `leaderboard.kills`
+  - [x] Wins `leaderboard.wins`
+  - [x] Deaths `leaderboard.deaths`
+  - [x] Score `leaderboard.score`
 
 #### Gameplay
 - [x] Implement killstreak system
