@@ -27,7 +27,7 @@
   - [x] Profile menu (`/trigger profile`)
   - [x] Shown on lobby actionbar
 
-#### Gameplay
+### Gameplay
 - [x] Implement killstreak system
   - [x] Cool names?
   - [ ] Make the names cooler
@@ -43,7 +43,7 @@
   - [ ] Teams (not fully complete)
   - [ ] CTH-style (1 person has the "thing" which allows them to gain points (but they get glowing and slowness(?), goal is to get the most points with the "thing"))
 
-#### Cosmetic systems
+### Cosmetic systems
 - [ ] Add a 'Coins' system
   - Earned from playing games, getting kills, winning rounds etc.
   - [ ] Earn from passively playing games
