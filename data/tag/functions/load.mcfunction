@@ -27,6 +27,7 @@ team modify blue prefix "① "
 ## display
 scoreboard objectives add team.displayed_red dummy
 scoreboard objectives add team.displayed_blue dummy
+scoreboard objectives add team.displayed_reset dummy
 
 # open profile
 ## /trigger profile

@@ -10,3 +10,4 @@ item replace entity @s armor.feet with leather_boots{CustomModelData:2,display:{
 # reset
 scoreboard players reset @s team.displayed_red
 scoreboard players set @s team.displayed_blue 1
+scoreboard players reset @s team.displayed_reset
