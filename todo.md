@@ -43,6 +43,18 @@
   - [ ] Teams (not fully complete)
   - [ ] CTH-style (1 person has the "thing" which allows them to gain points (but they get glowing and slowness(?), goal is to get the most points with the "thing"))
 
+#### Cosmetic systems
+- [ ] Add a 'Coins' system
+  - Earned from playing games, getting kills, winning rounds etc.
+  - [ ] Earn from passively playing games
+  - [ ] Earn from getting kills
+  - [ ] Earn from winning rounds
+  - [ ] Show when near a shop?
+
+- [ ] Implement shop/market
+  - Allows you to spend 'Coins' on cosmetics
+
+
 ### Weapon systems
 - [x] Implement Crossbow
 - [x] Implement Machine Crossbow
