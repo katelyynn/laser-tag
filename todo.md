@@ -35,6 +35,9 @@
 - [x] Track player name kills (who killed who)
   - [x] Display on subtitle
 
+- [ ] Add particles on kill
+  - Similar to MCC Island, makes kills a lot more satisfying
+
 - [ ] Add more gameplay modes
   - [x] Solos
   - [ ] Teams (not fully complete)
