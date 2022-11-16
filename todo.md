@@ -54,7 +54,6 @@
 - [ ] Implement shop/market
   - Allows you to spend 'Coins' on cosmetics
 
-
 ### Weapon systems
 - [x] Implement Crossbow
 - [x] Implement Machine Crossbow
