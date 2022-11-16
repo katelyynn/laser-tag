@@ -15,6 +15,10 @@ scoreboard players set 5 internal 5
 gamerule naturalRegeneration false
 gamerule doImmediateRespawn true
 
+# bossbars
+bossbar add tag:ver ""
+bossbar set tag:ver max 12
+
 # teams
 ## red
 team add red "Red"
