@@ -35,6 +35,11 @@
 - [x] Track player name kills (who killed who)
   - [x] Display on subtitle
 
+- [ ] Add more gameplay modes
+  - [x] Solos
+  - [ ] Teams (not fully complete)
+  - [ ] CTH-style (1 person has the "thing" which allows them to gain points (but they get glowing and slowness(?), goal is to get the most points with the "thing"))
+
 ### Weapon systems
 - [x] Implement Crossbow
 - [x] Implement Machine Crossbow
