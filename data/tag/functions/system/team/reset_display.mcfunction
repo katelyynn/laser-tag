@@ -3,5 +3,5 @@
 
 
 # reset
-scoreboard players reset @a team.displayed_red
-scoreboard players reset @a team.displayed_blue
+scoreboard players reset @s team.displayed_red
+scoreboard players reset @s team.displayed_blue
