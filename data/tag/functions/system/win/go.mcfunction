@@ -11,6 +11,10 @@ tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"②","color":"yellow"},
 # sfx
 execute as @a at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~
 
+# increment coins
+scoreboard players operation @s temp_store.coins += coins.win global
+function tag:system/coins/poll
+
 ## TODO: display top 3 killers and points leaderboard
 
 # fireworks

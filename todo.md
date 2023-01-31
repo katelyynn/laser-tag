@@ -47,9 +47,11 @@
 - [ ] Add a 'Coins' system
   - Earned from playing games, getting kills, winning rounds etc.
   - [ ] Earn from passively playing games `+2`
-  - [ ] Earn from getting kills `+20`
-  - [ ] Earn from winning rounds `+50`
+  - [x] Earn from getting kills `+20`
+  - [ ] Earn from getting killstreaks `+??` (based on value, cap out)
+  - [x] Earn from winning rounds `+50`
   - [x] Add function to poll coin updates in batch
+  - [ ] Swap out placeholder coin sfx
   - [ ] Show when near a shop?
 
 - [ ] Implement shop/market

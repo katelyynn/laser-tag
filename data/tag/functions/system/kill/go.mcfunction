@@ -15,6 +15,10 @@ title @s subtitle [{"text":"🗡 ","color":"#FB7C3F"},{"selector":"@a[scores={pl
 # sfx
 function tag:sfx/kill
 
+# increment coins
+scoreboard players operation @s temp_store.coins += coins.kill global
+function tag:system/coins/poll
+
 # increment killstreak
 scoreboard players operation @s player.killstreak += 1 internal
 # announce
