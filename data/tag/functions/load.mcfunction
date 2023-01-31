@@ -58,8 +58,13 @@ scoreboard objectives add player.killstreak dummy
 scoreboard objectives add player.score dummy "Score"
 
 
+# track temporary coin storage
+scoreboard objectives add temp_store.coins dummy
+
+
 # leaderboards
 ## total score from all games
+scoreboard objectives add leaderboard.coins dummy "Coins"
 scoreboard objectives add leaderboard.score dummy "Score"
 scoreboard objectives add leaderboard.wins dummy
 scoreboard objectives add leaderboard.deaths dummy
