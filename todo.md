@@ -26,6 +26,11 @@
 - [x] Allow player to view their statistics
   - [x] Profile menu (`/trigger profile`)
   - [x] Shown on lobby actionbar
+- [ ] Track more fun statistics
+  - [ ] Highest killstreak `leaderboard.killstreak_highest`
+  - [ ] Highest total kills `leaderboard.kills_highest`
+  - [ ] Highest total deaths `leaderboard.deaths_highest`
+  - . . .
 
 ### Gameplay
 - [x] Implement killstreak system
