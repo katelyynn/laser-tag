@@ -8,7 +8,7 @@ tag @a[gamemode=adventure] add playing
 
 scoreboard players reset @a[tag=playing] player.score
 clear @a[tag=playing]
-## TODO: give default crossbow on spawn & death
+## TODO: give default crossbow on spawn & death (#3)
 ## TODO: reload silently on start
 
 
