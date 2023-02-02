@@ -26,7 +26,7 @@ tellraw @s {"text":"\nDeaths","color":"gray"}
 tellraw @s ["",{"text":"Player deaths: "},{"score":{"name":"@s","objective":"leaderboard.deaths_player"},"color":"yellow"}," \u0020 ",{"text":"Suicidal deaths: "},{"score":{"name":"@s","objective":"leaderboard.death_suicide"},"color":"yellow"}]
 
 ## footer
-tellraw @s "\n"
+tellraw @s ""
 
 
 scoreboard players reset @a profile
