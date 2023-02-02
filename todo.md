@@ -32,7 +32,7 @@
   - [ ] Ranged kills (crossbows etc.)
   - [ ] Potion/"magic" kills (potions)
 - [ ] Track more fun statistics
-  - [ ] Highest killstreak `leaderboard.killstreak_highest`
+  - [x] Highest killstreak `leaderboard.killstreak_highest`
   - [ ] Highest total kills `leaderboard.kills_highest`
   - [ ] Highest total deaths `leaderboard.deaths_highest`
   - . . .

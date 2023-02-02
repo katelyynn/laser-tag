@@ -69,6 +69,7 @@ scoreboard objectives add leaderboard.score dummy "Score"
 scoreboard objectives add leaderboard.wins dummy
 scoreboard objectives add leaderboard.deaths dummy
 scoreboard objectives add leaderboard.kills dummy
+scoreboard objectives add leaderboard.killstreak_highest dummy
 
 
 # systems
