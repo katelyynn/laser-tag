@@ -11,7 +11,7 @@ tellraw @s [{"selector":"@s"}]
 
 ## overall
 tellraw @s {"text":"\nOverall","underlined":true}
-tellraw @s ["",{"text":"Score: "},{"score":{"name":"@s","objective":"leaderboard.score"},"color":"yellow"}]
+tellraw @s ["",{"text":"Score: "},{"score":{"name":"@s","objective":"leaderboard.score"},"color":"yellow"}," \u0020 ",{"text":"Coins: "},{"score":{"name":"@s","objective":"leaderboard.coins"},"color":"yellow"}]
 
 ## games
 tellraw @s {"text":"\nGames","underlined":true}
