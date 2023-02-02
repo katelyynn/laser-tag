@@ -27,6 +27,10 @@
 - [x] Allow player to view their statistics
   - [x] Profile menu (`/trigger profile`)
   - [x] Shown on lobby actionbar
+- [ ] Track more in-depth statistics
+  - [ ] Melee kills (knife, punch?)
+  - [ ] Ranged kills (crossbows etc.)
+  - [ ] Potion/"magic" kills (potions)
 - [ ] Track more fun statistics
   - [ ] Highest killstreak `leaderboard.killstreak_highest`
   - [ ] Highest total kills `leaderboard.kills_highest`
