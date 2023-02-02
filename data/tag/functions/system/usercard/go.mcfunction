@@ -7,15 +7,26 @@ playsound minecraft:ui.toast.in player @s
 
 # tellraw
 ## header
-tellraw @s ["\n",{"selector":"@s"}]
+tellraw @s [{"selector":"@s"}]
 
-## score
+## overall
+tellraw @s {"text":"\nOverall","underlined":true}
 tellraw @s ["",{"text":"\nScore: "},{"score":{"name":"@s","objective":"leaderboard.score"},"color":"yellow"}]
 
-## wins / kills / deaths
-tellraw @s ["",{"text":"\n④ Wins: "},{"score":{"name":"@s","objective":"leaderboard.wins"},"color":"yellow"}]
-tellraw @s ["",{"text":"③ Kills: "},{"score":{"name":"@s","objective":"leaderboard.kills"},"color":"yellow"}]
-tellraw @s ["",{"text":"⑤ Deaths: "},{"score":{"name":"@s","objective":"leaderboard.deaths"},"color":"yellow"},{"text":"\n"}]
+## games
+tellraw @s {"text":"Games","underlined":true}
+tellraw @s ["",{"text":"Games won: "},{"score":{"name":"@s","objective":"leaderboard.wins"},"color":"yellow"}," \u0020 ",{"text":"Games lost: "},{"score":{"name":"@s","objective":"leaderboard.losses"},"color":"yellow"}]
+
+## kills
+tellraw @s {"text":"Kills","underlined":true}
+tellraw @s ["",{"text":"Players killed: "},{"score":{"name":"@s","objective":"leaderboard.kills"},"color":"yellow"}," \u0020 ",{"text":"Highest killstreak: "},{"score":{"name":"@s","objective":"leaderboard.killstreak_highest"},"color":"yellow"}]
+
+## deaths
+tellraw @s {"text":"Deaths","underlined":true}
+tellraw @s ["",{"text":"Player deaths: "},{"score":{"name":"@s","objective":"leaderboard.deaths_player"},"color":"yellow"}," \u0020 ",{"text":"Suicidal deaths: "},{"score":{"name":"@s","objective":"leaderboard.death_suicide"},"color":"yellow"}]
+
+## footer
+tellraw @s "\n"
 
 
 scoreboard players reset @a profile
