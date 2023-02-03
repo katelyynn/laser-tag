@@ -3,7 +3,7 @@
 
 
 # announce
-tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"$","color":"gold","bold":true},{"text":"] ","color":"dark_gray"},{"text":"You earned ","color":"gold"},{"score":{"name":"@s","objective":"temp_store.coins"}},{"text":" Coins!","color":"gold"}]
+tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"$","color":"gold","bold":true},{"text":"] ","color":"dark_gray"},{"text":"You earned ","color":"gold"},{"score":{"name":"@s","objective":"temp_store.coins"},"color":"yellow"},{"text":" Coins!","color":"gold"}]
 # sfx
 function tag:sfx/coins
 
