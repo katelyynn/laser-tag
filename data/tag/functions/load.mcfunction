@@ -14,6 +14,7 @@ scoreboard players set 5 internal 5
 # world
 gamerule naturalRegeneration false
 gamerule doImmediateRespawn true
+gamerule showDeathMessages false
 
 # bossbars
 bossbar add tag:ver ""
