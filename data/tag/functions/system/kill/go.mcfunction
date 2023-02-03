@@ -7,18 +7,18 @@ scoreboard players operation @s player.score += score.kill global
 ## and multiply based on gametime
 ## eg. 0-12m 3x, 12-20m 2x, 21m+ 1x
 
+# increment killstreak
+scoreboard players operation @s player.killstreak += 1 internal
 # announce
-tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"dark_gray"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"}]
+#function tag:system/kill/streak
+
+# announce
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"dark_gray"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"},{"text":" (x","color":"#FB7C3F"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"#FB7C3F"},{"text":" streak)","color":"#FB7C3F"}]
 title @s title ""
 ## detect who killed who
 title @s subtitle [{"text":"🗡 ","color":"#FB7C3F"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"}]
 # sfx
 function tag:sfx/kill
-
-# increment killstreak
-scoreboard players operation @s player.killstreak += 1 internal
-# announce
-function tag:system/kill/streak
 
 # increment coins
 scoreboard players operation @s temp_store.coins += coins.kill global
