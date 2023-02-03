@@ -63,6 +63,10 @@ execute as @a at @s run function tag:system/health/main
 scoreboard players enable @a profile
 execute as @a at @s if score @s profile matches 1.. run function tag:system/usercard/go
 
+# display player info
+execute unless score period internal matches 0..3 run scoreboard objectives setdisplay belowName leaderboard.coins
+execute if score period internal matches 0..3 run scoreboard objectives setdisplay belowName health.hp
+
 # teams
 execute as @a run function tag:system/team/main
 

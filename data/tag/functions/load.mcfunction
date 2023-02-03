@@ -40,8 +40,6 @@ scoreboard objectives add profile trigger "Open profile"
 # track player health
 scoreboard objectives add health.hp health {"text":" ♥","color":"red"}
 scoreboard objectives add health.hunger food
-## display
-scoreboard objectives setdisplay belowName health.hp
 
 # track deaths
 scoreboard objectives add player.death deathCount
@@ -67,7 +65,7 @@ scoreboard objectives add temp_store.coins dummy
 
 # leaderboards
 ## total score from all games
-scoreboard objectives add leaderboard.coins dummy "Coins"
+scoreboard objectives add leaderboard.coins dummy {"text":" $","color":"gold"}
 scoreboard objectives add leaderboard.score dummy "Score"
 scoreboard objectives add leaderboard.wins dummy
 scoreboard objectives add leaderboard.deaths dummy
