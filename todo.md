@@ -97,3 +97,17 @@
   - [ ] Use "who killed who" logic to display kill messages (plexionlive -> plexiongold)
   - [ ] Cover suicides (use logic to retract points if suicide?)
   - [ ] Hide default death messages
+
+### Development
+- [ ] Create a test structure
+  - [ ] Allow main loop to be switched off
+  - [ ] Allow easy game period-switching for tests
+  - [ ] Create tests for various scenarios
+    - [ ] Kills (who killed who etc.)
+    - [ ] Killstreaks
+    - [ ] Death detection
+    - [ ] Round endings
+    - [ ] Score (used for balancing)
+    - [x] Coins (used for balancing)
+    - [ ] Simulate user statistics (for user card)
+    - . . .
