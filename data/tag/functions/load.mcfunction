@@ -37,8 +37,11 @@ scoreboard objectives add team.displayed_reset dummy
 ## /trigger profile
 scoreboard objectives add profile trigger "Open profile"
 
-# track player hunger
+# track player health
+scoreboard objectives add health.hp health {"text":" ♥","color":"red"}
 scoreboard objectives add health.hunger food
+## display
+scoreboard objectives setdisplay belowName health.hp
 
 # track deaths
 scoreboard objectives add player.death deathCount
