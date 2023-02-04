@@ -27,3 +27,4 @@ scoreboard players operation @s temp_store.coins += coins.kill global
 
 # save to leaderboards
 scoreboard players add @s leaderboard.kills 1
+execute if score @s player.killstreak > @s leaderboard.killstreak_highest run scoreboard players operation @s leaderboard.killstreak_highest = @s player.killstreak
