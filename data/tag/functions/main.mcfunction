@@ -44,6 +44,10 @@ execute as @e[tag=button_reset] at @s if block ~ ~ ~ oak_button[powered=true] ru
 execute as @e[tag=button_reset] at @s if block ~ ~ ~ spruce_button[powered=true] run setblock ~ ~ ~ spruce_button[powered=false]
 execute as @e[tag=button_reset] at @s if block ~ ~ ~ birch_button[powered=true] run setblock ~ ~ ~ birch_button[powered=false]
 
+# remove arrow piercing into player
+execute as @e[type=arrow,tag=!arrow.patched] run data merge entity @s {PierceLevel:1b}
+execute as @e[type=arrow,tag=!arrow.patched] run tag @s add arrow.patched
+
 # kill arrows
 execute as @e[type=arrow,nbt={inGround:1b}] at @s run particle block gravel ~ ~ ~ 0 0 0 0 10
 kill @e[type=arrow,nbt={inGround:1b}]
