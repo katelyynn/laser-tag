@@ -56,6 +56,8 @@ scoreboard objectives add player.kill playerKillCount
 # track killstreak
 ## TODO: range check killstreak
 scoreboard objectives add player.killstreak dummy
+# temp store to calculate killstreak coins
+scoreboard objectives add temp_store.killstreak dummy
 
 # track score
 ## singular game

@@ -24,6 +24,8 @@ function tag:sfx/kill
 
 # increment coins
 scoreboard players operation @s temp_store.coins += coins.kill global
+## killstreak
+execute if score @s player.killstreak > 1 internal run function tag:system/kill/streak
 
 
 # save to leaderboards
