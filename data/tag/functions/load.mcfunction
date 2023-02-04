@@ -46,6 +46,8 @@ scoreboard objectives add health.hunger food
 scoreboard objectives add player.death deathCount
 # track direct death from player
 scoreboard objectives add player.direct_death killed_by:player
+# temp score to track direct death
+scoreboard objectives add temp_store.direct_death dummy
 
 # track kills
 scoreboard objectives add player.kills playerKillCount
@@ -70,6 +72,8 @@ scoreboard objectives add leaderboard.coins dummy {"text":"$","color":"gold"}
 scoreboard objectives add leaderboard.score dummy "Score"
 scoreboard objectives add leaderboard.wins dummy
 scoreboard objectives add leaderboard.deaths dummy
+scoreboard objectives add leaderboard.deaths_player dummy
+scoreboard objectives add leaderboard.deaths_suicide dummy
 scoreboard objectives add leaderboard.kills dummy
 scoreboard objectives add leaderboard.killstreak_highest dummy
 
