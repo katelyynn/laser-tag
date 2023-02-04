@@ -9,8 +9,8 @@ scoreboard players set score.death global -1
 
 # coins
 scoreboard players set coins.passive global 2
-scoreboard players set coins.kill global 20
-scoreboard players set coins.win global 50
+scoreboard players set coins.kill global 10
+scoreboard players set coins.win global 25
 
 # respawn timer
 ## TODO: implement respawn on death
