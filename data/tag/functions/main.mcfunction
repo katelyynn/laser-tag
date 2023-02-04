@@ -92,6 +92,9 @@ execute as @a unless score @s leaderboard.killstreak_highest matches 0.. run sco
 execute if score period internal matches -1 run setworldspawn 0 150 0
 execute if score period internal matches -1 run spawnpoint @a 0 150 0
 execute if score period internal matches -1 run effect give @a resistance 9999 255 true
+execute if score period internal matches -1 run effect give @a regeneration 9999 255 true
+execute if score period internal matches -1 run effect give @a fire_resistance 9999 255 true
+execute if score period internal matches -1 run effect give @a water_breathing 9999 255 true
 execute if score period internal matches -1 run scoreboard objectives setdisplay sidebar
 ## period 0
 execute if score period internal matches 0..3 run scoreboard objectives setdisplay sidebar player.score
