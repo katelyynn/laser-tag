@@ -13,6 +13,9 @@ tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"text":"→","color":"gray"},
 execute as @a at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 100 0.5
 
 
+# poll final coins
+function tag:system/coins/poll
+
 # save to leaderboards
 execute as @a[tag=playing] run scoreboard players operation @s leaderboard.score += @s player.score
 
