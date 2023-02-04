@@ -62,6 +62,13 @@
 - [x] Add end game actions
   - [x] Open profile
 
+- [ ] Implement ready/unready system
+  - Replaces actionbar statistics
+
+- [ ] Make start button a toggle for "matchmaking"
+  - Start after 5s of waiting for players to be ready
+  - Cancel if insufficient or chosen by player
+
 ### Cosmetic systems
 - [x] Add a 'Coins' system
   - Earned from playing games, getting kills, winning rounds etc.
