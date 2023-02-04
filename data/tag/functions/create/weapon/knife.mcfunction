@@ -1,2 +1,2 @@
-give @s iron_sword{display:{Name:'[{"text":"Knife","italic":false}]'},melee_type:"knife",AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:1.5,Operation:0,UUID:[I;-1458275648,-1370275478,-1651220378,-396495190],Slot:"mainhand"}]}
+give @s iron_sword{display:{Name:'[{"text":"Knife","italic":false}]'},melee_type:"knife",AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:1.5,Operation:0,UUID:[I;-1458275648,-1370275478,-1651220378,-396495190],Slot:"mainhand"}],Unbreakable:1b}
 ## intentionally 1.8-esc attack speed for now, may reconsider in the future?
