@@ -23,7 +23,7 @@ tellraw @s ["",{"text":"Players killed: "},{"score":{"name":"@s","objective":"le
 
 ## deaths
 tellraw @s {"text":"\nDeaths","color":"gray"}
-tellraw @s ["",{"text":"Player deaths: "},{"score":{"name":"@s","objective":"leaderboard.deaths_player"},"color":"yellow"}," \u0020 ",{"text":"Suicidal deaths: "},{"score":{"name":"@s","objective":"leaderboard.death_suicide"},"color":"yellow"}]
+tellraw @s ["",{"text":"Player deaths: "},{"score":{"name":"@s","objective":"leaderboard.deaths_player"},"color":"yellow"}," \u0020 ",{"text":"Suicidal deaths: "},{"score":{"name":"@s","objective":"leaderboard.deaths_suicide"},"color":"yellow"}]
 
 ## footer
 tellraw @s ""
