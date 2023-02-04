@@ -9,4 +9,4 @@ function tag:sfx/coins
 
 # update coins
 scoreboard players operation @s leaderboard.coins += @s temp_store.coins
-scoreboard players reset @s temp_store.coins
+scoreboard players set @s temp_store.coins 0

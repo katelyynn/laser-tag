@@ -71,8 +71,17 @@ execute if score period internal matches 0..3 run scoreboard objectives setdispl
 execute as @a run function tag:system/team/main
 
 
-# set score
+# range check
+## gameplay
+execute as @a unless score @s temp_store.coins matches 0.. run scoreboard players set @s temp_store.coins 0
 execute as @a unless score @s player.score matches 0.. run scoreboard players set @s player.score 0
+## leaderboard
+execute as @a unless score @s leaderboard.coins matches 0.. run scoreboard players set @s leaderboard.coins 0
+execute as @a unless score @s leaderboard.score matches 0.. run scoreboard players set @s leaderboard.score 0
+execute as @a unless score @s leaderboard.wins matches 0.. run scoreboard players set @s leaderboard.wins 0
+execute as @a unless score @s leaderboard.deaths matches 0.. run scoreboard players set @s leaderboard.deaths 0
+execute as @a unless score @s leaderboard.kills matches 0.. run scoreboard players set @s leaderboard.kills 0
+execute as @a unless score @s leaderboard.killstreak_highest matches 0.. run scoreboard players set @s leaderboard.killstreak_highest 0
 
 # gameplay
 ## period -1
