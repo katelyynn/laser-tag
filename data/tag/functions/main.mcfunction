@@ -8,6 +8,9 @@ function tag:system/version/main
 # item blacklist
 clear @a #tag:item_blacklist
 
+# kill weapon items
+function tag:system/item/weapon/main
+
 # kill
 execute as @a at @s if score @s player.kill matches 1.. run function tag:system/kill/go
 scoreboard players reset @a player.kill

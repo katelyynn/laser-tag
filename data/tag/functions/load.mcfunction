@@ -70,6 +70,12 @@ scoreboard objectives add temp_store.killstreak dummy
 scoreboard objectives add player.score dummy "Score"
 
 
+# track item drops
+## used to know when to kill items
+scoreboard objectives add temp_store.drop_crossbow minecraft.dropped:minecraft.crossbow
+scoreboard objectives add temp_store.drop_sword minecraft.dropped:minecraft.iron_sword
+
+
 # track temporary coin storage
 scoreboard objectives add temp_store.coins dummy
 
