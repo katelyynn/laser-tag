@@ -8,7 +8,7 @@ effect clear @a glowing
 tp @a 0 150 0
 
 # announce
-tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"text":"→","color":"gray"},{"text":"] ","color":"dark_gray"},{"text":"Game over! \u0020 ","color":"gray"},{"text":"[Open profile]","color":"green","clickEvent":{"action":"run_command","value":"/trigger profile"}}]
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"text":"→","color":"gray"},{"text":"] ","color":"dark_gray"},{"text":"Game over! \u0020 ","color":"gray"},{"text":"[Open profile]","color":"green","clickEvent":{"action":"run_command","value":"/trigger profile"}},"\n"]
 # sfx
 execute as @a at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 100 0.5
 
