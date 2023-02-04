@@ -4,6 +4,9 @@
 
 
 effect clear @a[tag=playing] resistance
+effect clear @a[tag=playing] regeneration
+effect clear @a[tag=playing] fire_resistance
+effect clear @a[tag=playing] water_breathing
 execute as @a[tag=playing] run function tag:system/loadout/go
 
 
