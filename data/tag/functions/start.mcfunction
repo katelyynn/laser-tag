@@ -18,6 +18,6 @@ execute if score can_start_players internal matches 1.. if score can_start_perio
 
 # can start?
 ## yes, proceed to main start
-execute if score can_start internal matches 1.. run function tag:system/start/go
+execute if score can_start internal matches 1.. run function tag:system/start/matchmaking/go
 ## no, ineligible
 execute unless score can_start internal matches 1.. run playsound minecraft:block.note_block.bass player @a

@@ -107,5 +107,10 @@ execute if score period internal matches -1 run scoreboard objectives setdisplay
 execute if score period internal matches 0..3 run scoreboard objectives setdisplay sidebar player.score
 
 
+# track player ready status
+tag @a[scores={player.ready=1..},tag=!playing] add playing
+execute as @a[tag=playing] unless score @s player.ready matches 1.. run tag @s remove playing
+
+
 # patch items
 execute as @e[type=item,tag=!item.patched] at @s run function tag:system/item/patch

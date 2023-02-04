@@ -39,6 +39,7 @@ execute as @a[tag=playing] run function tag:system/map/spawn
 
 
 # countdown
+title @a[tag=!playing] times 20 60 20
 title @a[tag=playing] times 20 100 5
 ## delayed to account for map & spawn locations
 schedule function tag:system/start/count/5 1s
