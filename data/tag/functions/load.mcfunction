@@ -59,6 +59,7 @@ scoreboard objectives add player.killstreak dummy
 
 # track score
 ## singular game
+## re-created via start/go
 scoreboard objectives add player.score dummy "Score"
 
 
