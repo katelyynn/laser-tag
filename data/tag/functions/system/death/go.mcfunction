@@ -3,6 +3,10 @@
 
 tag @s add self
 
+# clear items
+## only necessary if `keepInventory` is enabled
+clear @s
+
 # decrease score
 scoreboard players operation @s player.score += score.death global
 
