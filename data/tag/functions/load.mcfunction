@@ -12,9 +12,14 @@ scoreboard players set 4 internal 4
 scoreboard players set 5 internal 5
 
 # world
+difficulty easy
+gamerule commandBlockOutput false
 gamerule naturalRegeneration false
 gamerule doImmediateRespawn true
 gamerule showDeathMessages false
+gamerule doInsomnia false
+gamerule doFireTick false
+gamerule spawnRadius 1
 
 # bossbars
 bossbar add tag:ver ""
