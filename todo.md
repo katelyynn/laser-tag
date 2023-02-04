@@ -103,6 +103,17 @@
   - [x] Vary colour for player's own screen (red if referring to own player)
   - [x] Hide default death messages
 
+### Designs
+- [x] Redesign user card
+- [x] Redesign kill feed & killstreaks
+- [ ] Redesign game end flow
+  - [x] More padding
+  - [ ] Leaderboards
+  - [ ] More cooler statistics
+- [ ] Redesign lobby actionbar
+- [ ] Redesign gameplay actionbar
+  - Display reloading progress?
+
 ### Development
 - [ ] Create a test structure
   - [ ] Allow main loop to be switched off
