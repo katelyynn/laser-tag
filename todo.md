@@ -94,9 +94,9 @@
 - [ ] Use titles/subtitles for some game status updates
   - aka. for kills on the subtitle layer
 - [ ] Display fully custom death messages
-  - [ ] Use "who killed who" logic to display kill messages (plexionlive -> plexiongold)
+  - [x] Use "who killed who" logic to display kill messages (plexionlive -> plexiongold)
   - [ ] Cover suicides (use logic to retract points if suicide?)
-  - [ ] Hide default death messages
+  - [x] Hide default death messages
 
 ### Development
 - [ ] Create a test structure
