@@ -91,6 +91,7 @@
 - [ ] ~~Display current map and mode on actionbar when no item is held~~
   - Replaced by player statistics
   - Currently displaying the same static `Score: 0`
+- [ ] Add customisation for winning score (default 20)
 
 - [ ] Add user-specific options
   - [ ] Disable some sound effects
