@@ -98,3 +98,7 @@ execute if score period internal matches -1 run effect give @a water_breathing 9
 execute if score period internal matches -1 run scoreboard objectives setdisplay sidebar
 ## period 0
 execute if score period internal matches 0..3 run scoreboard objectives setdisplay sidebar player.score
+
+
+# patch items
+execute as @e[type=item,tag=!item.patched] at @s run function tag:system/item/patch
