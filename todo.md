@@ -53,6 +53,10 @@
   - [ ] Teams (not fully complete)
   - [ ] CTH-style (1 person has the "thing" which allows them to gain points (but they get glowing and slowness(?), goal is to get the most points with the "thing"))
 
+### Lobby
+- [x] Add end game actions
+  - [x] Open profile
+
 ### Cosmetic systems
 - [ ] Add a 'Coins' system
   - Earned from playing games, getting kills, winning rounds etc.
