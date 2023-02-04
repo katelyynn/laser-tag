@@ -8,7 +8,7 @@
   - [ ] **2**: Game pause/countdown
   - [x] **3**: Game over, victory screen
 
-- [ ] Implement game clock
+- [x] Implement game clock
   - Integrate with ***p!f***
   - Depended on for many future things
 

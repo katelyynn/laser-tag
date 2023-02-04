@@ -2,6 +2,11 @@
 ## if eligible
 
 
+# reset clock
+scoreboard players set time internal 0
+scoreboard players set time_s internal 0
+
+
 # mark players
 tag @a remove playing
 tag @a[gamemode=adventure] add playing

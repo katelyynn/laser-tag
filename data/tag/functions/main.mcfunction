@@ -4,6 +4,9 @@
 # display version number
 function tag:system/version/main
 
+# game clock
+execute if score period internal matches 1 run function tag:time
+
 
 # item blacklist
 clear @a #tag:item_blacklist

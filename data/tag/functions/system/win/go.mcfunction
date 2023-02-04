@@ -30,5 +30,12 @@ scoreboard players operation @s leaderboard.wins += 1 internal
 scoreboard players operation @s leaderboard.games_played += 1 internal
 
 
+# reset clock
+scoreboard players operation last_game_time internal = time internal
+scoreboard players operation last_game_time_s internal = time_s internal
+scoreboard players set time internal 0
+scoreboard players set time_s internal 0
+
+
 # transition back to lobby
 schedule function tag:system/win/lobby 5s
