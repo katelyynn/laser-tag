@@ -71,7 +71,7 @@ scoreboard objectives add temp_store.coins dummy
 
 # leaderboards
 ## total score from all games
-scoreboard objectives add leaderboard.coins dummy {"text":"$","color":"#C19B1B"}
+scoreboard objectives add leaderboard.coins dummy {"text":"$","color":"#CCB548"}
 scoreboard objectives add leaderboard.score dummy "Score"
 scoreboard objectives add leaderboard.wins dummy
 scoreboard objectives add leaderboard.games_played dummy
