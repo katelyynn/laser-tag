@@ -126,10 +126,10 @@
 - [ ] Add coin levels
   - Intended to be difficult to achieve the top.
   - Display in chat (polling), profile, and market
-  - [ ] Copper for less than 100
-  - [ ] Silver for less than 350
-  - [ ] Gold for less than 1200
-  - [ ] Platinum for less than 10000
+  - [ ] Copper (base level)
+  - [ ] Silver (greater than 350)
+  - [ ] Gold (greater than 1200)
+  - [ ] Platinum (greater than 10000)
 
 ### Development
 - [ ] Create a test structure
