@@ -63,9 +63,9 @@
   - [x] Open profile
 
 ### Cosmetic systems
-- [ ] Add a 'Coins' system
+- [x] Add a 'Coins' system
   - Earned from playing games, getting kills, winning rounds etc.
-  - [ ] Earn from passively playing games `+2`
+  - [x] Earn from passively playing games `+2`
   - [x] Earn from getting kills `+20`
   - [x] Earn from getting killstreaks `+??` (based on value, cap out)
   - [x] Earn from winning rounds `+50`

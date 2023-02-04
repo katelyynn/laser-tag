@@ -10,6 +10,13 @@ scoreboard players set 2 internal 2
 scoreboard players set 3 internal 3
 scoreboard players set 4 internal 4
 scoreboard players set 5 internal 5
+scoreboard players set 6 internal 6
+scoreboard players set 7 internal 7
+scoreboard players set 8 internal 8
+scoreboard players set 9 internal 9
+scoreboard players set 10 internal 10
+scoreboard players set 30 internal 30
+scoreboard players set 60 internal 60
 
 # world
 difficulty easy
@@ -81,6 +88,10 @@ scoreboard objectives add temp_store.drop_sword minecraft.dropped:minecraft.iron
 
 # track temporary coin storage
 scoreboard objectives add temp_store.coins dummy
+
+# earn coins passively
+## 1 minute in ticks
+scoreboard players set passive_coin_time internal 1200
 
 
 # leaderboards
