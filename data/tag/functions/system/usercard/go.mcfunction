@@ -15,7 +15,7 @@ tellraw @s ["",{"text":"Score: "},{"score":{"name":"@s","objective":"leaderboard
 
 ## games
 tellraw @s {"text":"\nGames","color":"gray"}
-tellraw @s ["",{"text":"Games won: "},{"score":{"name":"@s","objective":"leaderboard.wins"},"color":"yellow"}," \u0020 ",{"text":"Games lost: "},{"score":{"name":"@s","objective":"leaderboard.losses"},"color":"yellow"}]
+tellraw @s ["",{"text":"Games played: "},{"score":{"name":"@s","objective":"leaderboard.games_played"},"color":"yellow"}," \u0020 ",{"text":"Games won: "},{"score":{"name":"@s","objective":"leaderboard.wins"},"color":"yellow"}]
 
 ## kills
 tellraw @s {"text":"\nKills","color":"gray"}

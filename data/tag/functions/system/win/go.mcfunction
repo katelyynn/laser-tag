@@ -26,6 +26,7 @@ effect give @a[tag=win] glowing 9999 255 true
 
 # save to leaderboards
 scoreboard players operation @s leaderboard.wins += 1 internal
+scoreboard players operation @s leaderboard.games_played += 1 internal
 
 
 # transition back to lobby

@@ -71,6 +71,7 @@ scoreboard objectives add temp_store.coins dummy
 scoreboard objectives add leaderboard.coins dummy {"text":"$","color":"gold"}
 scoreboard objectives add leaderboard.score dummy "Score"
 scoreboard objectives add leaderboard.wins dummy
+scoreboard objectives add leaderboard.games_played dummy
 scoreboard objectives add leaderboard.deaths dummy
 scoreboard objectives add leaderboard.deaths_player dummy
 scoreboard objectives add leaderboard.deaths_suicide dummy
