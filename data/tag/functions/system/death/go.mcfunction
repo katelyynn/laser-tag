@@ -30,17 +30,10 @@ execute if entity @a[scores={player.direct_death=1..}] run scoreboard players ad
 execute unless entity @a[scores={player.direct_death=1..}] run scoreboard players add @s leaderboard.deaths_suicide 1
 
 
-# reset hunger
-function tag:system/health/reset
-# reset ammo
-## NORMAL
-function tag:system/crossbow/normal/reload
-## MACHINE
-function tag:system/crossbow/machine/reload
-## ROCKET
-function tag:system/crossbow/rocket/reload
-
 # reset loadout
 function tag:system/loadout/go
+
+# reset hunger
+function tag:system/health/reset
 
 tag @s remove self
