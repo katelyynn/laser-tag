@@ -3,7 +3,7 @@
 
 
 # sfx
-playsound minecraft:ui.toast.in player @s
+playsound minecraft:entity.item_frame.place player @s
 
 # tellraw
 ## header
