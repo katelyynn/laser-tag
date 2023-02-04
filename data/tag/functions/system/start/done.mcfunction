@@ -8,7 +8,7 @@ effect clear @a[tag=playing] resistance
 
 
 # announce
-tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Let the games begin!","color":"yellow"}]
+tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"text":"→","color":"green"},{"text":"] ","color":"dark_gray"},{"text":"Let the games begin!\n","color":"yellow"}]
 ## default timings
 schedule function fm:title/reset_times 3s
 # sfx
