@@ -15,7 +15,8 @@ execute if score @s player.killstreak > 2 internal run playsound minecraft:entit
 
 # announce
 tellraw @a[scores={player.direct_death=..0}] ["",{"text":"[","color":"dark_gray"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"dark_gray"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"},{"text":" (x","color":"#FB7C3F"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"#FB7C3F"},{"text":" streak)","color":"#FB7C3F"}]
-tellraw @a[scores={player.direct_death=1..},limit=1] ["",{"text":"\n[","color":"red"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"red"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"},{"text":" (x","color":"#FB7C3F"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"#FB7C3F"},{"text":" streak)\n","color":"#FB7C3F"}]
+tellraw @a[scores={player.direct_death=1..},limit=1] ""
+tellraw @a[scores={player.direct_death=1..},limit=1] ["",{"text":"[","color":"red"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"red"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"},{"text":" (x","color":"#FB7C3F"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"#FB7C3F"},{"text":" streak)","color":"#FB7C3F"}]
 title @s title ""
 ## detect who killed who
 title @s subtitle [{"text":"🗡 ","color":"#FB7C3F"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"}]
