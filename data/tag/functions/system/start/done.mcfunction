@@ -4,7 +4,7 @@
 
 
 effect clear @a[tag=playing] resistance
-## TODO: give default crossbow on spawn & death
+execute as @a[tag=playing] run function tag:system/loadout/go
 
 
 # announce

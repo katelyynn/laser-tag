@@ -39,4 +39,7 @@ function tag:system/crossbow/machine/reload
 ## ROCKET
 function tag:system/crossbow/rocket/reload
 
+# reset loadout
+function tag:system/loadout/go
+
 tag @s remove self
