@@ -9,13 +9,11 @@ tag @a[gamemode=adventure] add playing
 scoreboard players reset @a[tag=playing] player.score
 scoreboard players reset @a[tag=playing] player.killstreak
 clear @a[tag=playing]
-## TODO: give default crossbow on spawn & death (#3)
-## TODO: reload silently on start
 
 
 # reset scoreboards
 ## accounts for offline players
-## probably a better way so please tell me lmao
+## there's probably a better way so please tell me lmao
 scoreboard objectives remove player.score
 scoreboard objectives add player.score dummy "Score"
 
@@ -27,10 +25,8 @@ execute if score mode global matches 1 as @a[team=red] run function tag:create/a
 execute if score mode global matches 1 as @a[team=blue] run function tag:create/armour/blue
 
 # teleport players
-## -1: test
-execute if score map global matches -1 run tp @a[tag=playing] -200 150 -200
-##  0: default
-execute if score map global matches 0 run tp @a[tag=playing] 200 150 200
+execute as @a[tag=playing] run function tag:system/map/teleport
+execute as @a[tag=playing] run function tag:system/map/spawn
 
 # pick random spawn locations
 ## TODO: create stands that mark random locations
@@ -38,7 +34,7 @@ execute if score map global matches 0 run tp @a[tag=playing] 200 150 200
 
 
 # countdown
-title @a times 20 100 5
+title @a[tag=playing] times 20 100 5
 ## delayed to account for map & spawn locations
 schedule function tag:system/start/count/5 1s
 schedule function tag:system/start/count/4 2s
