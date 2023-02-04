@@ -97,10 +97,10 @@
   - Also use cooler custom colours
 - [ ] Use titles/subtitles for some game status updates
   - aka. for kills on the subtitle layer
-- [ ] Display fully custom death messages
+- [x] Display fully custom death messages
   - [x] Use "who killed who" logic to display kill messages (plexionlive -> plexiongold)
   - [x] Cover suicides (use logic to retract points if suicide?)
-  - [ ] Vary colour for player's own screen (red if referring to own player)
+  - [x] Vary colour for player's own screen (red if referring to own player)
   - [x] Hide default death messages
 
 ### Development
