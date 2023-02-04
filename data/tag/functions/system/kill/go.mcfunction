@@ -9,6 +9,7 @@ scoreboard players operation @s player.score += score.kill global
 
 # increment killstreak
 scoreboard players operation @s player.killstreak += 1 internal
+execute if score @s player.killstreak > 2 internal run playsound minecraft:entity.player.attack.crit player @s ~ ~ ~ 15 0.6
 # announce
 #function tag:system/kill/streak
 
