@@ -119,6 +119,10 @@
 - [ ] Redesign gameplay actionbar
   - Display reloading progress?
 
+- [ ] Add all custom sound effects
+  - Terraria for inspiration (mostly stock)
+  - Solves the subtitles issue
+
 ### Development
 - [ ] Create a test structure
   - [ ] Allow main loop to be switched off
