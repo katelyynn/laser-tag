@@ -7,6 +7,7 @@ tag @a remove playing
 tag @a[gamemode=adventure] add playing
 
 scoreboard players reset @a[tag=playing] player.score
+scoreboard players reset @a[tag=playing] player.killstreak
 clear @a[tag=playing]
 ## TODO: give default crossbow on spawn & death (#3)
 ## TODO: reload silently on start
