@@ -21,7 +21,9 @@ scoreboard players set @s player.killstreak 0
 
 
 # save to leaderboards
-scoreboard players operation @s leaderboard.deaths += 1 internal
+scoreboard players add @s leaderboard.deaths 1
+execute if entity @a[scores={player.direct_death=1..}] run scoreboard players add @s leaderboard.deaths_player 1
+execute unless entity @a[scores={player.direct_death=1..}] run scoreboard players add @s leaderboard.deaths_suicide 1
 
 
 # reset hunger

@@ -25,4 +25,4 @@ scoreboard players operation @s temp_store.coins += coins.kill global
 
 
 # save to leaderboards
-scoreboard players operation @s leaderboard.kills += 1 internal
+scoreboard players add @s leaderboard.kills 1
