@@ -84,6 +84,10 @@
 - [x] Implement reloading
 - [ ] Implement overheating for Machine Crossbow?
 
+- [ ] Add item spawners
+  - [ ] Locked on specific item
+  - [ ] Chosen randomly from pool
+
 ### Game setup
 - [ ] Create setup-flow, either physically or via /trigger
 - [ ] Swap out slow buttons with a faster, more intiutive replacement
