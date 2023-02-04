@@ -99,7 +99,8 @@
   - aka. for kills on the subtitle layer
 - [ ] Display fully custom death messages
   - [x] Use "who killed who" logic to display kill messages (plexionlive -> plexiongold)
-  - [ ] Cover suicides (use logic to retract points if suicide?)
+  - [x] Cover suicides (use logic to retract points if suicide?)
+  - [ ] Vary colour for player's own screen (red if referring to own player)
   - [x] Hide default death messages
 
 ### Development

@@ -4,13 +4,9 @@
 # decrease score
 scoreboard players operation @s player.score += score.death global
 
-# killed by player?
-execute if entity @a[scores={player.direct_death=1..}] run scoreboard players set @s temp_store.direct_death 1
-execute unless entity @a[scores={player.direct_death=1..}] run scoreboard players set @s temp_store.direct_death 0
-
 # announce
 ## direct death is handled via kill/go
-execute unless score @s temp_store.direct_death matches 1.. run tellraw @a [["",{"text":"[","color":"dark_gray"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"dark_gray"},{"selector":"@s"},{"text":" ›","color":"gray"},{"text":"☠","color":"gray"}," ",{"selector":"@s"},{"text":" (lost x","color":"#CE3F29"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"#CE3F29"},{"text":" streak)","color":"#CE3F29"}]
+execute unless entity @a[scores={player.direct_death=1..}] run tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"dark_gray"},{"selector":"@s"},{"text":" ›","color":"gray"},{"text":"☠","color":"gray"}," ",{"selector":"@s"},{"text":" (lost x","color":"#CE3F29"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"#CE3F29"},{"text":" streak)","color":"#CE3F29"}]
 title @s title ""
 title @s subtitle {"text":"You died!","color":"red"}
 # sfx
