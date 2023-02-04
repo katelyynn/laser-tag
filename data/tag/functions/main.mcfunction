@@ -75,6 +75,7 @@ execute as @a run function tag:system/team/main
 ## gameplay
 execute as @a unless score @s temp_store.coins matches 0.. run scoreboard players set @s temp_store.coins 0
 execute as @a unless score @s player.score matches 0.. run scoreboard players set @s player.score 0
+execute as @a unless score @s player.direct_death matches 0.. run scoreboard players set @s player.direct_death 0
 ## leaderboard
 execute as @a unless score @s leaderboard.coins matches 0.. run scoreboard players set @s leaderboard.coins 0
 execute as @a unless score @s leaderboard.score matches 0.. run scoreboard players set @s leaderboard.score 0

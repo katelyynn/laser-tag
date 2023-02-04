@@ -1,8 +1,6 @@
 # LASERTAG kill
 
 
-tag @s add self
-
 # increment score
 scoreboard players operation @s player.score += score.kill global
 ## TODO: in gameplay use <internal> score.kill
@@ -15,8 +13,8 @@ scoreboard players operation @s player.killstreak += 1 internal
 #function tag:system/kill/streak
 
 # announce
-tellraw @a[tag=!self] ["",{"text":"[","color":"dark_gray"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"dark_gray"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"},{"text":" (x","color":"#FB7C3F"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"#FB7C3F"},{"text":" streak)","color":"#FB7C3F"}]
-tellraw @s ["",{"text":"\n[","color":"red"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"red"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"},{"text":" (x","color":"#FB7C3F"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"#FB7C3F"},{"text":" streak)\n","color":"#FB7C3F"}]
+tellraw @a[scores={player.direct_death=..0}] ["",{"text":"[","color":"dark_gray"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"dark_gray"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"},{"text":" (x","color":"#FB7C3F"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"#FB7C3F"},{"text":" streak)","color":"#FB7C3F"}]
+tellraw @a[scores={player.direct_death=1..},limit=1] ["",{"text":"\n[","color":"red"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"red"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"},{"text":" (x","color":"#FB7C3F"},{"score":{"name":"@s","objective":"player.killstreak"},"color":"#FB7C3F"},{"text":" streak)\n","color":"#FB7C3F"}]
 title @s title ""
 ## detect who killed who
 title @s subtitle [{"text":"🗡 ","color":"#FB7C3F"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"}]
@@ -29,5 +27,3 @@ scoreboard players operation @s temp_store.coins += coins.kill global
 
 # save to leaderboards
 scoreboard players add @s leaderboard.kills 1
-
-tag @s remove self
