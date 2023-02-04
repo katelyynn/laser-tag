@@ -11,3 +11,7 @@ execute if entity @s[team=blue] unless score @s team.displayed_blue matches 1.. 
 execute if entity @s[team=!red,team=!blue] unless score @s team.displayed_reset matches 1.. run function tag:system/team/reset_armour
 execute if entity @s[team=!red,team=!blue] run function tag:system/team/reset_display
 execute unless score mode global matches 1 run function tag:system/team/reset_display
+
+# remove teams
+execute unless score mode global matches 1 run team leave @s[team=red]
+execute unless score mode global matches 1 run team leave @s[team=blue]
