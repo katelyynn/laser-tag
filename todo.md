@@ -70,7 +70,7 @@
   - [x] Earn from getting killstreaks `+??` (based on value, cap out)
   - [x] Earn from winning rounds `+50`
   - [x] Add function to poll coin updates in batch
-  - [ ] Swap out placeholder coin sfx
+  - [x] Swap out placeholder coin sfx
   - [x] Display in-place of score when out of game
 
 - [ ] Implement shop/market
