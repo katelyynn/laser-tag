@@ -123,6 +123,14 @@
   - Terraria for inspiration (mostly stock)
   - Solves the subtitles issue
 
+- [ ] Add coin levels
+  - Intended to be difficult to achieve the top.
+  - Display in chat (polling), profile, and market
+  - [ ] Copper for less than 100
+  - [ ] Silver for less than 350
+  - [ ] Gold for less than 1200
+  - [ ] Platinum for less than 10000
+
 ### Development
 - [ ] Create a test structure
   - [ ] Allow main loop to be switched off
