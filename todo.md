@@ -45,6 +45,11 @@
 - [x] Track player name kills (who killed who)
   - [x] Display on subtitle
 
+- [ ] Add timer before respawn
+  - [ ] Become temporary spectator
+  - [ ] Return to game after 3s?
+  - [ ] Time is configurable
+
 - [ ] Add particles on kill
   - Similar to MCC Island, makes kills a lot more satisfying
 
