@@ -7,7 +7,8 @@ scoreboard players operation @s player.wins += 1 internal
 # announce
 title @a title {"text":"GAME OVER!","color":"gold","bold":true}
 title @a subtitle ["",{"selector":"@a[tag=win,limit=1]"},{"text":" has won!","color":"yellow"}]
-tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"text":"②","color":"yellow"},{"text":"] ","color":"dark_gray"},{"selector":"@a[tag=win,limit=1]"},{"text":" has won!\n","color":"yellow"}]
+tellraw @a ""
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"②","color":"yellow"},{"text":"] ","color":"dark_gray"},{"selector":"@a[tag=win,limit=1]"},{"text":" has won!\n","color":"yellow"}]
 # sfx
 execute as @a at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~
 
