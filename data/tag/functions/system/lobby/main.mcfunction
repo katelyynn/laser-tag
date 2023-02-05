@@ -1,6 +1,14 @@
 # LASERTAG lobby
 
 
+# lobby controls
+execute as @e[tag=lobby.controller] store result score @s lobby_controls run data get entity @s ItemRotation
+
+
+# game start
+execute as @e[tag=lobby.game_start] at @s if score @s lobby_controls matches 1.. run function tag:system/lobby/controller/start
+
+
 # mode
 ## 0: solo
 ## 1: teams

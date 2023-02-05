@@ -64,6 +64,9 @@
 
 - [x] Implement ready/unready system
   - Replaces actionbar statistics
+  - [ ] Automatically ready by default
+
+- [ ] Clear items in hotbar and inventory
 
 - [x] Make start button a toggle for "matchmaking"
   - Start after 8s of waiting for players to be ready

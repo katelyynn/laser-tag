@@ -49,6 +49,12 @@ scoreboard objectives add team.displayed_red dummy
 scoreboard objectives add team.displayed_blue dummy
 scoreboard objectives add team.displayed_reset dummy
 
+
+# lobby controls
+## stores current frame state
+scoreboard objectives add lobby_controls dummy
+
+
 # open profile
 ## /trigger profile
 scoreboard objectives add profile trigger "Open profile"
