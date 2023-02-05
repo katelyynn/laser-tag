@@ -13,6 +13,8 @@ execute as @e[tag=lobby.game_map] at @s run function tag:system/lobby/controller
 execute as @e[tag=lobby.win_score] at @s run function tag:system/lobby/controller/win_score
 ## respawn time
 execute as @e[tag=lobby.respawn_time] at @s run function tag:system/lobby/controller/respawn_time
+## reset defaults
+execute as @e[tag=lobby.reset] at @s run function tag:system/lobby/controller/reset
 
 
 # game start
