@@ -1,5 +1,5 @@
 # LASERTAG lobby controller
-## game mode
+## game type
 
 
 execute if score game_type global matches 0 run data merge entity @s {Item:{tag:{CustomModelData:1}}}
