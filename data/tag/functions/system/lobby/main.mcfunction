@@ -11,6 +11,15 @@ execute as @e[tag=lobby.game_mode] at @s run function tag:system/lobby/controlle
 execute as @e[tag=lobby.game_map] at @s run function tag:system/lobby/controller/map
 
 
+# game start
+## 0: not matchmaking
+## 1:     matchmaking
+## range check
+execute if score matchmaking_controller internal matches 2.. run scoreboard players set matchmaking_controller internal 0
+## execute
+execute unless score matchmaking internal matches 1.. if score matchmaking_controller internal matches 1 run function tag:system/start/matchmaking/go
+execute if score matchmaking internal matches 1.. if score matchmaking_controller internal matches 0 run function tag:system/start/matchmaking/cancel
+
 # mode
 ## 0: solo
 ## 1: teams
