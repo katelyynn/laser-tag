@@ -3,7 +3,6 @@
 
 
 scoreboard players set matchmaking internal 1
-function tag:system/lobby/controller/go
 
 # announce
 tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"text":"→","color":"green"},{"text":"] ","color":"dark_gray"},{"text":"A new game will begin in 8 seconds.. ready up to play.\n","color":"yellow"}]
