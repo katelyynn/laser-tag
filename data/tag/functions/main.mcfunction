@@ -10,6 +10,8 @@ execute if score period internal matches 1 run function tag:time
 
 # item blacklist
 clear @a #tag:item_blacklist
+kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick"}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick"}}]
 
 # kill weapon items
 #function tag:system/item/weapon/main
