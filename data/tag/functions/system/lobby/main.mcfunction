@@ -35,7 +35,7 @@ execute if score matchmaking internal matches 1.. if score matchmaking_controlle
 ## spawn display
 execute if score mode global matches 0 run data merge block -10 152 5 {Color:"black",Text3:'{"text":"FFA"}',Text2:'{"text":"MODE:"}',GlowingText:1b}
 execute if score mode global matches 1 run data merge block -10 152 5 {Color:"black",Text3:'{"text":"TEAMS"}',Text2:'{"text":"MODE:"}',GlowingText:1b}
-execute if score mode global matches 2 run data merge block -10 152 5 {Color:"black",Text3:'{"text":"CAPTURE"}',Text2:'{"text":"MODE:"}',GlowingText:1b}
+#execute if score mode global matches 2 run data merge block -10 152 5 {Color:"black",Text3:'{"text":"CAPTURE"}',Text2:'{"text":"MODE:"}',GlowingText:1b}
 ## range check
 execute if score mode global matches 2.. run scoreboard players set mode global 0
 
