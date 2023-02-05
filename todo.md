@@ -57,7 +57,8 @@
   - Game mode renamed to Game type
   - [x] Solos
   - [ ] Teams (not fully complete)
-  - [ ] CTH-style (1 person has the "thing" which allows them to gain points (but they get glowing and slowness(?), goal is to get the most points with the "thing"))
+  - [ ] CTH-style
+    - (1 person has the "thing" which allows them to gain points (but they get glowing and slowness(?), goal is to get the most points with the "thing"))
 
 - [ ] Add more gameplay modes
   - [x] Classic (default gameplay)
