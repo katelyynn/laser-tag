@@ -59,4 +59,4 @@ execute if score win_score global matches 41.. run scoreboard players set win_sc
 ## spawn display
 execute unless score respawn_time global matches 11.. run data merge block -13 152 1 {Color:"black",Text3:'{"score":{"name":"respawn_time","objective":"global"}}',Text2:'{"text":"RESPAWN TIME:"}',GlowingText:1b}
 ## range check
-execute if score respawn_time global matches 11.. run scoreboard players set win_score global 6
+execute if score respawn_time global matches 11.. run scoreboard players set respawn_time global 6
