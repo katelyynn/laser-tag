@@ -33,20 +33,6 @@ execute if score period internal matches 1 as @a at @s if score win_goal global 
 # lobby controls
 function tag:system/lobby/main
 
-# mode
-## 0: solo
-## 1: teams
-## range check
-execute if score mode global matches ..-1 run scoreboard players set mode global 0
-execute if score mode global matches 2.. run scoreboard players set mode global 1
-
-# map
-## -1: test
-##  0: default
-## range check
-execute if score map global matches ..-2 run scoreboard players set map global -1
-execute if score map global matches 1.. run scoreboard players set map global 0
-
 # remove arrow piercing into player
 execute as @e[type=arrow,tag=!arrow.patched] run data merge entity @s {PierceLevel:1b}
 execute as @e[type=arrow,tag=!arrow.patched] run tag @s add arrow.patched

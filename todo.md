@@ -100,7 +100,7 @@
 
 ### Game setup
 - [ ] Create setup-flow, either physically or via /trigger
-- [ ] Swap out slow buttons with a faster, more intiutive replacement
+- [x] Swap out slow buttons with a faster, more intiutive replacement
   - They are very annoying to use right now
 - [ ] ~~Display current map and mode on actionbar when no item is held~~
   - Replaced by player statistics
