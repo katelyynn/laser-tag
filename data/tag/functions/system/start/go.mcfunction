@@ -25,8 +25,8 @@ scoreboard objectives add player.score dummy "Score"
 # mode
 ## 0: solos
 ## 1: teams
-execute if score mode global matches 1 as @a[team=red] run function tag:create/armour/red
-execute if score mode global matches 1 as @a[team=blue] run function tag:create/armour/blue
+execute if score game_type global matches 1 as @a[team=red] run function tag:create/armour/red
+execute if score game_type global matches 1 as @a[team=blue] run function tag:create/armour/blue
 
 # teleport players
 execute as @a[tag=playing] run function tag:system/map/teleport

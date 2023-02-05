@@ -33,9 +33,14 @@ scoreboard players set win_score global 20
 ## win time (8m)
 scoreboard players set win_time global 480
 
-# mode
-## 0: solo
-## 1: teams
-execute unless score defaults internal matches 2 run scoreboard players set mode global 0
+# game type
+## previously 'mode'
+execute unless score defaults internal matches 2 run scoreboard players set game_type global 0
+
+# game mode
+execute unless score defaults internal matches 2 run scoreboard players set game_game_type global 0
+
+# game map
+execute unless score defaults internal matches 2 run scoreboard players set game_map global 0
 
 scoreboard players set defaults internal 1

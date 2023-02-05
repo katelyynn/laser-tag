@@ -1,2 +1,2 @@
-execute if score period internal matches -1 if score mode global matches 1.. run scoreboard players remove mode global 1
+execute if score period internal matches -1 if score game_type global matches 1.. run scoreboard players remove game_type global 1
 execute unless score period internal matches -1 run tellraw @p ["",{"text":"[","color":"dark_gray"},{"text":"⓪"},{"text":"] ","color":"dark_gray"},{"text":"Cannot change game settings when game is in progress.","color":"red"}]
