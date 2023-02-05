@@ -62,7 +62,7 @@
 - [x] Add end game actions
   - [x] Open profile
 
-- [ ] Implement ready/unready system
+- [x] Implement ready/unready system
   - Replaces actionbar statistics
 
 - [x] Make start button a toggle for "matchmaking"

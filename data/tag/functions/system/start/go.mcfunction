@@ -8,8 +8,7 @@ scoreboard players set time_s internal 0
 
 
 # mark players
-tag @a remove playing
-tag @a[gamemode=adventure] add playing
+scoreboard players set @a[tag=playing] player.ingame 1
 
 scoreboard players reset @a[tag=playing] player.score
 scoreboard players reset @a[tag=playing] player.killstreak

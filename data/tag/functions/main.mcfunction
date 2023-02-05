@@ -107,10 +107,21 @@ execute if score period internal matches -1 run scoreboard objectives setdisplay
 execute if score period internal matches 0..3 run scoreboard objectives setdisplay sidebar player.score
 
 
+# send logged off players back to lobby
+execute if score period internal matches -1 as @a[scores={player.ingame=1..}] at @s run function tag:system/win/reset_player
+
 # track player ready status
 tag @a[scores={player.ready=1..},tag=!playing] add playing
 execute as @a[tag=playing] unless score @s player.ready matches 1.. run tag @s remove playing
 
+# toggle ready status
+execute as @a unless score @s player.ingame matches 1.. unless score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{display:{Name:'[{"text":"Change ready status","italic":false}]'}}
+execute as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with warped_fungus_on_a_stick{display:{Name:'[{"text":"Change ready status","italic":false}]'}}
+
+execute as @a unless score @s player.ready matches 1.. if score @s temp_store.use_ready matches 1.. run scoreboard players set @s player.ready 1
+execute as @a if score @s player.ready matches 1.. if score @s temp_store.use_unready matches 1.. run scoreboard players reset @s player.ready
+scoreboard players reset @a temp_store.use_ready
+scoreboard players reset @a temp_store.use_unready
 
 # patch items
 execute as @e[type=item,tag=!item.patched] at @s run function tag:system/item/patch
