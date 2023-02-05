@@ -118,8 +118,8 @@ execute as @a[tag=playing] unless score @s player.ready matches 1.. run tag @s r
 execute as @a unless score @s player.ingame matches 1.. unless score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{display:{Name:'[{"text":"Change ready status","italic":false}]'}}
 execute as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with warped_fungus_on_a_stick{display:{Name:'[{"text":"Change ready status","italic":false}]'}}
 
-execute as @a unless score @s player.ready matches 1.. if score @s temp_store.use_ready matches 1.. run scoreboard players set @s player.ready 1
-execute as @a if score @s player.ready matches 1.. if score @s temp_store.use_unready matches 1.. run scoreboard players reset @s player.ready
+execute as @a unless score @s player.ready matches 1.. if score @s temp_store.use_ready matches 1.. run function tag:system/ready/enable
+execute as @a if score @s player.ready matches 1.. if score @s temp_store.use_unready matches 1.. run function tag:system/ready/disable
 scoreboard players reset @a temp_store.use_ready
 scoreboard players reset @a temp_store.use_unready
 
