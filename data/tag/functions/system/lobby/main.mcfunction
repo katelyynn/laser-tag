@@ -14,6 +14,9 @@ execute as @e[tag=lobby.game_map] at @s run function tag:system/lobby/controller
 # game start
 ## 0: not matchmaking
 ## 1:     matchmaking
+## spawn display
+execute if score matchmaking_controller internal matches 0 run data merge block 0 152 6 {Color:"green",Text3:'{"text":"GAME"}',Text2:'{"text":"START"}',GlowingText:1b}
+execute if score matchmaking_controller internal matches 1 run data merge block 0 152 6 {Color:"red",Text3:'{"text":"GAME"}',Text2:'{"text":"CANCEL"}',GlowingText:1b}
 ## range check
 execute if score matchmaking_controller internal matches 2.. run scoreboard players set matchmaking_controller internal 0
 ## execute
