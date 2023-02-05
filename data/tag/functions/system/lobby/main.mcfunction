@@ -9,6 +9,10 @@ execute as @e[tag=lobby.game_start] at @s run function tag:system/lobby/controll
 execute as @e[tag=lobby.game_mode] at @s run function tag:system/lobby/controller/mode
 ## game map
 execute as @e[tag=lobby.game_map] at @s run function tag:system/lobby/controller/map
+## win score
+execute as @e[tag=lobby.win_score] at @s run function tag:system/lobby/controller/win_score
+## respawn time
+execute as @e[tag=lobby.respawn_time] at @s run function tag:system/lobby/controller/respawn_time
 
 
 # game start
@@ -44,3 +48,15 @@ execute if score map global matches 1 run data merge block -10 152 -5 {Color:"bl
 ## range check
 execute if score map global matches ..-2 run scoreboard players set map global 0
 execute if score map global matches 2.. run scoreboard players set map global -1
+
+# win score
+## spawn display
+execute unless score win_score global matches 41.. run data merge block -13 152 3 {Color:"black",Text3:'{"score":{"name":"win_score","objective":"global"}}',Text2:'{"text":"WIN SCORE:"}',GlowingText:1b}
+## range check
+execute if score win_score global matches 41.. run scoreboard players set win_score global 6
+
+# respawn time
+## spawn display
+execute unless score respawn_time global matches 11.. run data merge block -13 152 1 {Color:"black",Text3:'{"score":{"name":"respawn_time","objective":"global"}}',Text2:'{"text":"RESPAWN TIME:"}',GlowingText:1b}
+## range check
+execute if score respawn_time global matches 11.. run scoreboard players set win_score global 6

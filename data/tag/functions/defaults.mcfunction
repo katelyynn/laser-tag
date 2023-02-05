@@ -1,4 +1,5 @@
 # LASERTAG defaults
+## if value of 2, requested manually
 
 
 # scoring
@@ -35,6 +36,6 @@ scoreboard players set win_time global 480
 # mode
 ## 0: solo
 ## 1: teams
-scoreboard players set mode global 0
+execute unless score defaults internal matches 2 run scoreboard players set mode global 0
 
 scoreboard players set defaults internal 1

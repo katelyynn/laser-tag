@@ -1,6 +1,10 @@
 # LASERTAG main loop
 
 
+# request defaults manually
+execute if score defaults internal matches 2 run function tag:defaults
+
+
 # display version number
 function tag:system/version/main
 

@@ -99,13 +99,13 @@
   - [ ] Chosen randomly from pool
 
 ### Game setup
-- [ ] Create setup-flow, either physically or via /trigger
+- [x] Create setup-flow, either physically or via /trigger
 - [x] Swap out slow buttons with a faster, more intiutive replacement
   - They are very annoying to use right now
 - [ ] ~~Display current map and mode on actionbar when no item is held~~
   - Replaced by player statistics
   - Currently displaying the same static `Score: 0`
-- [ ] Add customisation for winning score (default 20)
+- [x] Add customisation for winning score (default 20)
 
 - [ ] Add user-specific options
   - [ ] Disable some sound effects
