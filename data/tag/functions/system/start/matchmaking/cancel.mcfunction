@@ -3,6 +3,7 @@
 
 
 scoreboard players set matchmaking internal 0
+function tag:system/lobby/controller/go
 
 # announce
 tellraw @a ["",{"text":"\n[","color":"dark_gray"},{"text":"→","color":"gray"},{"text":"] ","color":"dark_gray"},{"text":"Matchmaking cancelled.\n","color":"gray"}]
