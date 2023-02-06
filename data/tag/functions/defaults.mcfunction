@@ -38,7 +38,7 @@ scoreboard players set win_time global 480
 execute unless score defaults internal matches 2 run scoreboard players set game_type global 0
 
 # game mode
-execute unless score defaults internal matches 2 run scoreboard players set game_game_type global 0
+execute unless score defaults internal matches 2 run scoreboard players set game_mode global 0
 
 # game map
 execute unless score defaults internal matches 2 run scoreboard players set game_map global 0
