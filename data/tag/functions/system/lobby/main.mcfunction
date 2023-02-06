@@ -37,8 +37,8 @@ execute if score matchmaking internal matches 1.. if score matchmaking_controlle
 ## range check
 execute if score game_type global matches 2.. run scoreboard players set game_type global 0
 ## spawn display
-execute if score game_type global matches 0 run data merge block -10 152 5 {Color:"black",Text3:'{"text":"FFA"}',Text2:'{"text":"GAME TYPE:"}',GlowingText:1b}
-execute if score game_type global matches 1 run data merge block -10 152 5 {Color:"black",Text3:'{"text":"TEAMS"}',Text2:'{"text":"GAME TYPE:"}',GlowingText:1b}
+execute if score game_type global matches 0 run data merge block -11 152 5 {Color:"black",Text3:'{"text":"FFA"}',Text2:'{"text":"GAME TYPE:"}',GlowingText:1b}
+execute if score game_type global matches 1 run data merge block -11 152 5 {Color:"black",Text3:'{"text":"TEAMS"}',Text2:'{"text":"GAME TYPE:"}',GlowingText:1b}
 
 # game mode
 ## 0: classic
@@ -48,10 +48,10 @@ execute if score game_type global matches 1 run data merge block -10 152 5 {Colo
 ## range check
 execute if score game_mode global matches 4.. run scoreboard players set game_mode global 0
 ## spawn display
-execute if score game_mode global matches 0 run data merge block -10 152 5 {Color:"black",Text3:'{"text":"CLASSIC"}',Text2:'{"text":"GAME MODE:"}',GlowingText:1b}
-execute if score game_mode global matches 1 run data merge block -10 152 5 {Color:"black",Text3:'{"text":"OITC"}',Text2:'{"text":"GAME MODE:"}',GlowingText:1b}
-execute if score game_mode global matches 2 run data merge block -10 152 5 {Color:"black",Text3:'{"text":"CRITICAL"}',Text2:'{"text":"GAME MODE:"}',GlowingText:1b}
-execute if score game_mode global matches 3 run data merge block -10 152 5 {Color:"black",Text3:'{"text":"CAPTURE"}',Text2:'{"text":"GAME MODE:"}',GlowingText:1b}
+execute if score game_mode global matches 0 run data merge block -9 152 5 {Color:"black",Text3:'{"text":"CLASSIC"}',Text2:'{"text":"GAME MODE:"}',GlowingText:1b}
+execute if score game_mode global matches 1 run data merge block -9 152 5 {Color:"black",Text3:'{"text":"OITC"}',Text2:'{"text":"GAME MODE:"}',GlowingText:1b}
+execute if score game_mode global matches 2 run data merge block -9 152 5 {Color:"black",Text3:'{"text":"CRITICAL"}',Text2:'{"text":"GAME MODE:"}',GlowingText:1b}
+execute if score game_mode global matches 3 run data merge block -9 152 5 {Color:"black",Text3:'{"text":"CAPTURE"}',Text2:'{"text":"GAME MODE:"}',GlowingText:1b}
 
 # game map
 ## -1: test
