@@ -58,11 +58,11 @@ execute if score game_mode global matches 3 run data merge block -11 152 5 {Colo
 ##  0: test 2
 ##  1: upcoming
 ## range check
-execute if score map global matches 2.. run scoreboard players set map global -1
+execute if score game_map global matches 2.. run scoreboard players set game_map global -1
 ## spawn display
-execute if score map global matches -1 run data merge block -10 152 -5 {Color:"black",Text3:'{"text":"TEST","color":"light_purple"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
-execute if score map global matches 0 run data merge block -10 152 -5 {Color:"black",Text3:'{"text":"TEST 2","color":"aqua"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
-execute if score map global matches 1 run data merge block -10 152 -5 {Color:"black",Text3:'{"text":"NEW WIP!","color":"green"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
+execute if score game_map global matches -1 run data merge block -10 152 -5 {Color:"black",Text3:'{"text":"TEST","color":"light_purple"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
+execute if score game_map global matches 0 run data merge block -10 152 -5 {Color:"black",Text3:'{"text":"TEST 2","color":"aqua"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
+execute if score game_map global matches 1 run data merge block -10 152 -5 {Color:"black",Text3:'{"text":"NEW WIP!","color":"green"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
 
 # win score
 ## range check
