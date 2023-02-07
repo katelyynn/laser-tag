@@ -27,8 +27,8 @@ execute as @e[tag=lobby.dev_mode] at @s run function tag:system/lobby/controller
 
 
 # player items
-execute as @a store result score @s temp_store.ready_item run clear @s #tag:ready_item{readyItem:1b}
-execute as @a if score @s temp_store.ready_item matches 2.. run clear @s #tag:ready_item{readyItem:1b}
+execute as @a store result score @s temp_store.ready_item run clear @s #tag:ready_item{tag:{readyItem:1b}} 0
+execute as @a if score @s temp_store.ready_item matches 2.. run clear @s #tag:ready_item{tag:{readyItem:1b}}
 
 
 # game start
