@@ -1,6 +1,11 @@
 # LASERTAG lobby
 
 
+# restrict control
+execute unless score period internal matches -1 as @e[tag=lobby.controller] at @s if score @s lobby_controls matches 1.. run playsound block.note_block.bass player @a ~ ~ ~
+execute unless score period internal matches -1 as @e[tag=lobby.controller] at @s if score @s lobby_controls matches 1.. run scoreboard players set @s lobby_controls 0
+
+
 # lobby controls
 execute as @e[tag=lobby.controller] store result score @s lobby_controls run data get entity @s ItemRotation
 ## game start
