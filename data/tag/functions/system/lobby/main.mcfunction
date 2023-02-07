@@ -26,7 +26,7 @@ execute as @e[tag=lobby.reset] at @s run function tag:system/lobby/controller/re
 execute as @e[tag=lobby.dev_mode] at @s run function tag:system/lobby/controller/dev_mode
 
 # tags
-execute as @e[type=glow_item_frame] at @s unless data entity @s {Invulnerable:1b} run particle minecraft:totem_of_undying ~ ~ ~ 0 0 0 0.1 7
+execute as @e[type=glow_item_frame] at @s unless data entity @s {Invulnerable:1b} run particle minecraft:glow ~ ~ ~ 0 0 0 0.1 7
 execute as @e[type=glow_item_frame] at @s unless data entity @s {Invulnerable:1b} run data merge entity @s {Invulnerable:1b}
 
 
