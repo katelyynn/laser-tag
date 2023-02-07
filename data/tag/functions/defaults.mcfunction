@@ -43,4 +43,7 @@ execute unless score defaults internal matches 2 run scoreboard players set game
 # game map
 execute unless score defaults internal matches 2 run scoreboard players set game_map global 0
 
+# map storage
+execute unless score defaults internal matches 2 run function tag:system/map/storage/go
+
 scoreboard players set defaults internal 1
