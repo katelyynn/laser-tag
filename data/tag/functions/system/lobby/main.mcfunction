@@ -36,12 +36,12 @@ execute as @a if score @s temp_store.ready_item matches 2.. run clear @s #tag:re
 ## 1:     matchmaking
 ## range check
 execute if score matchmaking_controller internal matches 2.. run scoreboard players set matchmaking_controller internal 0
-## spawn display
-execute if score matchmaking_controller internal matches 0 run data merge block 0 152 6 {Color:"green",Text3:'{"text":"GAME"}',Text2:'{"text":"START"}',GlowingText:1b}
-execute if score matchmaking_controller internal matches 1 run data merge block 0 152 6 {Color:"red",Text3:'{"text":"GAME"}',Text2:'{"text":"CANCEL"}',GlowingText:1b}
 ## execute
 execute as @e[tag=lobby.game_start] unless score matchmaking internal matches 1.. if score matchmaking_controller internal matches 1 run function tag:start
 execute if score matchmaking internal matches 1.. if score matchmaking_controller internal matches 0 run function tag:system/start/matchmaking/cancel
+## spawn display
+execute if score matchmaking_controller internal matches 0 run data merge block 0 152 6 {Color:"green",Text3:'{"text":"GAME"}',Text2:'{"text":"START"}',GlowingText:1b}
+execute if score matchmaking_controller internal matches 1 run data merge block 0 152 6 {Color:"red",Text3:'{"text":"GAME"}',Text2:'{"text":"CANCEL"}',GlowingText:1b}
 
 # game type
 ## 0: ffa
