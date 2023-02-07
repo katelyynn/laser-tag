@@ -22,6 +22,8 @@ execute as @e[tag=lobby.win_score] at @s run function tag:system/lobby/controlle
 execute as @e[tag=lobby.respawn_time] at @s run function tag:system/lobby/controller/respawn_time
 ## reset defaults
 execute as @e[tag=lobby.reset] at @s run function tag:system/lobby/controller/reset
+## dev mode
+execute as @e[tag=lobby.dev_mode] at @s run function tag:system/lobby/controller/dev_mode
 
 
 # game start
@@ -81,3 +83,9 @@ execute unless score win_score global matches 41.. run data merge block -13 152 
 execute if score respawn_time global matches 11.. run scoreboard players set respawn_time global 1
 ## spawn display
 execute unless score respawn_time global matches 11.. run data merge block -13 152 1 {Color:"black",Text3:'{"score":{"name":"respawn_time","objective":"global"}}',Text2:'{"text":"RESPAWN TIME:"}',GlowingText:1b}
+
+# dev mode
+## range check
+execute if score dev_mode internal matches 78.. run scoreboard players set dev_mode internal 0
+## spawn display
+execute if score dev_mode internal matches ..77 run data merge block -13 152 -1 {Color:"magenta",Text3:'{"score":{"name":"dev_mode","objective":"internal"}}',Text2:'{"text":"DEV MODE:"}',GlowingText:1b}
