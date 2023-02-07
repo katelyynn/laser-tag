@@ -25,6 +25,7 @@ function tag:sfx/kill
 
 # increment coins
 scoreboard players operation @s temp_store.coins += coins.kill global
+execute if score dev_mode internal matches 77 run function tag:system/coins/query
 ## killstreak
 execute if score @s player.killstreak > 1 internal run function tag:system/kill/streak
 

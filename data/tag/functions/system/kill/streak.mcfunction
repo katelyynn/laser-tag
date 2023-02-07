@@ -24,3 +24,4 @@ scoreboard players remove @s temp_store.killstreak 1
 scoreboard players operation @s temp_store.killstreak *= coins.killstreak global
 
 scoreboard players operation @s temp_store.coins += @s temp_store.killstreak
+execute if score dev_mode internal matches 77 run function tag:system/coins/query
