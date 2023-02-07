@@ -6,10 +6,8 @@ scoreboard players set can_start_players internal 0
 scoreboard players set can_start_period internal 0
 
 # player check
-## TODO: implement player checks later on
-## for now, just auto-bypass check
-execute if entity @a[tag=playing] run scoreboard players set can_start_players internal 1
-execute unless score can_start_players internal matches 1.. run tellraw @p ["",{"text":"[","color":"dark_gray"},{"text":"⓪"},{"text":"] ","color":"dark_gray"},{"text":"Cannot start, at least 2 players required.","color":"red"}]
+execute store result score can_start_players internal if entity @a[tag=playing]
+execute unless score can_start_players internal matches 2.. run tellraw @p ["",{"text":"[","color":"dark_gray"},{"text":"→","color":"red"},{"text":"] ","color":"dark_gray"},{"text":"Cannot start, at least 2 players must be ready.","color":"red"}]
 # period check
 execute if score period internal matches -1 run scoreboard players set can_start_period internal 1
 execute unless score can_start_period internal matches 1.. run tellraw @p ["",{"text":"[","color":"dark_gray"},{"text":"⓪"},{"text":"] ","color":"dark_gray"},{"text":"Cannot start, a game is already in progress.","color":"red"}]
