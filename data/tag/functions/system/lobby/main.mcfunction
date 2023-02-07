@@ -21,6 +21,7 @@ execute as @e[tag=lobby.reset] at @s run function tag:system/lobby/controller/re
 execute as @e[tag=lobby.dev_mode] at @s run function tag:system/lobby/controller/dev_mode
 
 # map selector
+execute as @a unless score @s temp_store.map_selector matches 0.. run scoreboard players set @s temp_store.map_selector 0
 execute as @a run function tag:system/lobby/map_selector/check
 
 
