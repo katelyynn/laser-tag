@@ -25,6 +25,10 @@ execute as @e[tag=lobby.reset] at @s run function tag:system/lobby/controller/re
 ## dev mode
 execute as @e[tag=lobby.dev_mode] at @s run function tag:system/lobby/controller/dev_mode
 
+# tags
+execute as @e[type=item_frame] at @s unless data entity @s {Invulnerable:1b} run particle minecraft:totem_of_undying ~ ~ ~ 0 0 0 0.1 7
+execute as @e[type=item_frame] at @s unless data entity @s {Invulnerable:1b} run data merge entity @s {Invulnerable:1b}
+
 
 # player items
 execute as @a store result score @s temp_store.ready_item run clear @s #tag:ready_item{tag:{readyItem:1b}} 0
