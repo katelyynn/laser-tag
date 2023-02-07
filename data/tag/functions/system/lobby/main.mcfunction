@@ -82,4 +82,4 @@ execute unless score respawn_time global matches 11.. run data merge block -13 1
 ## range check
 execute if score dev_mode internal matches 78.. run scoreboard players set dev_mode internal 0
 ## spawn display
-execute unless score dev_mode internal matches 77 run data merge block -13 152 -1 {Color:"magenta",Text3:'{"score":{"name":"dev_mode","objective":"internal"}}',Text2:'{"text":"DEV MODE:"}',GlowingText:1b}
+execute if score dev_mode internal matches ..77 run data merge block -13 152 -1 {Color:"magenta",Text3:'{"score":{"name":"dev_mode","objective":"internal"}}',Text2:'{"text":"DEV MODE:"}',GlowingText:1b}
