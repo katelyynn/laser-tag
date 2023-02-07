@@ -26,6 +26,11 @@ execute as @e[tag=lobby.reset] at @s run function tag:system/lobby/controller/re
 execute as @e[tag=lobby.dev_mode] at @s run function tag:system/lobby/controller/dev_mode
 
 
+# player items
+execute as @a store result score @s temp_store.ready_item run clear @s #tag:ready_item{readyItem:1b}
+execute as @a if score @s temp_store.ready_item matches 2.. run clear @s #tag:ready_item{readyItem:1b}
+
+
 # game start
 ## 0: not matchmaking
 ## 1:     matchmaking

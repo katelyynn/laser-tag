@@ -99,8 +99,8 @@ tag @a[scores={player.ready=1..},tag=!playing] add playing
 execute as @a[tag=playing] unless score @s player.ready matches 1.. run tag @s remove playing
 
 # toggle ready status
-execute as @a unless score @s player.ingame matches 1.. unless score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{display:{Name:'[{"text":"Change ready status","italic":false}]'}}
-execute as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with warped_fungus_on_a_stick{display:{Name:'[{"text":"Change ready status","italic":false}]'}}
+execute as @a unless score @s player.ingame matches 1.. unless score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{tag:{readyItem:1b},display:{Name:'[{"text":"Change ready status","italic":false}]'}}
+execute as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with warped_fungus_on_a_stick{tag:{readyItem:1b},display:{Name:'[{"text":"Change ready status","italic":false}]'}}
 
 execute as @a at @s unless score @s player.ready matches 1.. if score @s temp_store.use_ready matches 1.. run function tag:system/ready/enable
 execute as @a at @s if score @s player.ready matches 1.. if score @s temp_store.use_unready matches 1.. run function tag:system/ready/disable
