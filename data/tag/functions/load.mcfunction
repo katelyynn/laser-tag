@@ -54,6 +54,9 @@ scoreboard objectives add team.displayed_reset dummy
 ## stores current frame state
 scoreboard objectives add lobby_controls dummy
 
+# map selector
+scoreboard objectives add temp_store.map_selector dummy
+
 
 # open profile
 ## /trigger profile
