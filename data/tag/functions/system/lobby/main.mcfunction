@@ -20,6 +20,9 @@ execute as @e[tag=lobby.reset] at @s run function tag:system/lobby/controller/re
 ## dev mode
 execute as @e[tag=lobby.dev_mode] at @s run function tag:system/lobby/controller/dev_mode
 
+# map selector
+execute as @a run function tag:system/lobby/map_selector/check
+
 
 # game start
 ## 0: not matchmaking
