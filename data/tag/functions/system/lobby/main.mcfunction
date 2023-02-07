@@ -28,8 +28,9 @@ execute if score matchmaking_controller internal matches 2.. run scoreboard play
 execute if score matchmaking_controller internal matches 0 run data merge block 0 152 6 {Color:"green",Text3:'{"text":"GAME"}',Text2:'{"text":"START"}',GlowingText:1b}
 execute if score matchmaking_controller internal matches 1 run data merge block 0 152 6 {Color:"red",Text3:'{"text":"GAME"}',Text2:'{"text":"CANCEL"}',GlowingText:1b}
 ## execute
-execute unless score matchmaking internal matches 1.. if score matchmaking_controller internal matches 1 run function tag:system/start/matchmaking/go
-execute if score matchmaking internal matches 1.. if score matchmaking_controller internal matches 0 run function tag:system/start/matchmaking/cancel
+execute if score period internal matches -1 unless score matchmaking internal matches 1.. if score matchmaking_controller internal matches 1 run function tag:system/start/matchmaking/go
+execute if score period internal matches -1 if score matchmaking internal matches 1.. if score matchmaking_controller internal matches 0 run function tag:system/start/matchmaking/cancel
+execute unless score period internal matches -1 if score @e[tag=lobby.game_start,limit=1] lobby.controls matches 1.. run function tag:system/start/matchmaking/error
 
 # game type
 ## 0: ffa
