@@ -27,6 +27,7 @@ gamerule showDeathMessages false
 gamerule doInsomnia false
 gamerule doFireTick false
 gamerule spawnRadius 1
+gamerule doMobSpawning false
 ## overrides custom weapon killing
 ## would like to revisit ^ in the future
 gamerule keepInventory true
