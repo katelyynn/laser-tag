@@ -19,6 +19,8 @@ execute as @e[tag=lobby.respawn_time] at @s run function tag:system/lobby/contro
 execute as @e[tag=lobby.reset] at @s run function tag:system/lobby/controller/reset
 ## dev mode
 execute as @e[tag=lobby.dev_mode] at @s run function tag:system/lobby/controller/dev_mode
+## map dev mode
+execute as @e[tag=lobby.map_dev_mode] at @s run function tag:system/lobby/controller/map_dev_mode
 
 # tags
 execute as @e[type=glow_item_frame] at @s unless data entity @s {Invulnerable:1b} run particle minecraft:glow ~ ~ ~ 0 0 0 0.1 7
@@ -92,3 +94,9 @@ execute as @e[tag=lobby.respawn_time] at @s unless score respawn_time global mat
 execute if score dev_mode internal matches 78.. run scoreboard players set dev_mode internal 0
 ## spawn display
 execute as @e[tag=lobby.dev_mode] at @s if score dev_mode internal matches ..77 run data merge block ~ ~1 ~ {Color:"magenta",Text3:'{"score":{"name":"dev_mode","objective":"internal"}}',Text2:'{"text":"DEV MODE:"}',GlowingText:1b}
+
+# map dev mode
+## range check
+execute if score map_dev_mode internal matches 2.. run scoreboard players set map_dev_mode internal 0
+## spawn display
+execute as @e[tag=lobby.map_dev_mode] at @s if score dev_mode internal matches ..1 run data merge block ~ ~1 ~ {Color:"magenta",Text3:'{"score":{"name":"map_dev_mode","objective":"internal"}}',Text2:'{"text":"MAP DEV MODE:"}',GlowingText:1b}
