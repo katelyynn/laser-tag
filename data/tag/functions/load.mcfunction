@@ -59,6 +59,11 @@ scoreboard objectives add lobby_controls dummy
 scoreboard objectives add temp_store.ready_item dummy
 
 
+# return to lobby
+## /trigger return_lobby
+scoreboard objectives add return_lobby trigger "Return to lobby (map dev)"
+
+
 # open profile
 ## /trigger profile
 scoreboard objectives add profile trigger "Open profile"

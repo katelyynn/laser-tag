@@ -54,6 +54,13 @@ execute as @a at @s run function tag:system/health/main
 scoreboard players enable @a profile
 execute as @a at @s if score @s profile matches 1.. run function tag:system/usercard/go
 
+# return to lobby
+## /trigger return_lobby
+execute if score map_dev_mode internal matches 1.. run scoreboard objectives add return_lobby trigger "Return to lobby (map dev)"
+execute if score map_dev_mode internal matches 1.. run scoreboard players enable @a return_lobby
+execute unless score map_dev_mode internal matches 1.. run scoreboard objectives remove return_lobby
+execute as @a at @s if score @s return_lobby matches 1.. run function tag:system/map/return_lobby
+
 # display player info
 execute unless score period internal matches 0..3 run scoreboard objectives setdisplay belowName leaderboard.coins
 execute if score period internal matches 0..3 run scoreboard objectives setdisplay belowName health.hp
