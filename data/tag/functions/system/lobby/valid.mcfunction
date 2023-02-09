@@ -38,11 +38,13 @@ execute as @a if score @s temp_store.ready_item matches 2.. run clear @s #tag:re
 ## range check
 execute if score matchmaking_controller internal matches 2.. run scoreboard players set matchmaking_controller internal 0
 ## execute
-execute as @e[tag=lobby.game_start] unless score matchmaking internal matches 1.. if score matchmaking_controller internal matches 1 run function tag:start
-execute if score matchmaking internal matches 1.. if score matchmaking_controller internal matches 0 run function tag:system/start/matchmaking/cancel
+execute as @e[tag=lobby.game_start] unless score map_dev_mode internal matches 1.. unless score matchmaking internal matches 1.. if score matchmaking_controller internal matches 1 run function tag:start
+execute unless score map_dev_mode internal matches 1.. if score matchmaking internal matches 1.. if score matchmaking_controller internal matches 0 run function tag:system/start/matchmaking/cancel
+execute as @p if score map_dev_mode internal matches 1.. run function tag:system/start/matchmaking/dev
 ## spawn display
-execute as @e[tag=lobby.game_start] at @s if score matchmaking_controller internal matches 0 run data merge block ~ ~1 ~ {Color:"green",Text3:'{"text":"GAME"}',Text2:'{"text":"START"}',GlowingText:1b}
-execute as @e[tag=lobby.game_start] at @s if score matchmaking_controller internal matches 1 run data merge block ~ ~1 ~ {Color:"red",Text3:'{"text":"GAME"}',Text2:'{"text":"CANCEL"}',GlowingText:1b}
+execute as @e[tag=lobby.game_start] at @s unless score map_dev_mode internal matches 1.. if score matchmaking_controller internal matches 0 run data merge block ~ ~1 ~ {Color:"green",Text3:'{"text":"GAME"}',Text2:'{"text":"START"}',GlowingText:1b}
+execute as @e[tag=lobby.game_start] at @s unless score map_dev_mode internal matches 1.. if score matchmaking_controller internal matches 1 run data merge block ~ ~1 ~ {Color:"red",Text3:'{"text":"GAME"}',Text2:'{"text":"CANCEL"}',GlowingText:1b}
+execute as @e[tag=lobby.game_start] at @s if score map_dev_mode internal matches 1.. run data merge block ~ ~1 ~ {Color:"gold",Text3:'{"text":"MAP"}',Text2:'{"text":"GO TO"}',GlowingText:1b}
 
 # game type
 ## 0: ffa
