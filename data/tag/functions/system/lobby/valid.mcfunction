@@ -99,4 +99,4 @@ execute as @e[tag=lobby.dev_mode] at @s if score dev_mode internal matches ..77 
 ## range check
 execute if score map_dev_mode internal matches 2.. run scoreboard players set map_dev_mode internal 0
 ## spawn display
-execute as @e[tag=lobby.map_dev_mode] at @s if score dev_mode internal matches ..1 run data merge block ~ ~1 ~ {Color:"magenta",Text3:'{"score":{"name":"map_dev_mode","objective":"internal"}}',Text2:'{"text":"MAP DEV MODE:"}',GlowingText:1b}
+execute as @e[tag=lobby.map_dev_mode] at @s if score map_dev_mode internal matches ..1 run data merge block ~ ~1 ~ {Color:"magenta",Text3:'{"score":{"name":"map_dev_mode","objective":"internal"}}',Text2:'{"text":"MAP DEV MODE:"}',GlowingText:1b}
