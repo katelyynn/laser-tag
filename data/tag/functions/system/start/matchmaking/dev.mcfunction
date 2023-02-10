@@ -5,10 +5,10 @@
 scoreboard players set matchmaking_controller internal 0
 
 # announce
-tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"→","color":"gray"},{"text":"] ","color":"dark_gray"},{"text":"Teleported to current selected map (in map dev mode).","color":"gray"}]
+tellraw @p ["",{"text":"[","color":"dark_gray"},{"text":"→","color":"gray"},{"text":"] ","color":"dark_gray"},{"text":"Teleported to current selected map (in map dev mode).","color":"gray"}]
 # sfx
-playsound tag:menu.open player @s
+playsound tag:menu.open player @p
 
 
 # teleport to map
-function tag:system/map/teleport
+execute as @p run function tag:system/map/teleport
