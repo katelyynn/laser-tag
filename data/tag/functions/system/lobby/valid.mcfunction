@@ -21,6 +21,8 @@ execute as @e[tag=lobby.reset] at @s run function tag:system/lobby/controller/re
 execute as @e[tag=lobby.dev_mode] at @s run function tag:system/lobby/controller/dev_mode
 ## map dev mode
 execute as @e[tag=lobby.map_dev_mode] at @s run function tag:system/lobby/controller/map_dev_mode
+## open profile
+execute as @e[tag=lobby.open_profile] at @s run function tag:system/lobby/controller/open_profile
 
 # tags
 execute as @e[type=glow_item_frame] at @s unless data entity @s {Invulnerable:1b} run particle minecraft:glow ~ ~ ~ 0 0 0 0.1 7
@@ -102,3 +104,11 @@ execute as @e[tag=lobby.dev_mode] at @s if score dev_mode internal matches ..77 
 execute if score map_dev_mode internal matches 2.. run scoreboard players set map_dev_mode internal 0
 ## spawn display
 execute as @e[tag=lobby.map_dev_mode] at @s if score map_dev_mode internal matches ..1 run data merge block ~ ~1 ~ {Color:"magenta",Text3:'{"score":{"name":"map_dev_mode","objective":"internal"}}',Text2:'{"text":"MAP DEV MODE:"}',GlowingText:1b}
+
+# open profile
+## execute
+execute at @e[tag=lobby.open_profile] as @p if score @s lobby_controls matches 1.. run function tag:system/usercard/go
+## range check
+execute if score open_profile internal matches 1.. run scoreboard players set open_profile internal 0
+## spawn display
+execute as @e[tag=lobby.open_profile] at @s if score map_dev_mode internal matches ..1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"score":{"name":"PROFILE","objective":"internal"}}',Text2:'{"text":"OPEN YOUR"}',GlowingText:1b}
