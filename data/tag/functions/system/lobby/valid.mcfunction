@@ -111,4 +111,4 @@ execute at @e[tag=lobby.open_profile] as @p if score @s lobby_controls matches 1
 ## range check
 execute if score open_profile internal matches 1.. run scoreboard players set open_profile internal 0
 ## spawn display
-execute as @e[tag=lobby.open_profile] at @s if score map_dev_mode internal matches ..1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"score":{"name":"PROFILE","objective":"internal"}}',Text2:'{"text":"OPEN YOUR"}',GlowingText:1b}
+execute as @e[tag=lobby.open_profile] at @s if score map_dev_mode internal matches ..1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"PROFILE"}',Text2:'{"text":"OPEN YOUR"}',GlowingText:1b}
