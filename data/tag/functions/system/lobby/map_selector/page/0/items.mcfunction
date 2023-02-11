@@ -5,9 +5,9 @@
 # selection
 #execute if score selection temp_store.map_selector matches 0 run say 0
 
-execute if score selection temp_store.map_selector matches 2 run scoreboard players set map global -1
-execute if score selection temp_store.map_selector matches 3 run scoreboard players set map global 0
-execute if score selection temp_store.map_selector matches 4 run scoreboard players set map global 1
+execute if score selection temp_store.map_selector matches 2 run scoreboard players set game_map global -1
+execute if score selection temp_store.map_selector matches 3 run scoreboard players set game_map global 0
+execute if score selection temp_store.map_selector matches 4 run scoreboard players set game_map global 1
 
 
 # reset
