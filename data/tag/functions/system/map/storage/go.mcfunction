@@ -11,6 +11,9 @@ data modify storage tag:maps maps append value {Slot:18b, id:"minecraft:carrot_o
 data modify storage tag:maps maps append value {Slot:1b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 1, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
 data modify storage tag:maps maps append value {Slot:10b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 10, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
 data modify storage tag:maps maps append value {Slot:19b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 19, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
+data modify storage tag:maps maps append value {Slot:8b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 8, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
+data modify storage tag:maps maps append value {Slot:17b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 17, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
+data modify storage tag:maps maps append value {Slot:26b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 26, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
 
 ## slots 0, 9, 18  reserved for map sizes
 ## slots 1, 10, 19 reserved for padding
