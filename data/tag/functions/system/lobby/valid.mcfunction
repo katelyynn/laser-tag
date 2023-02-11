@@ -107,7 +107,7 @@ execute as @e[tag=lobby.map_dev_mode] at @s if score map_dev_mode internal match
 
 # open profile
 ## execute
-execute at @e[tag=lobby.open_profile] as @p if score @s lobby_controls matches 1.. run function tag:system/usercard/go
+execute at @e[tag=lobby.open_profile] as @p if score open_profile internal matches 1.. run function tag:system/usercard/go
 ## range check
 execute if score open_profile internal matches 1.. run scoreboard players set open_profile internal 0
 ## spawn display
