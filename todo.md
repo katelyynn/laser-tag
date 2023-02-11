@@ -80,6 +80,13 @@
 
 - [ ] Clear items in hotbar and inventory
 
+- [x] Add custom interface for map selection
+  - Custom GUI with clickable items
+
+- [ ] Add custom interface for cosmetics
+  - Custom GUI using similar tech as the map selector, would have to be unique though
+  - would have to do `/item` on the player's ender chest most likely?
+
 - [x] Make start button a toggle for "matchmaking"
   - Start after 8s of waiting for players to be ready
   - Cancel if insufficient or chosen by player
