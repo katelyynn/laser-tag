@@ -23,6 +23,9 @@ title @s subtitle [{"text":"🗡 ","color":"#FB7C3F"},{"selector":"@a[scores={pl
 # sfx
 function tag:sfx/kill
 
+# restore player health
+effect give @s regeneration 1 255 true
+
 # increment coins
 scoreboard players operation @s temp_store.coins += coins.kill global
 execute if score dev_mode internal matches 77 run function tag:system/coins/query
