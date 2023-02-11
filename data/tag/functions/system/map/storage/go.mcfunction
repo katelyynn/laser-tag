@@ -4,8 +4,8 @@
 
 data remove storage tag:maps maps
 
-data modify storage tag:maps maps append value {Slot:0b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 0, mapItem: 1b, action:"chooseMapSize", mapSize:"small", CustomModelData:5, display:{Name:'{"text":"Map size: Small","color":"green","italic":false}'}}, Count:1b}
-data modify storage tag:maps maps append value {Slot:9b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 9, mapItem: 1b, action:"chooseMapSize", mapSize:"small", CustomModelData:5, display:{Name:'{"text":"Map size: Small","color":"green","italic":false}'}}, Count:1b}
+data modify storage tag:maps maps append value {Slot:0b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 0, mapItem: 1b, action:"chooseMapSize", mapSize:"small", CustomModelData:1, display:{Name:'{"text":"Map size: Small","color":"green","italic":false}'}}, Count:1b}
+data modify storage tag:maps maps append value {Slot:9b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 9, mapItem: 1b, action:"chooseMapSize", mapSize:"small", CustomModelData:2, display:{Name:'{"text":"Map size: Small","color":"green","italic":false}'}}, Count:1b}
 data modify storage tag:maps maps append value {Slot:18b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 18, mapItem: 1b, action:"chooseMapSize", mapSize:"small", CustomModelData:5, display:{Name:'{"text":"Map size: Small","color":"green","italic":false}'}}, Count:1b}
 
 ## slots 0, 9, 18  reserved for map sizes
