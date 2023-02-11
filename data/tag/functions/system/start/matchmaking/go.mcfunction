@@ -16,4 +16,4 @@ schedule function tag:system/start/count/title 5s
 schedule function tag:system/start/count/3 5s
 schedule function tag:system/start/count/2 6s
 schedule function tag:system/start/count/1 7s
-schedule function tag:system/start/go 8s
+schedule function tag:system/start/check 8s

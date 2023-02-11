@@ -57,13 +57,13 @@
   - Game mode renamed to Game type
   - [x] Solos
   - [ ] Teams (not fully complete)
-  - [ ] CTH-style
-    - (1 person has the "thing" which allows them to gain points (but they get glowing and slowness(?), goal is to get the most points with the "thing"))
 
 - [ ] Add more gameplay modes
   - [x] Classic (default gameplay)
   - [ ] OITC (One in the chamber, ranged is a one shot)
   - [ ] Critical Strike (a critical hit is a one shot)
+  - [ ] CTH-style
+    - (1 person has the "thing" which allows them to gain points (but they get glowing and slowness(?), goal is to get the most points with the "thing"))
 
 - [ ] Add more win conditions
   - [x] First to x score

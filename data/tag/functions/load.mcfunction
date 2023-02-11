@@ -27,6 +27,7 @@ gamerule showDeathMessages false
 gamerule doInsomnia false
 gamerule doFireTick false
 gamerule spawnRadius 1
+gamerule doMobSpawning false
 ## overrides custom weapon killing
 ## would like to revisit ^ in the future
 gamerule keepInventory true
@@ -56,6 +57,13 @@ scoreboard objectives add lobby_controls dummy
 
 # map selector
 scoreboard objectives add temp_store.map_selector dummy
+
+# lobby items
+scoreboard objectives add temp_store.ready_item dummy
+
+# return to lobby
+## /trigger return_lobby
+scoreboard objectives add return_lobby trigger "Return to lobby (map dev)"
 
 
 # open profile

@@ -6,6 +6,9 @@
 scoreboard players set time internal 0
 scoreboard players set time_s internal 0
 
+# reset matchmaking
+scoreboard players set matchmaking internal 0
+
 
 # mark players
 scoreboard players set @a[tag=playing] player.ingame 1

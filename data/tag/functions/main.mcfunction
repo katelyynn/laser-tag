@@ -37,6 +37,10 @@ execute if score period internal matches 1 as @a at @s if score win_goal global 
 # lobby controls
 function tag:system/lobby/main
 
+# ensure game state is set
+execute if score period internal matches 1 if score matchmaking_controller internal matches 1.. run scoreboard players set matchmaking_controller internal 0
+execute if score period internal matches 1 if score matchmaking internal matches 1.. run scoreboard players set matchmaking internal 0
+
 # remove arrow piercing into player
 execute as @e[type=arrow,tag=!arrow.patched] run data merge entity @s {PierceLevel:1b}
 execute as @e[type=arrow,tag=!arrow.patched] run tag @s add arrow.patched
@@ -53,6 +57,13 @@ execute as @a at @s run function tag:system/health/main
 ## profile
 scoreboard players enable @a profile
 execute as @a at @s if score @s profile matches 1.. run function tag:system/usercard/go
+
+# return to lobby
+## /trigger return_lobby
+execute if score map_dev_mode internal matches 1.. run scoreboard objectives add return_lobby trigger "Return to lobby (map dev)"
+execute if score map_dev_mode internal matches 1.. run scoreboard players enable @a return_lobby
+execute unless score map_dev_mode internal matches 1.. run scoreboard objectives remove return_lobby
+execute as @a at @s if score @s return_lobby matches 1.. run function tag:system/map/return_lobby
 
 # display player info
 execute unless score period internal matches 0..3 run scoreboard objectives setdisplay belowName leaderboard.coins
@@ -99,8 +110,8 @@ tag @a[scores={player.ready=1..},tag=!playing] add playing
 execute as @a[tag=playing] unless score @s player.ready matches 1.. run tag @s remove playing
 
 # toggle ready status
-execute as @a unless score @s player.ingame matches 1.. unless score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{display:{Name:'[{"text":"Change ready status","italic":false}]'}}
-execute as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with warped_fungus_on_a_stick{display:{Name:'[{"text":"Change ready status","italic":false}]'}}
+execute as @a unless score @s player.ingame matches 1.. unless score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{tag:{readyItem:1b},display:{Name:'[{"text":"Change ready status","italic":false}]'}}
+execute as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with warped_fungus_on_a_stick{tag:{readyItem:1b},display:{Name:'[{"text":"Change ready status","italic":false}]'}}
 
 execute as @a at @s unless score @s player.ready matches 1.. if score @s temp_store.use_ready matches 1.. run function tag:system/ready/enable
 execute as @a at @s if score @s player.ready matches 1.. if score @s temp_store.use_unready matches 1.. run function tag:system/ready/disable

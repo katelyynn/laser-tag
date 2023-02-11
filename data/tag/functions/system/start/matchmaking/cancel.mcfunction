@@ -17,4 +17,4 @@ schedule clear tag:system/start/count/title
 schedule clear tag:system/start/count/3
 schedule clear tag:system/start/count/2
 schedule clear tag:system/start/count/1
-schedule clear tag:system/start/go
+schedule clear tag:system/start/check

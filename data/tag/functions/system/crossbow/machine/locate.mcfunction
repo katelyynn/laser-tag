@@ -3,6 +3,7 @@
 ## locate in inventory
 
 
+scoreboard players set @s crossbow_machine.slot -1
 scoreboard players set @s crossbow_machine.slot_temp 0
 
 # run through slots
