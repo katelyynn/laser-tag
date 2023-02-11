@@ -37,6 +37,10 @@ execute if score period internal matches 1 as @a at @s if score win_goal global 
 # lobby controls
 function tag:system/lobby/main
 
+# ensure game state is set
+execute if score period internal matches 1 if score matchmaking_controller internal matches 1.. run scoreboard players set matchmaking_controller internal 0
+execute if score period internal matches 1 if score matchmaking internal matches 1.. run scoreboard players set matchmaking internal 0
+
 # remove arrow piercing into player
 execute as @e[type=arrow,tag=!arrow.patched] run data merge entity @s {PierceLevel:1b}
 execute as @e[type=arrow,tag=!arrow.patched] run tag @s add arrow.patched
