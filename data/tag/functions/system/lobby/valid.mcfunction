@@ -24,6 +24,10 @@ execute as @e[tag=lobby.map_dev_mode] at @s run function tag:system/lobby/contro
 ## open profile
 execute as @e[tag=lobby.open_profile] at @s run function tag:system/lobby/controller/open_profile
 
+# map selector
+execute as @a unless score @s temp_store.map_selector matches 0.. run scoreboard players set @s temp_store.map_selector 0
+execute as @a run function tag:system/lobby/map_selector/check
+
 # tags
 execute as @e[type=glow_item_frame] at @s unless data entity @s {Invulnerable:1b} run particle minecraft:glow ~ ~ ~ 0 0 0 0.1 7
 execute as @e[type=glow_item_frame] at @s unless data entity @s {Invulnerable:1b} run data merge entity @s {Invulnerable:1b}
