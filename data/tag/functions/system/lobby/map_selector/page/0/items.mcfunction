@@ -4,7 +4,7 @@
 
 # selection
 #execute if score selection temp_store.map_selector matches 0 run say 0
-execute if score selection temp_store.map_selector matches 18 run scoreboard players add map_dev_mode global 1
+execute if score selection temp_store.map_selector matches 18 run scoreboard players add map_dev_mode internal 1
 
 execute if score selection temp_store.map_selector matches 2 run scoreboard players set game_map global -1
 execute if score selection temp_store.map_selector matches 3 run scoreboard players set game_map global 0
