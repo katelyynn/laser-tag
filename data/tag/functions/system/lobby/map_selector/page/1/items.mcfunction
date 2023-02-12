@@ -1,5 +1,5 @@
 # LASERTAG map selector
-## page 0 (default)
+## page 1
 
 
 # selection
