@@ -59,11 +59,18 @@
   - [ ] Teams (not fully complete)
 
 - [ ] Add more gameplay modes
-  - [x] Classic (default gameplay)
-  - [ ] OITC (One in the chamber, ranged is a one shot)
-  - [ ] Critical Strike (a critical hit is a one shot)
-  - [ ] CTH-style
-    - (1 person has the "thing" which allows them to gain points (but they get glowing and slowness(?), goal is to get the most points with the "thing"))
+  - [x] Classic
+    - Default gameplay
+  - [ ] OITC
+    - One in the chamber, ranged is a one shot
+  - [ ] Critical Strike
+    - A critical hit is a one shot
+  - [ ] Capture the "helmet"
+    - 1 person has the "thing" which allows them to gain points
+    - but they get glowing and slowness(?), goal is to get the most points with the "thing"
+  - [ ] Infection
+    - Obviously, with some level of sane debuffs for infected like the event version
+    - Would actually pay more homage to the original (Halo) due to the limited map sizes and building
 
 - [ ] Add more win conditions
   - [x] First to x score
