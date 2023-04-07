@@ -121,6 +121,7 @@
 - [ ] Implement overheating for Machine Crossbow?
 
 - [ ] Add item spawners
+  - [x] Spawn egg creator
   - [ ] Locked on specific item
   - [ ] Chosen randomly from pool
 
