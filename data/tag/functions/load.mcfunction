@@ -168,5 +168,9 @@ scoreboard objectives add health.apple minecraft.used:minecraft.apple
 scoreboard objectives add health.golden_apple minecraft.used:minecraft.golden_apple
 
 
+# item spawners
+scoreboard objectives add item_spawner.state dummy
+
+
 # defaults
 execute unless score defaults internal matches 1.. run function tag:defaults

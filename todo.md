@@ -122,8 +122,10 @@
 
 - [ ] Add item spawners
   - [x] Spawn egg creator
-  - [ ] Locked on specific item
-  - [ ] Chosen randomly from pool
+  - [x] Locked on specific item
+  - [x] Chosen randomly from pool
+  - [ ] Implement timer system
+  - [ ] Automatically give item on game start
 
 ### Game setup
 - [x] Create setup-flow, either physically or via /trigger
