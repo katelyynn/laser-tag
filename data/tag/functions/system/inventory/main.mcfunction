@@ -7,6 +7,10 @@
 execute if entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] if entity @s[nbt={Inventory:[{Slot:-106b,tag:{weaponItem:1b}}]}] run function tag:system/inventory/reload/check
 
 # put offhand item back into mainhand
+## TODO: make case for if item is placed manually and not via hotkey
+## (offhand in this case would not have previously mainhand)
+## need check to make sure current mainhand does not have item
+## and do something if holding an item (maybe summon item then copy item data?)
 item replace entity @s weapon.mainhand from entity @s weapon.offhand
 
 # check if duplicates (moved by player)
