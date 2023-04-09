@@ -9,7 +9,9 @@ execute if entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] if entity @s
 # put offhand item back into mainhand
 item replace entity @s weapon.mainhand from entity @s weapon.offhand
 
-## TODO: run clear {requestedReload etc.} 0 to check if item exists
-## if more than 1, clear
+# check if duplicates (moved by player)
+execute store result score @s temp_store.requested_reload_items run clear @s minecraft:carrot_on_a_stick{requestedReload:1b} 0
+execute if score @s temp_store.requested_reload_items matches 2.. run clear @s minecraft:carrot_on_a_stick{requestedReload:1b}
 
-## TODO: replace offhand with requestedReload
+# replace reload item
+item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{CustomModelData:7,requestedReload:1b}
