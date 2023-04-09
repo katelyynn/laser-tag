@@ -50,6 +50,8 @@ execute as @e[type=arrow,nbt={inGround:1b}] at @s run particle block gravel ~ ~ 
 kill @e[type=arrow,nbt={inGround:1b}]
 
 # systems
+## inventory
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s run function tag:system/inventory/main
 ## crossbow
 execute as @a at @s run function tag:system/crossbow/main
 ## health
