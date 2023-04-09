@@ -9,4 +9,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] if entity @s
 # put offhand item back into mainhand
 item replace entity @s weapon.mainhand from entity @s weapon.offhand
 
-## TODO: replace offhand with requestedReload if not there
+## TODO: run clear {requestedReload etc.} 0 to check if item exists
+## if more than 1, clear
+
+## TODO: replace offhand with requestedReload
