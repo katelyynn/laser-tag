@@ -14,11 +14,11 @@ execute unless score @s crossbow_rocket.time matches -1 run function tag:system/
 execute if score @s crossbow_rocket.time matches -1..0 run function tag:system/crossbow/rocket/display
 
 # clear actionbar
-execute unless score period internal matches -1 if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"machine"}}},nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"normal"}}},nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"rocket"}}}] run title @s actionbar ["",{"text":"Score: "},{"score":{"name":"@s","objective":"player.score"},"color":"yellow"}]
+execute unless score period internal matches -1 if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{weaponItem:1b}}}] run title @s actionbar ["",{"text":"Score: "},{"score":{"name":"@s","objective":"player.score"},"color":"yellow"}]
 
 # lobby actionbar
 ## TODO: relocate this somewhere better
 ## ready
-execute if score period internal matches -1 if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"machine"}}},nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"normal"}}},nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"rocket"}}}] if score @s player.ready matches 1.. run title @s actionbar ["",{"text":"Coins: "},{"score":{"name":"@s","objective":"leaderboard.coins"},"color":"yellow"},{"text":" \u0020 "},{"text":"Ready","color":"green"}]
+execute if score period internal matches -1 if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{weaponItem:1b}}}] if score @s player.ready matches 1.. run title @s actionbar ["",{"text":"Coins: "},{"score":{"name":"@s","objective":"leaderboard.coins"},"color":"yellow"},{"text":" \u0020 "},{"text":"Ready","color":"green"}]
 ## unready
-execute if score period internal matches -1 if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"machine"}}},nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"normal"}}},nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{crossbow_type:"rocket"}}}] unless score @s player.ready matches 1.. run title @s actionbar ["",{"text":"Coins: "},{"score":{"name":"@s","objective":"leaderboard.coins"},"color":"yellow"},{"text":" \u0020 "},{"text":"Not ready","color":"gray"}]
+execute if score period internal matches -1 if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{weaponItem:1b}}}] unless score @s player.ready matches 1.. run title @s actionbar ["",{"text":"Coins: "},{"score":{"name":"@s","objective":"leaderboard.coins"},"color":"yellow"},{"text":" \u0020 "},{"text":"Not ready","color":"gray"}]
