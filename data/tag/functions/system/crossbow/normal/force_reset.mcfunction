@@ -4,7 +4,7 @@
 
 
 # replace item
-item replace entity @s weapon.mainhand with minecraft:crossbow{ChargedProjectiles:[],Charged:1b,canReload:1b,weaponItem:1b,crossbow_type:"normal",Enchantments:[]}
+item replace entity @s weapon.mainhand with minecraft:crossbow{ChargedProjectiles:[],Charged:0b,canReload:1b,weaponItem:1b,crossbow_type:"normal",Enchantments:[]}
 
 
 scoreboard players set @s crossbow_normal.time 0
