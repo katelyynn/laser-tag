@@ -15,17 +15,17 @@ data modify storage tag:maps page1 append value {Slot:9b, id:"minecraft:carrot_o
 data modify storage tag:maps page1 append value {Slot:18b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 18, mapItem: 1b, CustomModelData:3, display:{Name:'{"text":"Toggle map dev mode","color":"green","italic":false}'}}, Count:1b}
 
 data modify storage tag:maps page0 append value {Slot:1b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 1, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
-data modify storage tag:maps page0 append value {Slot:10b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 10, mapItem: 1b, CustomModelData:8, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
+data modify storage tag:maps page0 append value {Slot:10b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 10, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
 data modify storage tag:maps page0 append value {Slot:19b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 19, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
 data modify storage tag:maps page0 append value {Slot:8b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 8, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
-data modify storage tag:maps page0 append value {Slot:17b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 17, mapItem: 1b, CustomModelData:9, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
+data modify storage tag:maps page0 append value {Slot:17b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 17, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
 data modify storage tag:maps page0 append value {Slot:26b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 26, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
 ##
 data modify storage tag:maps page1 append value {Slot:1b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 1, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
-data modify storage tag:maps page1 append value {Slot:10b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 10, mapItem: 1b, CustomModelData:8, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
+data modify storage tag:maps page1 append value {Slot:10b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 10, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
 data modify storage tag:maps page1 append value {Slot:19b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 19, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
 data modify storage tag:maps page1 append value {Slot:8b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 8, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
-data modify storage tag:maps page1 append value {Slot:17b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 17, mapItem: 1b, CustomModelData:9, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
+data modify storage tag:maps page1 append value {Slot:17b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 17, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
 data modify storage tag:maps page1 append value {Slot:26b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 26, mapItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}, Count:1b}
 
 ## slots 0, 9, 18  reserved for map sizes
