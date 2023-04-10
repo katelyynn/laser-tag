@@ -134,6 +134,8 @@ scoreboard objectives add leaderboard.killstreak_highest dummy
 
 
 # systems
+## inventory
+scoreboard objectives add temp_store.requested_reload_items dummy
 ## crossbow
 ## NORMAL
 scoreboard objectives add crossbow_normal.time dummy
