@@ -36,4 +36,4 @@ clear @s crossbow{ChargedProjectiles:[],canReload:1b,weaponItem:1b,crossbow_type
 # disable timer until shot
 scoreboard players set @s crossbow_rocket.time -1
 
-tellraw @s [{"text":"Crossbow rocket recharged at slot "},{"score":{"name":"@s","objective":"crossbow_rocket.slot"},"color":"yellow"}]
+execute if score dev_mode internal matches 77 run tellraw @s [{"text":"Crossbow rocket recharged at slot "},{"score":{"name":"@s","objective":"crossbow_rocket.slot"},"color":"yellow"}]

@@ -15,4 +15,4 @@ item replace entity @s weapon.mainhand from entity @s weapon.offhand
 data modify entity @e[type=minecraft:item,tag=inventory.bound_item,limit=1] PickupDelay set value 0
 tag @e[type=minecraft:item,tag=inventory.bound_item,limit=1] remove inventory.bound_item
 
-tellraw @s {"text":"Fallback item ran"}
+execute if score dev_mode internal matches 77 run tellraw @s {"text":"Fallback item ran"}

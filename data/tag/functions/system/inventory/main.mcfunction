@@ -7,7 +7,7 @@
 execute if entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] if entity @s[nbt={Inventory:[{Slot:-106b,tag:{canReload:1b,weaponItem:1b}}]}] run function tag:system/inventory/reload/check
 
 # put offhand back into mainhand
-execute if entity @s[nbt={SelectedItem:{}}] unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{requestedReload:1b}}]}] run function tag:system/inventory/fallback_item
+execute if entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{canReload:1b,weaponItem:1b}}]}] run function tag:system/inventory/fallback_item
 
 # check if duplicates (moved by player)
 execute store result score @s temp_store.requested_reload_items run clear @s minecraft:carrot_on_a_stick{requestedReload:1b} 0
