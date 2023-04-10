@@ -4,8 +4,7 @@
 
 # player requesting reload?
 ## selected item matches criteria
-## TODO: what happens with knife? (testing)
-execute if entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] if entity @s[nbt={Inventory:[{Slot:-106b,tag:{weaponItem:1b}}]}] run function tag:system/inventory/reload/check
+execute if entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] if entity @s[nbt={Inventory:[{Slot:-106b,tag:{canReload:1b,weaponItem:1b}}]}] run function tag:system/inventory/reload/check
 
 # put offhand back into mainhand
 execute if entity @s[nbt={SelectedItem:{}}] unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{requestedReload:1b}}]}] run function tag:system/inventory/fallback_item

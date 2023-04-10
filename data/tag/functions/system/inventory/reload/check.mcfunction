@@ -21,4 +21,4 @@ execute if score dev_mode internal matches 77 if entity @s[nbt={SelectedItem:{ta
 execute if entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] run item replace entity @s weapon.mainhand from entity @s weapon.offhand
 
 # generic
-execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{weaponItem:1b}}]}] run function tag:system/inventory/reload/go
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{canReload:1b,weaponItem:1b}}]}] run function tag:system/inventory/reload/go
