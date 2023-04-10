@@ -14,4 +14,4 @@ execute unless data entity @e[type=minecraft:item,tag=inventory.bound_item,limit
 execute if data entity @e[type=minecraft:item,tag=inventory.bound_item,limit=1] {Item:{id:"minecraft:barrier"}} run kill @e[type=minecraft:item,tag=inventory.bound_item,limit=1]
 tag @e[type=minecraft:item,tag=inventory.bound_item,limit=1] remove inventory.bound_item
 
-tellraw @s {"text":"Dropped mainhand item"}
+execute if score dev_mode internal matches 77 run tellraw @s {"text":"Dropped mainhand item"}

@@ -10,4 +10,4 @@ execute if entity @s[nbt={SelectedItem:{}}] run function tag:system/inventory/dr
 # then copy offhand
 item replace entity @s weapon.mainhand from entity @s weapon.offhand
 
-tellraw @s {"text":"Copied offhand item to mainhand"}
+execute if score dev_mode internal matches 77 run tellraw @s {"text":"Copied offhand item to mainhand"}
