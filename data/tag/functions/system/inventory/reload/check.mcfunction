@@ -5,7 +5,7 @@
 # put offhand item back into mainhand
 ## if item in hand fallback to item
 execute if score dev_mode internal matches 77 if entity @s[nbt={SelectedItem:{}}] unless entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] run tellraw @s {"text":"Attempted to swap mainhand and offhand, using fallback"}
-execute if entity @s[nbt={SelectedItem:{}}] unless entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] run function tag:system/inventory/fallback_item
+execute if entity @s[nbt={SelectedItem:{}}] unless entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] run function tag:system/inventory/drop_offhand
 ## if no item in hand
 execute if score dev_mode internal matches 77 unless entity @s[nbt={SelectedItem:{}}] run tellraw @s {"text":"Swapped mainhand and offhand (1)"}
 execute unless entity @s[nbt={SelectedItem:{}}] run item replace entity @s weapon.mainhand from entity @s weapon.offhand
