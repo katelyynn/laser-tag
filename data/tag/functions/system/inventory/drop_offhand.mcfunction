@@ -9,3 +9,5 @@ execute unless entity @s[nbt={SelectedItem:{}}] run function tag:system/inventor
 
 # then copy offhand
 item replace entity @s weapon.mainhand from entity @s weapon.offhand
+
+tellraw @s {"text":"Copied offhand item to mainhand"}

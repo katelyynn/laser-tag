@@ -12,3 +12,5 @@ data modify entity @e[type=minecraft:item,tag=inventory.bound_item,limit=1] Item
 # remove tag
 data modify entity @e[type=minecraft:item,tag=inventory.bound_item,limit=1] PickupDelay set value 0
 tag @e[type=minecraft:item,tag=inventory.bound_item,limit=1] remove inventory.bound_item
+
+tellraw @s {"text":"Dropped mainhand item"}

@@ -11,10 +11,14 @@ execute unless score @s crossbow_machine.shots matches 0 if entity @s[nbt={Inven
 execute unless score @s crossbow_rocket.shots matches 0 if entity @s[nbt={Inventory:[{Slot:-106b,tag:{weaponItem:1b,crossbow_type:"rocket"}}]}] run function tag:system/crossbow/rocket/force_reset
 
 # put offhand item back into mainhand
+## if item in hand fallback to item
+execute if score dev_mode internal matches 77 if entity @s[nbt={SelectedItem:{}}] unless entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] run tellraw @s {"text":"Attempted to swap mainhand and offhand, using fallback"}
+execute if entity @s[nbt={SelectedItem:{}}] unless entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] run function tag:system/inventory/fallback_item
 ## if no item in hand
+execute if score dev_mode internal matches 77 unless entity @s[nbt={SelectedItem:{}}] run tellraw @s {"text":"Swapped mainhand and offhand (1)"}
 execute unless entity @s[nbt={SelectedItem:{}}] run item replace entity @s weapon.mainhand from entity @s weapon.offhand
-## however, if item in hand fallback to item
-execute if entity @s[nbt={SelectedItem:{}}] run function tag:system/inventory/fallback_item
+execute if score dev_mode internal matches 77 if entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] run tellraw @s {"text":"Swapped mainhand and offhand (2)"}
+execute if entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] run item replace entity @s weapon.mainhand from entity @s weapon.offhand
 
 # generic
 execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{weaponItem:1b}}]}] run function tag:system/inventory/reload/go

@@ -35,3 +35,5 @@ clear @s crossbow{ChargedProjectiles:[],weaponItem:1b,crossbow_type:"rocket"}
 
 # disable timer until shot
 scoreboard players set @s crossbow_rocket.time -1
+
+tellraw @s [{"text":"Crossbow rocket recharged at slot "},{"score":{"name":"@s","objective":"crossbow_rocket.slot"},"color":"yellow"}]
