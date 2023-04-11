@@ -14,4 +14,4 @@ execute store result score @s temp_store.requested_reload_items run clear @s min
 execute if score @s temp_store.requested_reload_items matches 2.. run clear @s minecraft:carrot_on_a_stick{requestedReload:1b}
 
 # replace reload item
-item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{CustomModelData:7,requestedReload:1b}
+item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'[{"text":""}]'},CustomModelData:7,requestedReload:1b}
