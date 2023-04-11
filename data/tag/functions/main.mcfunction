@@ -20,12 +20,17 @@ kill @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick"}}]
 # kill weapon items
 #function tag:system/item/weapon/main
 
+# player location
+## y
+execute as @a store result score @s player.y run data get entity @s Pos[1]
+
 # kill
 execute as @a at @s if score @s player.kill matches 1.. run function tag:system/kill/go
 scoreboard players reset @a player.kill
 
 # death
-execute as @a at @s if score @s player.death matches 1.. run function tag:system/death/go
+execute if score period internal matches 1 as @a at @s if score @s player.death matches 1.. run function tag:system/death/go
+execute as @a at @s if score @s player.y matches ..64 run function tag:system/death/below_min_y
 scoreboard players reset @a player.death
 scoreboard players reset @a player.direct_death
 

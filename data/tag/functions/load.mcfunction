@@ -32,6 +32,9 @@ gamerule doMobSpawning false
 ## would like to revisit ^ in the future
 gamerule keepInventory true
 
+# player location
+scoreboard objectives add player.y dummy
+
 # bossbars
 bossbar add tag:ver ""
 bossbar set tag:ver max 12
