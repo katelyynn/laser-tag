@@ -3,4 +3,5 @@
 
 
 # teleport to map
-function tag:system/map/teleport
+execute if score @s player.ingame matches 1.. run function tag:system/map/teleport
+execute unless score @s player.ingame matches 1.. run tp @s 0 150 0
