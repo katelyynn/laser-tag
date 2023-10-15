@@ -71,6 +71,8 @@
   - [ ] Infection
     - Obviously, with some level of sane debuffs for infected like the event version
     - Would actually pay more homage to the original (Halo) due to the limited map sizes and building
+  - [ ] Murder Mystery
+    - Like Hypixel :3
 
 - [ ] Add more win conditions
   - [x] First to x score
