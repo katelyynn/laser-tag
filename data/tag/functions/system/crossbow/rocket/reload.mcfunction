@@ -36,3 +36,5 @@ clear @s crossbow{ChargedProjectiles:[],canReload:1b,weaponItem:1b,crossbow_type
 # disable timer until shot
 scoreboard players set @s crossbow_rocket.time -1
 scoreboard players set @s crossbow_rocket.shots 0
+
+execute if score logs internal matches 1 run say "Reloaded rocket crossbow"

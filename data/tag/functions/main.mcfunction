@@ -24,16 +24,6 @@ kill @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick"}}]
 ## y
 execute as @a store result score @s player.y run data get entity @s Pos[1]
 
-# kill
-execute as @a at @s if score @s player.kill matches 1.. run function tag:system/kill/go
-scoreboard players reset @a player.kill
-
-# death
-execute if score period internal matches 1 as @a at @s if score @s player.death matches 1.. run function tag:system/death/go
-execute as @a at @s if score @s player.y matches ..64 run function tag:system/death/below_min_y
-scoreboard players reset @a player.death
-scoreboard players reset @a player.direct_death
-
 # win
 ## win score
 execute if score period internal matches 1 as @a if score win_goal global matches 0 if score @s player.score >= win_score global run tag @s add win
@@ -56,7 +46,7 @@ kill @e[type=arrow,nbt={inGround:1b}]
 
 # systems
 ## inventory
-execute as @a[gamemode=!creative,gamemode=!spectator] at @s run function tag:system/inventory/main
+execute as @a[gamemode=!creative,gamemode=!spectator,scores={player.time_since_death=5..}] at @s run function tag:system/inventory/main
 ## crossbow
 execute as @a at @s run function tag:system/crossbow/main
 ## health
@@ -64,6 +54,16 @@ execute as @a at @s run function tag:system/health/main
 ## profile
 scoreboard players enable @a profile
 execute as @a at @s if score @s profile matches 1.. run function tag:system/usercard/go
+
+# kill
+execute as @a at @s if score @s player.kill matches 1.. run function tag:system/kill/go
+scoreboard players reset @a player.kill
+
+# death
+execute if score period internal matches 1 as @a at @s if score @s player.death matches 1.. run function tag:system/death/go
+execute as @a at @s if score @s player.y matches ..64 run function tag:system/death/below_min_y
+scoreboard players reset @a player.death
+scoreboard players reset @a player.direct_death
 
 # return to lobby
 ## /trigger return_lobby

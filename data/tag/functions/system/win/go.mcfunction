@@ -2,7 +2,7 @@
 
 
 scoreboard players set period internal 3
-scoreboard players operation @s player.wins += 1 internal
+scoreboard players add @s player.wins 1
 
 # announce
 title @a title {"text":"GAME OVER!","color":"gold","bold":true}
@@ -26,8 +26,8 @@ effect give @a[tag=win] glowing 9999 255 true
 
 
 # save to leaderboards
-scoreboard players operation @s leaderboard.wins += 1 internal
-scoreboard players operation @s leaderboard.games_played += 1 internal
+scoreboard players add @s leaderboard.wins 1
+scoreboard players add @s leaderboard.games_played 1
 
 
 # reset clock

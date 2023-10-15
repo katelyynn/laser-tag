@@ -37,9 +37,18 @@ execute unless entity @a[scores={player.direct_death=1..}] run scoreboard player
 # reset loadout
 function tag:system/loadout/go
 ## reload loadout
-function tag:system/crossbow/normal/reload
-function tag:system/crossbow/machine/reload
-function tag:system/crossbow/rocket/reload
+#function tag:system/crossbow/normal/reload
+#function tag:system/crossbow/machine/reload
+#function tag:system/crossbow/rocket/reload
+advancement revoke @s only tag:crossbow/shoot_normal
+advancement revoke @s only tag:crossbow/shoot_rocket
+advancement revoke @s only tag:crossbow/shoot_machine
+scoreboard players set @s crossbow_normal.time -1
+scoreboard players set @s crossbow_normal.shots 0
+scoreboard players set @s crossbow_rocket.time -1
+scoreboard players set @s crossbow_rocket.shots 0
+scoreboard players set @s crossbow_machine.time -1
+scoreboard players set @s crossbow_machine.shots 0
 
 # reset hunger
 function tag:system/health/reset

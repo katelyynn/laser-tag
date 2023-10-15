@@ -83,6 +83,8 @@ scoreboard objectives add player.death deathCount
 scoreboard objectives add player.direct_death killed_by:player
 # temp score to track direct death
 scoreboard objectives add temp_store.direct_death dummy
+# track time since
+scoreboard objectives add player.time_since_death minecraft.custom:minecraft.time_since_death
 
 # track kills
 scoreboard objectives add player.kills playerKillCount

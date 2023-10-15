@@ -11,8 +11,8 @@ execute as @a at @s run playsound tag:ui.tick player @s
 
 
 # countdown
-function fm:title/reset
-function fm:title/reset_times
+function kate:title/reset
+function kate:title/reset_times
 schedule clear tag:system/start/count/title
 schedule clear tag:system/start/count/3
 schedule clear tag:system/start/count/2

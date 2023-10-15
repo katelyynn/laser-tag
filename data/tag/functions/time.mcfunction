@@ -2,7 +2,7 @@
 ## game clock
 
 
-function fm:clock
+function kate:clock
 
 
 # earn coins passively

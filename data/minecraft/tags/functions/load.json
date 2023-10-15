@@ -1,6 +1,6 @@
 {
     "values": [
-        "fm:prepare",
-        "tag:load" 
-    ] 
+        "kate:prepare",
+        "tag:load"
+    ]
 }
