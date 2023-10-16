@@ -15,13 +15,13 @@ the **classic** game mode is the basis of the game, it receives the most attenti
 
 | game mode | quick bio | status |
 | --------- | --------- | ------ |
-| classic   | the default crossbow/weapon gameplay | getting there |
-| OITC      | one in the chamber - ranged is one shot | ...not started |
-| critical  | critical strike - critical hit (jump) is one shot | ...not started |
-| capture   | previously released as 'capture the helmet', aka cold potato | ...not started |
-| infection | like halo! alive vs infected (if infected kill, u join infected) | ...not started |
+| classic   | the default crossbow/weapon gameplay | **getting there** |
+| OITC      | one in the chamber - ranged is one shot | *...not started* |
+| critical  | critical strike - critical hit (jump) is one shot | *...not started* |
+| capture   | previously released as 'capture the helmet', aka cold potato | *...not started* |
+| infection | like halo! alive vs infected (if infected kill, u join infected) | *...not started* |
 | mur/mystery | hypixel's murdery mystery, as it says on the tin | workin on it |
-| zombies | hypixel/COD's zombies, not sure at this point (maybe?) | unsure |
+| zombies | hypixel/COD's zombies, not sure at this point (maybe?) | *unsure* |
 
 ## note
 
