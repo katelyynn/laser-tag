@@ -118,8 +118,8 @@ tag @a[scores={player.ready=1..},tag=!playing] add playing
 execute as @a[tag=playing] unless score @s player.ready matches 1.. run tag @s remove playing
 
 # toggle ready status
-execute as @a unless score @s player.ingame matches 1.. unless score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{readyItem:1b,display:{Name:'[{"text":"Change ready status","italic":false}]'}}
-execute as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{unreadyItem:1b,display:{Name:'[{"text":"Change ready status","italic":false}]'}}
+execute as @a unless score @s player.ingame matches 1.. unless score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{CustomModelData:11,readyItem:1b,display:{Name:'[{"text":"Change ready status","italic":false}]'}}
+execute as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{CustomModelData:10,unreadyItem:1b,display:{Name:'[{"text":"Change ready status","italic":false}]'}}
 
 
 # carrot on a stick trigger
