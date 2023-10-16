@@ -27,7 +27,7 @@ execute as @a store result score @s player.y run data get entity @s Pos[1]
 # win
 ## win score
 execute if score period internal matches 1 as @a if score win_goal global matches 0 if score @s player.score >= win_score global run tag @s add win
-execute if score period internal matches 1 as @a at @s if score win_goal global matches 0 if score @s player.score >= win_score global run function tag:system/win/go
+execute if score period internal matches 1 if entity @a[tag=win] run function tag:system/win/go
 
 # lobby controls
 function tag:system/lobby/main
