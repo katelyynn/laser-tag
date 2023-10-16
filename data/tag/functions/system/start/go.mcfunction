@@ -25,12 +25,6 @@ scoreboard objectives remove player.score
 scoreboard objectives add player.score dummy "Score"
 
 
-# mode
-## 0: solos
-## 1: teams
-execute if score game_type global matches 1 as @a[team=red] run function tag:create/armour/red
-execute if score game_type global matches 1 as @a[team=blue] run function tag:create/armour/blue
-
 # teleport players
 execute as @a[tag=playing] run function tag:system/map/teleport
 execute as @a[tag=playing] run function tag:system/map/spawn
@@ -50,6 +44,16 @@ schedule function tag:system/start/count/3 3s
 schedule function tag:system/start/count/2 4s
 schedule function tag:system/start/count/1 5s
 schedule function tag:system/start/done 6s
+
+
+# game mode
+## 0: classic
+## 1: oitc
+## 2: critical
+## 3: cth
+## 4: infection
+## 5: murder mystery
+execute if score game_mode internal matches 0..2 run function tag:system/mode/0/go
 
 
 scoreboard players set period internal 0
