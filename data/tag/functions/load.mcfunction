@@ -179,5 +179,16 @@ scoreboard objectives add health.golden_apple minecraft.used:minecraft.golden_ap
 scoreboard objectives add item_spawner.state dummy
 
 
+# murder mystery
+## alive
+scoreboard objectives add mode.mystery.display dummy "Murder Mystery"
+## murderer
+## used to store index of current murderer
+scoreboard objectives add mode.mystery.murderer_index dummy
+## detective
+## used to store index of current detective
+scoreboard objectives add mode.mystery.detective_index dummy
+
+
 # defaults
 execute unless score defaults internal matches 1.. run function tag:defaults
