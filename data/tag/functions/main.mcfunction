@@ -38,7 +38,7 @@ execute if score period internal matches 1 if score matchmaking internal matches
 
 # remove arrow piercing into player
 execute as @e[type=arrow,tag=!arrow.patched] run data merge entity @s {PierceLevel:1b}
-execute as @e[type=arrow,tag=!arrow.patched] run tag @s add arrow.patched
+tag @e[type=arrow,tag=!arrow.patched] add arrow.patched
 
 # kill arrows
 execute as @e[type=arrow,nbt={inGround:1b}] at @s run particle block gravel ~ ~ ~ 0 0 0 0 10
@@ -53,7 +53,8 @@ execute as @a at @s run function tag:system/crossbow/main
 execute as @a at @s run function tag:system/health/main
 ## profile
 scoreboard players enable @a profile
-execute as @a at @s if score @s profile matches 1.. run function tag:system/usercard/go
+execute as @a[tag=playing] at @s if score @s profile matches 1.. run function tag:system/usercard/go
+execute as @a[tag=!playing] at @s if score @s profile matches 1.. run function tag:system/usercard/deny
 
 # kill
 execute as @a at @s if score @s player.kill matches 1.. run function tag:system/kill/go
