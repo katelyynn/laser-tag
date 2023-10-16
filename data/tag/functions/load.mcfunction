@@ -107,8 +107,7 @@ scoreboard objectives add player.ready dummy
 # track if player is ingame
 scoreboard objectives add player.ingame dummy
 # track items
-scoreboard objectives add temp_store.use_ready minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add temp_store.use_unready minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add temp_store.use_trigger_item minecraft.used:minecraft.carrot_on_a_stick
 
 
 # track item drops

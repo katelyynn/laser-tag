@@ -119,12 +119,12 @@ execute as @a[tag=playing] unless score @s player.ready matches 1.. run tag @s r
 
 # toggle ready status
 execute as @a unless score @s player.ingame matches 1.. unless score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{tag:{readyItem:1b},display:{Name:'[{"text":"Change ready status","italic":false}]'}}
-execute as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with warped_fungus_on_a_stick{tag:{readyItem:1b},display:{Name:'[{"text":"Change ready status","italic":false}]'}}
+execute as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{tag:{unreadyItem:1b},display:{Name:'[{"text":"Change ready status","italic":false}]'}}
 
-execute as @a at @s unless score @s player.ready matches 1.. if score @s temp_store.use_ready matches 1.. run function tag:system/ready/enable
-execute as @a at @s if score @s player.ready matches 1.. if score @s temp_store.use_unready matches 1.. run function tag:system/ready/disable
-scoreboard players reset @a temp_store.use_ready
-scoreboard players reset @a temp_store.use_unready
+
+# carrot on a stick trigger
+execute as @a at @s if score @s temp_store.use_trigger_item matches 1.. run function tag:system/inventory/trigger/go
+scoreboard players reset @a temp_store.use_trigger_item
 
 # patch items
 execute as @e[type=item,tag=!item.patched] at @s run function tag:system/item/patch
