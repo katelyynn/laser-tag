@@ -20,7 +20,7 @@ tag @a[tag=playing,tag=!mode.mystery.murderer] add mode.mystery.alive
 # announce
 execute as @a[tag=mode.mystery.murderer] at @s run function tag:system/mode/5/announce/murderer
 execute as @a[tag=mode.mystery.detective] at @s run function tag:system/mode/5/announce/detective
-execute as @a[tag=mode.mystery.alive,tag=!mode.mystery.detective] at @s run function tag:system/mode/5/announce/alive
+execute as @a[tag=mode.mystery.alive,tag=!mode.mystery.detective] at @s run function tag:system/mode/5/announce/innocent
 
 
 # reset scores
