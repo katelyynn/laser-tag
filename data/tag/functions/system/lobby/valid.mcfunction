@@ -48,10 +48,9 @@ execute as @e[tag=lobby.game_start] unless score map_dev_mode internal matches 1
 execute unless score map_dev_mode internal matches 1.. if score matchmaking internal matches 1.. if score matchmaking_controller internal matches 0 run function tag:system/start/matchmaking/cancel
 execute as @e[tag=lobby.game_start] at @s if score map_dev_mode internal matches 1.. if score matchmaking_controller internal matches 1 run function tag:system/start/matchmaking/dev
 ## spawn display
-execute unless score matchmaking_controller internal = temp_matchmaking_controller internal as @e[tag=lobby.game_start] at @s unless score map_dev_mode internal matches 1.. if score matchmaking_controller internal matches 0 run data merge block ~ ~1 ~ {Color:"green",Text3:'{"text":"GAME"}',Text2:'{"text":"START"}',GlowingText:1b}
-execute unless score matchmaking_controller internal = temp_matchmaking_controller internal as @e[tag=lobby.game_start] at @s unless score map_dev_mode internal matches 1.. if score matchmaking_controller internal matches 1 run data merge block ~ ~1 ~ {Color:"red",Text3:'{"text":"GAME"}',Text2:'{"text":"CANCEL"}',GlowingText:1b}
-execute unless score matchmaking_controller internal = temp_matchmaking_controller internal as @e[tag=lobby.game_start] at @s if score map_dev_mode internal matches 1.. run data merge block ~ ~1 ~ {Color:"aqua",Text3:'{"text":"MAP"}',Text2:'{"text":"GO TO"}',GlowingText:1b}
-execute unless score matchmaking_controller internal = temp_matchmaking_controller internal run scoreboard players operation temp_matchmaking_controller internal = matchmaking_controller internal
+execute as @e[tag=lobby.game_start] at @s unless score map_dev_mode internal matches 1.. if score matchmaking_controller internal matches 0 run data merge block ~ ~1 ~ {Color:"green",Text3:'{"text":"GAME"}',Text2:'{"text":"START"}',GlowingText:1b}
+execute as @e[tag=lobby.game_start] at @s unless score map_dev_mode internal matches 1.. if score matchmaking_controller internal matches 1 run data merge block ~ ~1 ~ {Color:"red",Text3:'{"text":"GAME"}',Text2:'{"text":"CANCEL"}',GlowingText:1b}
+execute as @e[tag=lobby.game_start] at @s if score map_dev_mode internal matches 1.. run data merge block ~ ~1 ~ {Color:"aqua",Text3:'{"text":"MAP"}',Text2:'{"text":"GO TO"}',GlowingText:1b}
 
 # game type
 ## 0: ffa
