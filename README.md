@@ -21,6 +21,7 @@ the **classic** game mode is the basis of the game, it receives the most attenti
 | capture   | previously released as 'capture the helmet', aka cold potato | ...not started |
 | infection | like halo! alive vs infected (if infected kill, u join infected) | ...not started |
 | mur/mystery | hypixel's murdery mystery, as it says on the tin | workin on it |
+| zombies | hypixel/COD's zombies, not sure at this point (maybe?) | unsure |
 
 ## note
 
