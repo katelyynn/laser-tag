@@ -85,12 +85,12 @@ execute unless score game_mode global = temp_game_mode internal run scoreboard p
 ##  0: test 2
 ##  1: upcoming
 ## range check
-execute if score game_map global matches 2.. run scoreboard players set game_map global -1
+#execute if score game_map global matches 2.. run scoreboard players set game_map global -1
 ## spawn display
-execute unless score game_map global = temp_game_map internal as @e[tag=lobby.game_map] at @s if score game_map global matches -1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"TEST","color":"light_purple"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
-execute unless score game_map global = temp_game_map internal as @e[tag=lobby.game_map] at @s if score game_map global matches 0 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"TEST 2","color":"aqua"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
-execute unless score game_map global = temp_game_map internal as @e[tag=lobby.game_map] at @s if score game_map global matches 1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"NEW WIP!","color":"green"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
-execute unless score game_map global = temp_game_map internal run scoreboard players operation temp_game_map internal = game_map global
+#execute unless score game_map global = temp_game_map internal as @e[tag=lobby.game_map] at @s if score game_map global matches -1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"TEST","color":"light_purple"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
+#execute unless score game_map global = temp_game_map internal as @e[tag=lobby.game_map] at @s if score game_map global matches 0 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"TEST 2","color":"aqua"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
+#execute unless score game_map global = temp_game_map internal as @e[tag=lobby.game_map] at @s if score game_map global matches 1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"NEW WIP!","color":"green"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
+#execute unless score game_map global = temp_game_map internal run scoreboard players operation temp_game_map internal = game_map global
 
 # win score
 ## range check
