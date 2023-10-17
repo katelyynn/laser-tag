@@ -4,6 +4,7 @@
 scoreboard players set can_start internal 0
 scoreboard players set can_start_players internal 0
 scoreboard players set can_start_period internal 0
+scoreboard players set can_start_game_mode internal 0
 
 # player check
 execute store result score can_start_players internal if entity @a[tag=playing]
@@ -11,9 +12,13 @@ execute if score dev_mode internal matches 77 run scoreboard players add can_sta
 execute unless score can_start_players internal matches 2.. run tellraw @p ["",{"text":"[","color":"dark_gray"},{"text":"→","color":"red"},{"text":"] ","color":"dark_gray"},{"text":"Cannot start, at least 2 players must be ready.","color":"red"}]
 # period check
 execute if score period internal matches -1 run scoreboard players set can_start_period internal 1
-execute unless score can_start_period internal matches 1.. run tellraw @p ["",{"text":"[","color":"dark_gray"},{"text":"⓪"},{"text":"] ","color":"dark_gray"},{"text":"Cannot start, a game is already in progress.","color":"red"}]
+execute unless score can_start_period internal matches 1.. run tellraw @p ["",{"text":"[","color":"dark_gray"},{"text":"→","color":"red"},{"text":"] ","color":"dark_gray"},{"text":"Cannot start, a game is already in progress.","color":"red"}]
+# mode check
+scoreboard players set can_start_game_mode internal 1
+execute if score game_mode global matches 1..4 unless score dev_mode internal matches 77 run scoreboard players set can_start_game_mode internal 0
+execute if score game_mode global matches 1..4 unless score dev_mode internal matches 77 run tellraw @p ["",{"text":"[","color":"dark_gray"},{"text":"→","color":"red"},{"text":"] ","color":"dark_gray"},{"text":"Cannot start, this game mode is not complete. If you're sure, enable dev mode.","color":"red"}]
 
-execute if score can_start_players internal matches 2.. if score can_start_period internal matches 1.. run scoreboard players set can_start internal 1
+execute if score can_start_players internal matches 2.. if score can_start_period internal matches 1.. if score can_start_game_mode internal matches 1.. run scoreboard players set can_start internal 1
 
 # can start?
 ## yes, proceed to main start
