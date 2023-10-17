@@ -53,8 +53,8 @@ execute as @a at @s run function tag:system/crossbow/main
 execute as @a at @s run function tag:system/health/main
 ## profile
 scoreboard players enable @a profile
-execute as @a[tag=playing] at @s if score @s profile matches 1.. run function tag:system/usercard/go
-execute as @a[tag=!playing] at @s if score @s profile matches 1.. run function tag:system/usercard/deny
+execute as @a[tag=!playing] at @s if score @s profile matches 1.. run function tag:system/usercard/go
+execute as @a[tag=playing] at @s if score @s profile matches 1.. run function tag:system/usercard/deny
 
 # kill
 execute as @a at @s if score @s player.kill matches 1.. run function tag:system/kill/go
