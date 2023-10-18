@@ -1,0 +1,1 @@
+summon item ~ ~0.7 ~ {NoGravity:1b,Glowing:0b,Age:-32768,PickupDelay:0,Item:{id:"minecraft:crossbow",Count:1b}}

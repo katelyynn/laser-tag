@@ -179,6 +179,13 @@ scoreboard objectives add health.golden_apple minecraft.used:minecraft.golden_ap
 
 # item spawners
 scoreboard objectives add item_spawner.state dummy
+scoreboard objectives add temp_store.item_spawner_time dummy
+scoreboard objectives add temp_store.item_spawner_sfx_time dummy
+## metadata
+scoreboard objectives add item_spawner.replenish dummy
+scoreboard players set crossbow_normal item_spawner.replenish 60
+scoreboard players set crossbow_machine item_spawner.replenish 140
+scoreboard players set crossbow_rocket item_spawner.replenish 220
 
 
 # murder mystery

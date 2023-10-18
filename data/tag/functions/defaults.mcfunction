@@ -26,12 +26,13 @@ scoreboard players set respawn_time global 3
 ## win goal
 ## 0: score
 ## 1: time
+## 2: either
 ## TODO: range check
 scoreboard players set win_goal global 0
 ## win score
 scoreboard players set win_score global 20
-## win time (8m)
-scoreboard players set win_time global 480
+## win time (20m)
+scoreboard players set win_time global 1200
 
 # game type
 ## previously 'mode'
