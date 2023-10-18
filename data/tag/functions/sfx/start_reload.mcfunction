@@ -1,0 +1,1 @@
+playsound minecraft:item.crossbow.loading_start player @s

@@ -2,4 +2,5 @@
 ## generic reload item
 
 
-## TODO: sfx / particles?
+# sfx
+function tag:sfx/start_reload
