@@ -54,6 +54,6 @@ scoreboard players set @s crossbow_machine.shots 0
 function tag:system/health/reset
 
 # find a new spawn point
-execute as @a positioned as @e[tag=spawn_point,sort=random,limit=1,distance=..110] run spawnpoint @s ~ ~ ~
+execute as @a positioned as @e[tag=spawn_point,sort=random,limit=1,distance=..150] run spawnpoint @s ~ ~ ~
 
 tag @s remove self

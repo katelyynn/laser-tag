@@ -1,1 +1,1 @@
-title @a title {"text":"Starting in","color":"aqua"}
+title @a[tag=playing] title {"text":"Starting in","color":"aqua"}
