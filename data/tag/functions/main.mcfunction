@@ -61,10 +61,11 @@ execute as @a at @s if score @s player.kill matches 1.. run function tag:system/
 scoreboard players reset @a player.kill
 
 # death
-execute if score period internal matches 1 as @a at @s if score @s player.death matches 1.. run function tag:system/death/go
+execute if score period internal matches 1 as @a[tag=!handled] at @s if score @s player.death matches 1.. run function tag:system/death/go
 execute as @a[tag=!handled] at @s if score @s player.y matches ..64 run function tag:system/death/below_min_y
 scoreboard players reset @a player.death
 scoreboard players reset @a player.direct_death
+execute as @a[tag=handled] if score @s player.time_since_death matches 20.. run tag @s remove handled
 
 # return to lobby
 ## /trigger return_lobby
