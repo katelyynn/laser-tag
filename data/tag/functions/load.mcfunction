@@ -110,6 +110,7 @@ scoreboard objectives add player.ingame dummy
 scoreboard objectives add temp_store.use_trigger_item minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add temp_store.ready_item dummy
 scoreboard objectives add temp_store.unready_item dummy
+scoreboard objectives add temp_store.weapon_knife dummy
 
 
 # track item drops
