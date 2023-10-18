@@ -22,4 +22,4 @@ execute if entity @s[tag=item_spawner.crossbow_rocket] run scoreboard players op
 
 # item loop
 execute if entity @s[tag=item_spawner.has_item,tag=!item_spawner.lobby] unless score @s item_spawner.state matches 1 run function tag:system/spawner/item_loop
-execute if entity @s[tag=item_spawner.has_item,tag=item_spawner.lobby,scores={item_spawner.state=1}] run function tag:system/spawner/summon/go
+execute if entity @s[tag=item_spawner.has_item,tag=item_spawner.lobby,scores={item_spawner.state=0}] run function tag:system/spawner/summon/go
