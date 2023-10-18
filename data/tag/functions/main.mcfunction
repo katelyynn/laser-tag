@@ -108,6 +108,7 @@ execute if score period internal matches -1 run effect give @a water_breathing i
 execute if score period internal matches -1 run scoreboard objectives setdisplay sidebar
 ## period 0
 execute if score period internal matches 0..3 run scoreboard objectives setdisplay sidebar player.score
+effect give @a dolphins_grace infinite 255 true
 
 
 # send logged off players back to lobby
