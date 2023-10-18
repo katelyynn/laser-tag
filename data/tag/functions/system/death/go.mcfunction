@@ -57,3 +57,4 @@ function tag:system/health/reset
 execute as @a positioned as @e[tag=spawn_point,sort=random,limit=1,distance=..150] run spawnpoint @s ~ ~ ~
 
 tag @s remove self
+tag @s remove handled

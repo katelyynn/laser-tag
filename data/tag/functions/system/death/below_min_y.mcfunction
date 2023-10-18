@@ -4,6 +4,7 @@
 
 # based on period
 ## in-game
+tag @s add handled
 execute if score period internal matches 1 run kill @s
 execute if score period internal matches 1 run function tag:system/death/go
 ## out of game
