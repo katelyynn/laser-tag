@@ -175,6 +175,14 @@ scoreboard players set crossbow_rocket.delay internal 90
 scoreboard players set crossbow_rocket.ammo internal 2
 scoreboard players set crossbow_rocket.recharge internal 180
 
+# loadout
+scoreboard objectives add loadout dummy
+scoreboard objectives add temp_store.crossbow_normal dummy
+scoreboard objectives add temp_store.crossbow_machine dummy
+scoreboard objectives add temp_store.crossbow_rocket dummy
+scoreboard objectives add temp_store.knife dummy
+
+
 # health
 scoreboard objectives add health.apple minecraft.used:minecraft.apple
 scoreboard objectives add health.golden_apple minecraft.used:minecraft.golden_apple

@@ -144,5 +144,8 @@ execute as @e[type=item,tag=!item.patched] at @s run function tag:system/item/pa
 # spawn point
 execute if score map_dev_mode internal matches 1.. as @a at @s positioned as @e[tag=spawn_point,distance=..150] run particle minecraft:angry_villager ~ ~ ~ 0 2 0 1 1
 
+# loadout
+execute as @a at @s run function tag:system/loadout/main
+
 # item spawner
 execute as @e[tag=item_spawner.generic] at @s run function tag:system/spawner/main

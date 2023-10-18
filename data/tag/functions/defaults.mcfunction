@@ -34,6 +34,12 @@ scoreboard players set win_score global 20
 ## win time (20m)
 scoreboard players set win_time global 1200
 
+# loadout
+scoreboard players set crossbow_normal loadout 1
+scoreboard players set crossbow_machine loadout 0
+scoreboard players set crossbow_rocket loadout 0
+scoreboard players set knife loadout 1
+
 # game type
 ## previously 'mode'
 execute unless score defaults internal matches 2 run scoreboard players set game_type global 0
