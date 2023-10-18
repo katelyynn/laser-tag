@@ -183,9 +183,9 @@ scoreboard objectives add temp_store.item_spawner_time dummy
 scoreboard objectives add temp_store.item_spawner_sfx_time dummy
 ## metadata
 scoreboard objectives add item_spawner.replenish dummy
-scoreboard players set crossbow_normal item_spawner.replenish 60
-scoreboard players set crossbow_machine item_spawner.replenish 140
-scoreboard players set crossbow_rocket item_spawner.replenish 220
+scoreboard players set crossbow_normal item_spawner.replenish 100
+scoreboard players set crossbow_machine item_spawner.replenish 300
+scoreboard players set crossbow_rocket item_spawner.replenish 600
 
 
 # murder mystery
