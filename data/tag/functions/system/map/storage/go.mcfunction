@@ -30,8 +30,8 @@ data modify storage tag:maps page1 append value {Slot:26b, id:"minecraft:carrot_
 
 ## slots 0, 9, 18  reserved for map sizes
 ## slots 1, 10, 19 reserved for padding
-data modify storage tag:maps page0 append value {Slot:2b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 2, mapItem: 1b, CustomModelData:99, display:{Name:'{"text":"Test","italic":false}'}}, Count:1b}
-data modify storage tag:maps page0 append value {Slot:3b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 3, mapItem: 1b, CustomModelData:100, display:{Name:'{"text":"Test2","italic":false}'}}, Count:1b}
-data modify storage tag:maps page0 append value {Slot:4b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 4, mapItem: 1b, CustomModelData:101, display:{Name:'{"text":"New WIP","italic":false}'}}, Count:1b}
-data modify storage tag:maps page0 append value {Slot:5b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 5, mapItem: 1b, CustomModelData:102, display:{Name:'{"text":"Forest","italic":false}'}}, Count:1b}
-data modify storage tag:maps page0 append value {Slot:6b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 6, mapItem: 1b, CustomModelData:103, display:{Name:'{"text":"Backrooms","italic":false}'}}, Count:1b}
+#data modify storage tag:maps page0 append value {Slot:2b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 2, mapItem: 1b, CustomModelData:99, display:{Name:'{"text":"Test","italic":false}'}}, Count:1b}
+#data modify storage tag:maps page0 append value {Slot:3b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 3, mapItem: 1b, CustomModelData:100, display:{Name:'{"text":"Test2","italic":false}'}}, Count:1b}
+data modify storage tag:maps page0 append value {Slot:2b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 2, mapItem: 1b, CustomModelData:101, display:{Name:'{"text":"New WIP","italic":false}',Lore:['{"text":"by DR_Nolife, aztro_, and katehaj","italic":false,"colour":"gray"}']}}, Count:1b}
+data modify storage tag:maps page0 append value {Slot:3b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 3, mapItem: 1b, CustomModelData:102, display:{Name:'{"text":"Forest","italic":false}',Lore:['{"text":"by katehaj","italic":false,"colour":"gray"}']}}, Count:1b}
+data modify storage tag:maps page0 append value {Slot:4b, id:"minecraft:carrot_on_a_stick", tag:{page: 0, selection: 4, mapItem: 1b, CustomModelData:103, display:{Name:'{"text":"Backrooms","italic":false}',Lore:['{"text":"by katehaj and CatgirlEllaa","italic":false,"colour":"gray"}']}}, Count:1b}
