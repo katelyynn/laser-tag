@@ -22,6 +22,8 @@ title @s title ""
 title @s subtitle [{"text":"🗡 ","color":"#FB7C3F"},{"selector":"@a[scores={player.direct_death=1..},limit=1]"}]
 # sfx
 function tag:sfx/kill
+# particle
+particle minecraft:angry_villager ~ ~ ~ 0.3 0.8 0.3 0 5
 
 # restore player health
 effect give @s regeneration 1 255 true
