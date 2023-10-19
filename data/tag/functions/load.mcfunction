@@ -163,7 +163,7 @@ scoreboard objectives add crossbow_machine.shots dummy
 scoreboard objectives add crossbow_machine.shots_remaining dummy
 scoreboard players set crossbow_machine.delay internal 1
 scoreboard players set crossbow_machine.ammo internal 8
-scoreboard players set crossbow_machine.recharge internal 80
+scoreboard players set crossbow_machine.recharge internal 84
 scoreboard players set crossbow_machine.index internal 16741120
 ## ROCKET
 scoreboard objectives add crossbow_rocket.time dummy
@@ -174,12 +174,23 @@ scoreboard objectives add crossbow_rocket.shots_remaining dummy
 scoreboard players set crossbow_rocket.delay internal 90
 scoreboard players set crossbow_rocket.ammo internal 2
 scoreboard players set crossbow_rocket.recharge internal 180
+## POISON
+scoreboard objectives add crossbow_poison.time dummy
+scoreboard objectives add crossbow_poison.slot dummy
+scoreboard objectives add crossbow_poison.slot_temp dummy
+scoreboard objectives add crossbow_poison.shots dummy
+scoreboard objectives add crossbow_poison.shots_remaining dummy
+scoreboard players set crossbow_poison.delay internal 16
+scoreboard players set crossbow_poison.ammo internal 8
+scoreboard players set crossbow_poison.recharge internal 74
+scoreboard players set crossbow_machine.index internal 8494175
 
 # loadout
 scoreboard objectives add loadout dummy
 scoreboard objectives add temp_store.crossbow_normal dummy
 scoreboard objectives add temp_store.crossbow_machine dummy
 scoreboard objectives add temp_store.crossbow_rocket dummy
+scoreboard objectives add temp_store.crossbow_poison dummy
 scoreboard objectives add temp_store.knife dummy
 
 
@@ -198,6 +209,7 @@ scoreboard objectives add item_spawner.replenish dummy
 scoreboard players set crossbow_normal item_spawner.replenish 70
 scoreboard players set crossbow_machine item_spawner.replenish 130
 scoreboard players set crossbow_rocket item_spawner.replenish 200
+scoreboard players set crossbow_poison item_spawner.replenish 120
 scoreboard players set apple item_spawner.replenish 30
 
 

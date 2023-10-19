@@ -17,7 +17,10 @@ Given automatically.
   - Could apply heavy speed reduce?
 - [x] Rocket Crossbow
   - Similar speed reduce to machine?
-- [ ] Harming Crossbow?
+- [x] Poison Crossbow
+- [ ] Weakness Crossbow
+- [ ] Glowing Crossbow
+  - Break on reload?
 
 ### Items
 Collectible around the map.

@@ -19,6 +19,7 @@ function tag:system/spawner/sfx
 execute if entity @s[tag=item_spawner.crossbow_normal] run scoreboard players operation @s item_spawner.replenish = crossbow_normal item_spawner.replenish
 execute if entity @s[tag=item_spawner.crossbow_machine] run scoreboard players operation @s item_spawner.replenish = crossbow_machine item_spawner.replenish
 execute if entity @s[tag=item_spawner.crossbow_rocket] run scoreboard players operation @s item_spawner.replenish = crossbow_rocket item_spawner.replenish
+execute if entity @s[tag=item_spawner.crossbow_poison] run scoreboard players operation @s item_spawner.replenish = crossbow_poison item_spawner.replenish
 execute if entity @s[tag=item_spawner.apple] run scoreboard players operation @s item_spawner.replenish = apple item_spawner.replenish
 
 # item loop
