@@ -41,6 +41,7 @@ execute as @e[type=arrow,tag=!arrow.patched] run data merge entity @s {PierceLev
 execute as @e[type=arrow,tag=!arrow.patched] store result score @s temp_store.arrow_index run data get entity @s Color
 execute as @e[type=arrow,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_normal.index internal run data modify entity @s damage set value 1.8d
 execute as @e[type=arrow,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_machine.index internal run data modify entity @s damage set value 0.9d
+execute as @e[type=arrow,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_poison.index internal run data modify entity @s damage set value 0.9d
 scoreboard players reset @e[tag=arrow,tag=!arrow.patched] temp_store.arrow_index
 tag @e[type=arrow,tag=!arrow.patched] add arrow.patched
 
