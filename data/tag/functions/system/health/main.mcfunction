@@ -3,6 +3,7 @@
 
 
 # track hunger
+execute if score @s health.hunger matches 20 run function tag:system/health/reset
 execute if score @s health.hunger matches ..10 run function tag:system/health/reset_up
 
 # items
