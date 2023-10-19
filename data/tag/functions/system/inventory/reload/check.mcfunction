@@ -19,6 +19,8 @@ execute unless score @s crossbow_normal.shots matches 0 if entity @s[nbt={Select
 execute unless score @s crossbow_machine.shots matches 0 if entity @s[nbt={SelectedItem:{tag:{weaponItem:1b,CustomModelData:2,crossbow_type:"machine"}}}] run function tag:system/crossbow/machine/force_reset
 ## ROCKET
 execute unless score @s crossbow_rocket.shots matches 0 if entity @s[nbt={SelectedItem:{tag:{weaponItem:1b,crossbow_type:"rocket"}}}] run function tag:system/crossbow/rocket/force_reset
+## POISON
+execute unless score @s crossbow_poison.shots matches 0 if entity @s[nbt={SelectedItem:{tag:{weaponItem:1b,crossbow_type:"poison"}}}] run function tag:system/crossbow/poison/force_reset
 
 # generic
 execute if entity @s[nbt={SelectedItem:{tag:{canReload:1b,weaponItem:1b}}}] run function tag:system/inventory/reload/go
