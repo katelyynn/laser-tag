@@ -38,6 +38,8 @@ scoreboard players set win_time global 1200
 scoreboard players set crossbow_normal loadout 1
 scoreboard players set crossbow_machine loadout 0
 scoreboard players set crossbow_rocket loadout 0
+scoreboard players set crossbow_poison loadout 0
+scoreboard players set crossbow_glowing loadout 0
 scoreboard players set knife loadout 1
 
 # game type

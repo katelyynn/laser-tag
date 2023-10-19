@@ -183,7 +183,17 @@ scoreboard objectives add crossbow_poison.shots_remaining dummy
 scoreboard players set crossbow_poison.delay internal 110
 scoreboard players set crossbow_poison.ammo internal 3
 scoreboard players set crossbow_poison.recharge internal 166
-scoreboard players set crossbow_machine.index internal 8494175
+scoreboard players set crossbow_poison.index internal 8494175
+## GLOWING
+scoreboard objectives add crossbow_glowing.time dummy
+scoreboard objectives add crossbow_glowing.slot dummy
+scoreboard objectives add crossbow_glowing.slot_temp dummy
+scoreboard objectives add crossbow_glowing.shots dummy
+scoreboard objectives add crossbow_glowing.shots_remaining dummy
+scoreboard players set crossbow_glowing.delay internal 70
+scoreboard players set crossbow_glowing.ammo internal 2
+scoreboard players set crossbow_glowing.recharge internal 110
+scoreboard players set crossbow_glowing.index internal 15862911
 
 # loadout
 scoreboard objectives add loadout dummy
@@ -191,6 +201,7 @@ scoreboard objectives add temp_store.crossbow_normal dummy
 scoreboard objectives add temp_store.crossbow_machine dummy
 scoreboard objectives add temp_store.crossbow_rocket dummy
 scoreboard objectives add temp_store.crossbow_poison dummy
+scoreboard objectives add temp_store.crossbow_glowing dummy
 scoreboard objectives add temp_store.knife dummy
 
 
@@ -209,7 +220,8 @@ scoreboard objectives add item_spawner.replenish dummy
 scoreboard players set crossbow_normal item_spawner.replenish 70
 scoreboard players set crossbow_machine item_spawner.replenish 130
 scoreboard players set crossbow_rocket item_spawner.replenish 200
-scoreboard players set crossbow_poison item_spawner.replenish 120
+scoreboard players set crossbow_poison item_spawner.replenish 160
+scoreboard players set crossbow_glowing item_spawner.replenish 110
 scoreboard players set apple item_spawner.replenish 30
 
 
