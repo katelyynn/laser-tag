@@ -16,7 +16,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{requestedReload:1b}}}] run item rep
 ## NORMAL
 execute unless score @s crossbow_normal.shots matches 0 if entity @s[nbt={SelectedItem:{tag:{weaponItem:1b,crossbow_type:"normal"}}}] run function tag:system/crossbow/normal/force_reset
 ## MACHINE
-execute unless score @s crossbow_machine.shots matches 0 if entity @s[nbt={SelectedItem:{tag:{weaponItem:1b,crossbow_type:"machine"}}}] run function tag:system/crossbow/machine/force_reset
+execute unless score @s crossbow_machine.shots matches 0 if entity @s[nbt={SelectedItem:{tag:{weaponItem:1b,CustomModelData:2,crossbow_type:"machine"}}}] run function tag:system/crossbow/machine/force_reset
 ## ROCKET
 execute unless score @s crossbow_rocket.shots matches 0 if entity @s[nbt={SelectedItem:{tag:{weaponItem:1b,crossbow_type:"rocket"}}}] run function tag:system/crossbow/rocket/force_reset
 
