@@ -15,6 +15,9 @@ execute if score @s crossbow_rocket.time matches -1..0 run function tag:system/c
 ## POISON
 execute unless score @s crossbow_poison.time matches -1 run function tag:system/crossbow/poison/time
 execute if score @s crossbow_poison.time matches -1..0 run function tag:system/crossbow/poison/display
+## GLOWING
+execute unless score @s crossbow_glowing.time matches -1 run function tag:system/crossbow/glowing/time
+execute if score @s crossbow_glowing.time matches -1..0 run function tag:system/crossbow/glowing/display
 
 # clear actionbar
 execute unless score period internal matches -1 if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{canReload:1b,weaponItem:1b}}}] run title @s actionbar ["",{"text":"Score: "},{"score":{"name":"@s","objective":"player.score"},"color":"yellow"}]
