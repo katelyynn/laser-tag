@@ -53,6 +53,8 @@ scoreboard players set @s crossbow_rocket.time -1
 scoreboard players set @s crossbow_rocket.shots 0
 scoreboard players set @s crossbow_machine.time -1
 scoreboard players set @s crossbow_machine.shots 0
+scoreboard players set @s crossbow_poison.time -1
+scoreboard players set @s crossbow_poison.shots 0
 
 # reset hunger
 function tag:system/health/reset

@@ -163,7 +163,7 @@ scoreboard objectives add crossbow_machine.shots dummy
 scoreboard objectives add crossbow_machine.shots_remaining dummy
 scoreboard players set crossbow_machine.delay internal 1
 scoreboard players set crossbow_machine.ammo internal 8
-scoreboard players set crossbow_machine.recharge internal 84
+scoreboard players set crossbow_machine.recharge internal 90
 scoreboard players set crossbow_machine.index internal 16741120
 ## ROCKET
 scoreboard objectives add crossbow_rocket.time dummy
