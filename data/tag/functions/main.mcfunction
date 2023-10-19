@@ -37,17 +37,18 @@ execute if score period internal matches 1 if score matchmaking_controller inter
 execute if score period internal matches 1 if score matchmaking internal matches 1.. run scoreboard players set matchmaking internal 0
 
 # remove arrow piercing into player
-execute as @e[type=arrow,tag=!arrow.patched] run data merge entity @s {PierceLevel:1b}
-execute as @e[type=arrow,tag=!arrow.patched] store result score @s temp_store.arrow_index run data get entity @s Color
-execute as @e[type=arrow,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_normal.index internal run data modify entity @s damage set value 1.8d
-execute as @e[type=arrow,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_machine.index internal run data modify entity @s damage set value 0.9d
-execute as @e[type=arrow,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_poison.index internal run data modify entity @s damage set value 0.9d
-scoreboard players reset @e[tag=arrow,tag=!arrow.patched] temp_store.arrow_index
-tag @e[type=arrow,tag=!arrow.patched] add arrow.patched
+execute as @e[type=#arrows,tag=!arrow.patched] run data merge entity @s {PierceLevel:1b}
+execute as @e[type=#arrows,tag=!arrow.patched] store result score @s temp_store.arrow_index run data get entity @s Color
+execute as @e[type=#arrows,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_normal.index internal run data modify entity @s damage set value 1.8d
+execute as @e[type=#arrows,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_machine.index internal run data modify entity @s damage set value 0.9d
+execute as @e[type=#arrows,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_poison.index internal run data modify entity @s damage set value 0.9d
+execute as @e[type=spectral_arrow,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_glowing.index internal run data modify entity @s damage set value 0.2d
+scoreboard players reset @e[type=#arrows,tag=!arrow.patched] temp_store.arrow_index
+tag @e[type=#arrows,tag=!arrow.patched] add arrow.patched
 
 # kill arrows
-execute as @e[type=arrow,nbt={inGround:1b}] at @s run particle block gravel ~ ~ ~ 0 0 0 0 10
-kill @e[type=arrow,nbt={inGround:1b}]
+execute as @e[type=#arrows,nbt={inGround:1b}] at @s run particle block gravel ~ ~ ~ 0 0 0 0 10
+kill @e[type=#arrows,nbt={inGround:1b}]
 
 # systems
 ## inventory

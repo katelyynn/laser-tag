@@ -1,1 +1,1 @@
-give @s crossbow{display:{Name:'[{"text":"Spectral Crossbow","italic":false}]'},ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomPotionEffects:[{id:"minecraft:glowing",amplifier:1b,duration:80,show_particles:0b}],CustomPotionColor:15862911}}],Charged:1b,canReload:1b,weaponItem:1b,CustomModelData:3,crossbow_type:"glowing"}
+give @s crossbow{display:{Name:'[{"text":"Spectral Crossbow","italic":false}]'},ChargedProjectiles:[{id:"minecraft:spectral_arrow",Count:1b}],Charged:1b,canReload:1b,weaponItem:1b,CustomModelData:3,crossbow_type:"glowing"}

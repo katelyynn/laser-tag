@@ -4,7 +4,7 @@
 
 
 # replace item
-item replace entity @s weapon.mainhand with minecraft:crossbow{display:{Name:'[{"text":"Spectral Crossbow","italic":false}]'},ChargedProjectiles:[],Charged:0b,canReload:1b,weaponItem:1b,CustomModelData:3,crossbow_type:"glowing",Enchantments:[{id:"minecraft:quick_charge",lvl:1s}],HideFlags:1}
+item replace entity @s weapon.mainhand with minecraft:crossbow{display:{Name:'[{"text":"Spectral Crossbow","italic":false}]'},ChargedProjectiles:[],Charged:0b,canReload:1b,weaponItem:1b,CustomModelData:3,crossbow_type:"glowing"}
 
 
 scoreboard players set @s crossbow_glowing.time 0
