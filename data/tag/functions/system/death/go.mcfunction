@@ -15,6 +15,10 @@ scoreboard players operation @s player.score += score.death global
 execute unless entity @a[scores={player.direct_death=1..}] run tellraw @a[tag=!self] ["",{"text":"[","color":"dark_gray"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"dark_gray"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@s"}]
 execute unless entity @a[scores={player.direct_death=1..}] run tellraw @s ""
 execute unless entity @a[scores={player.direct_death=1..}] run tellraw @s ["",{"text":"[","color":"red"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"red"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@s"}]
+## suicides are handled here
+execute if score @s player.direct_death matches 1.. unless entity @a[scores={player.kill=1..}] run tellraw @a[tag=!self] ["",{"text":"[","color":"dark_gray"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"dark_gray"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@s"}]
+execute if score @s player.direct_death matches 1.. unless entity @a[scores={player.kill=1..}] run tellraw @s ""
+execute if score @s player.direct_death matches 1.. unless entity @a[scores={player.kill=1..}] run tellraw @s ["",{"text":"[","color":"red"},{"text":"🗡","color":"#FB7C3F"},{"text":"] ","color":"red"},{"selector":"@s"},{"text":" › ","color":"gray"},{"selector":"@s"}]
 title @s title ""
 title @s subtitle {"text":"You died!","color":"red"}
 # sfx
