@@ -12,4 +12,5 @@ scoreboard players add @s crossbow_glowing.time 1
 ## not out of ammo
 execute unless score @s crossbow_glowing.shots >= crossbow_glowing.ammo internal if score @s crossbow_glowing.time >= crossbow_glowing.delay internal run function tag:system/crossbow/glowing/charge
 ## out of ammo
-execute if score @s crossbow_glowing.shots >= crossbow_glowing.ammo internal if score @s crossbow_glowing.time >= crossbow_glowing.recharge internal run function tag:system/crossbow/glowing/reload
+#execute if score @s crossbow_glowing.shots >= crossbow_glowing.ammo internal if score @s crossbow_glowing.time >= crossbow_glowing.recharge internal run function tag:system/crossbow/glowing/reload
+execute if score @s crossbow_glowing.shots >= crossbow_glowing.ammo internal if score @s crossbow_glowing.time >= crossbow_glowing.recharge internal run function tag:system/crossbow/glowing/break

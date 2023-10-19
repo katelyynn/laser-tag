@@ -1,0 +1,33 @@
+
+{
+  "criteria": {
+    "crossbow": {
+      "conditions": {
+        "item": {
+          "item": "minecraft:crossbow",
+          "nbt": "{crossbow_type:\"glowing\"}"
+        }
+      },
+      "trigger": "minecraft:shot_crossbow"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "text": "Shoot crossbow"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:crossbow",
+      "nbt": "{crossbow_type:\"glowing\"}"
+    },
+    "show_toast": false,
+    "title": {
+      "text": "Spectral Crossbow"
+    }
+  },
+  "rewards": {
+    "function": "tag:system/crossbow/glowing/reset"
+  }
+}
