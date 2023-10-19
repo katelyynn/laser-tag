@@ -18,6 +18,11 @@ execute store result score @s temp_store.crossbow_rocket run clear @s minecraft:
 execute unless score @s temp_store.crossbow_rocket matches 1 run clear @s minecraft:crossbow{crossbow_type:"rocket"} 1
 execute unless score @s temp_store.crossbow_rocket matches 1 if entity @e[tag=item_spawner.crossbow_rocket,distance=..3] run execute as @e[tag=item_spawner.crossbow_rocket,distance=..3,scores={item_spawner.state=1}] at @s unless entity @e[type=item,distance=..1.5] run function tag:system/spawner/summon/crossbow_rocket
 #execute unless score @s temp_store.crossbow_normal matches 1 run function tag:create/weapon/crossbow_normal
+## poison
+execute store result score @s temp_store.crossbow_poison run clear @s minecraft:crossbow{crossbow_type:"poison"} 0
+execute unless score @s temp_store.crossbow_poison matches 1 run clear @s minecraft:crossbow{crossbow_type:"poison"} 1
+execute unless score @s temp_store.crossbow_poison matches 1 if entity @e[tag=item_spawner.crossbow_poison,distance=..3] run execute as @e[tag=item_spawner.crossbow_poison,distance=..3,scores={item_spawner.state=1}] at @s unless entity @e[type=item,distance=..1.5] run function tag:system/spawner/summon/crossbow_poison
+#execute unless score @s temp_store.crossbow_normal matches 1 run function tag:create/weapon/crossbow_normal
 ## knife
 execute store result score @s temp_store.knife run clear @s minecraft:iron_sword{melee_type:"knife"} 0
 execute unless score @s temp_store.knife matches 1 run clear @s minecraft:iron_sword{melee_type:"knife"} 1
