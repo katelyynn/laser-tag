@@ -180,8 +180,8 @@ scoreboard objectives add crossbow_poison.slot dummy
 scoreboard objectives add crossbow_poison.slot_temp dummy
 scoreboard objectives add crossbow_poison.shots dummy
 scoreboard objectives add crossbow_poison.shots_remaining dummy
-scoreboard players set crossbow_poison.delay internal 16
-scoreboard players set crossbow_poison.ammo internal 8
+scoreboard players set crossbow_poison.delay internal 40
+scoreboard players set crossbow_poison.ammo internal 3
 scoreboard players set crossbow_poison.recharge internal 74
 scoreboard players set crossbow_machine.index internal 8494175
 
