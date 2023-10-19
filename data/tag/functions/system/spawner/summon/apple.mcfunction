@@ -1,0 +1,1 @@
+summon item ~ ~0.7 ~ {Tags:["item_spawner.item"],NoGravity:1b,Glowing:0b,Age:-32768,PickupDelay:0,Item:{id:"minecraft:apple",Count:1b,tag:{display:{Name:'[{"text":"","italic":false},{"text":"Apple"},{"text":" +2","color":"green","bold":true}]'}}}}
