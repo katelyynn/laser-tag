@@ -220,9 +220,9 @@ scoreboard objectives add item_spawner.replenish dummy
 scoreboard players set crossbow_normal item_spawner.replenish 70
 scoreboard players set crossbow_machine item_spawner.replenish 130
 scoreboard players set crossbow_rocket item_spawner.replenish 200
-scoreboard players set crossbow_poison item_spawner.replenish 160
-scoreboard players set crossbow_glowing item_spawner.replenish 110
-scoreboard players set apple item_spawner.replenish 30
+scoreboard players set crossbow_poison item_spawner.replenish 150
+scoreboard players set crossbow_glowing item_spawner.replenish 80
+scoreboard players set apple item_spawner.replenish 24
 
 
 # murder mystery
