@@ -60,6 +60,7 @@ scoreboard objectives add lobby_controls dummy
 
 # map selector
 scoreboard objectives add temp_store.map_selector dummy
+scoreboard objectives add temp_store.is_spawn_valid dummy
 
 # lobby items
 scoreboard objectives add temp_store.ready_item dummy

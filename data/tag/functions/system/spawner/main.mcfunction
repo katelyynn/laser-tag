@@ -24,5 +24,6 @@ execute if entity @s[tag=item_spawner.crossbow_glowing] run scoreboard players o
 execute if entity @s[tag=item_spawner.apple] run scoreboard players operation @s item_spawner.replenish = apple item_spawner.replenish
 
 # item loop
-execute if entity @s[tag=item_spawner.has_item,tag=!item_spawner.lobby] unless score @s item_spawner.state matches 1 run function tag:system/spawner/item_loop
-execute if entity @s[tag=item_spawner.has_item,tag=item_spawner.lobby,scores={item_spawner.state=0}] run function tag:system/spawner/summon/go
+execute unless score map_dev_mode internal matches 1.. if entity @s[tag=item_spawner.has_item,tag=!item_spawner.lobby] unless score @s item_spawner.state matches 1 run function tag:system/spawner/item_loop
+execute unless score map_dev_mode internal matches 1.. if entity @s[tag=item_spawner.has_item,tag=item_spawner.lobby,scores={item_spawner.state=0}] run function tag:system/spawner/summon/go
+execute if score map_dev_mode internal matches 1.. if entity @s[tag=item_spawner.has_item,scores={item_spawner.state=0}] run function tag:system/spawner/summon/go

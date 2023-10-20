@@ -1,0 +1,1 @@
+execute as @e[tag=spawn_point,sort=nearest,limit=1,distance=..2.5] at @s run kill @s
