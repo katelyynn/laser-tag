@@ -42,7 +42,7 @@ execute as @e[type=#arrows,tag=!arrow.patched] store result score @s temp_store.
 execute as @e[type=#arrows,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_normal.index internal run data modify entity @s damage set value 1.8d
 execute as @e[type=#arrows,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_machine.index internal run data modify entity @s damage set value 0.9d
 execute as @e[type=#arrows,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_poison.index internal run data modify entity @s damage set value 0.9d
-execute as @e[type=spectral_arrow,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_glowing.index internal run data modify entity @s damage set value 0.2d
+execute as @e[type=#arrows,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_glowing.index internal run data modify entity @s damage set value 0.2d
 scoreboard players reset @e[type=#arrows,tag=!arrow.patched] temp_store.arrow_index
 tag @e[type=#arrows,tag=!arrow.patched] add arrow.patched
 
