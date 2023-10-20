@@ -92,6 +92,7 @@ execute as @a run function tag:system/team/main
 # range check
 ## gameplay
 execute as @a unless score @s temp_store.coins matches 0.. run scoreboard players set @s temp_store.coins 0
+execute as @a unless score @s player.kills matches 0.. run scoreboard players set @s player.kills 0
 execute as @a unless score @s player.score matches 0.. run scoreboard players set @s player.score 0
 execute as @a unless score @s player.direct_death matches 0.. run scoreboard players set @s player.direct_death 0
 ## leaderboard

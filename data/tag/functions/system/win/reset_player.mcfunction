@@ -23,6 +23,7 @@ execute as @s run function tag:system/coins/poll
 execute as @s run scoreboard players operation @s leaderboard.score += @s player.score
 
 # finish up
+scoreboard players reset @s player.kills
 scoreboard players reset @s player.score
 scoreboard players reset @s player.killstreak
 
