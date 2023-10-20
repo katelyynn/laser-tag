@@ -11,3 +11,7 @@ execute if score selection temp_store.map_selector matches 2 run scoreboard play
 execute if score selection temp_store.map_selector matches 3 run scoreboard players set game_map global 2
 execute if score selection temp_store.map_selector matches 4 run scoreboard players set game_map global 3
 execute if score selection temp_store.map_selector matches 5 run scoreboard players set game_map global 4
+
+
+# notify
+execute if score selection temp_store.map_selector matches 2..5 run function tag:system/lobby/map_selector/announce
