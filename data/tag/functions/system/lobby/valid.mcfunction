@@ -7,6 +7,8 @@
 execute as @e[tag=lobby.game_start] at @s run function tag:system/lobby/controller/start
 ## game type
 execute as @e[tag=lobby.game_type] at @s run function tag:system/lobby/controller/game_type
+## game rating
+execute as @e[tag=lobby.game_rating] at @s run function tag:system/lobby/controller/game_rating
 ## game mode
 execute as @e[tag=lobby.game_mode] at @s run function tag:system/lobby/controller/game_mode
 ## game map
@@ -58,9 +60,19 @@ execute as @e[tag=lobby.game_start] at @s if score map_dev_mode internal matches
 ## range check
 execute if score game_type global matches 2.. run scoreboard players set game_type global 0
 ## spawn display
-execute unless score game_type global = temp_game_type internal as @e[tag=lobby.game_type] at @s if score game_type global matches 0 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"FFA"}',Text2:'{"text":"GAME TYPE:"}',GlowingText:1b}
-execute unless score game_type global = temp_game_type internal as @e[tag=lobby.game_type] at @s if score game_type global matches 1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"TEAMS"}',Text2:'{"text":"GAME TYPE:"}',GlowingText:1b}
+execute unless score game_type global = temp_game_type internal as @e[tag=lobby.game_type] at @s if score game_type global matches 0 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"COMP"}',Text2:'{"text":"GAME RATING:"}',GlowingText:1b}
+execute unless score game_type global = temp_game_type internal as @e[tag=lobby.game_type] at @s if score game_type global matches 1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"CASUAL"}',Text2:'{"text":"GAME RATING:"}',GlowingText:1b}
 execute unless score game_type global = temp_game_type internal run scoreboard players operation temp_game_type internal = game_type global
+
+# game rating
+## 0: comp
+## 1: casual
+## range check
+execute if score game_rating global matches 2.. run scoreboard players set game_rating global 0
+## spawn display
+execute unless score game_rating global = temp_game_rating internal as @e[tag=lobby.game_rating] at @s if score game_rating global matches 0 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"FFA"}',Text2:'{"text":"GAME TYPE:"}',GlowingText:1b}
+execute unless score game_rating global = temp_game_rating internal as @e[tag=lobby.game_rating] at @s if score game_rating global matches 1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"TEAMS"}',Text2:'{"text":"GAME TYPE:"}',GlowingText:1b}
+execute unless score game_rating global = temp_game_rating internal run scoreboard players operation temp_game_rating internal = game_rating global
 
 # game mode
 ## 0: classic
