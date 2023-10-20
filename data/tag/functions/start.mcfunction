@@ -4,6 +4,7 @@
 scoreboard players set can_start internal 0
 scoreboard players set can_start_players internal 0
 scoreboard players set can_start_period internal 0
+## TODO: remove when finished
 scoreboard players set can_start_game_mode internal 0
 scoreboard players set can_start_game_rating internal 0
 
