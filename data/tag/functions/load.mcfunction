@@ -216,6 +216,11 @@ scoreboard objectives add temp_store.uuid.3 dummy
 scoreboard objectives add temp_store.arrow.cosmetic_id dummy
 
 
+# cosmetics
+## arrow trail
+scoreboard objectives add cosmetic.arrow_trail dummy
+
+
 # health
 scoreboard objectives add health.apple minecraft.used:minecraft.apple
 scoreboard objectives add health.golden_apple minecraft.used:minecraft.golden_apple
