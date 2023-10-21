@@ -1,1 +1,2 @@
-execute as @e[type=pig,distance=..2.5] run tag @s add map.leash_entity
+execute unless entity @e[type=pig,tag=!map.leash_entity,distance=..4] run tellraw @s {"text":"No pigs available to bind","color":"red"}
+execute as @e[type=pig,tag=!map.leash_entity,distance=..4] run tag @s add map.leash_entity

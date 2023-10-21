@@ -152,10 +152,12 @@ execute if score map_dev_mode internal matches 1.. run function tag:system/map/d
 # map dev
 ## pig leash
 execute as @e[type=pig,tag=map.leash_entity,team=!map.leash] run effect give @s invisibility infinite 255 true
+execute as @e[type=pig,tag=map.leash_entity,team=!map.leash] run effect give @s resistance infinite 255 true
 execute as @e[type=pig,tag=map.leash_entity,team=!map.leash] run data merge entity @s {Silent:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,HasVisualFire:0b,PersistenceRequired:1b}
 execute as @e[type=pig,tag=map.leash_entity,team=!map.leash] run team join map.leash
 ## leash entity
 execute as @e[type=leash_knot,tag=!map.leash_knot] run data merge entity @s {Invulnerable:1b,PersistenceRequired:1b}
+execute as @e[type=leash_knot,tag=!map.leash_knot] run effect give @s resistance infinite 255 true
 execute as @e[type=leash_knot,tag=!map.leash_knot] run tag @s add map.leash_knot
 
 
