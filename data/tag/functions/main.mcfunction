@@ -37,7 +37,7 @@ execute if score period internal matches 1 if score matchmaking_controller inter
 execute if score period internal matches 1 if score matchmaking internal matches 1.. run scoreboard players set matchmaking internal 0
 
 # player uuid (if required)
-execute if entity @e[type=#arrows,tag=!arrow.has_uuid] as @a run function tag:system/player/uuid
+execute if entity @e[type=#arrows,tag=!arrow.has_uuid] as @a[tag=!player.has_uuid] run function tag:system/player/uuid
 
 # remove arrow piercing into player
 execute as @e[type=#arrows,tag=!arrow.patched] run data merge entity @s {PierceLevel:1b}
