@@ -13,6 +13,7 @@ execute as @e[tag=lobby.game_rating] at @s run function tag:system/lobby/control
 execute as @e[tag=lobby.game_mode] at @s run function tag:system/lobby/controller/game_mode
 ## game map
 execute as @e[tag=lobby.game_map] at @s run function tag:system/lobby/controller/map
+execute as @e[tag=lobby.game_map.title] at @s unless score game_map_temp internal = game_map internal run function tag:system/lobby/title/map
 ## win score
 execute as @e[tag=lobby.win_score] at @s run function tag:system/lobby/controller/win_score
 ## respawn time

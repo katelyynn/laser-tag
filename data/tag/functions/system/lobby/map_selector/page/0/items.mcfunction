@@ -14,4 +14,4 @@ execute if score selection temp_store.map_selector matches 5 run scoreboard play
 
 
 # notify
-execute if score selection temp_store.map_selector matches 2..5 run function tag:system/lobby/map_selector/announce
+#execute if score selection temp_store.map_selector matches 2..5 run function tag:system/lobby/map_selector/announce
