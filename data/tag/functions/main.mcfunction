@@ -50,6 +50,7 @@ scoreboard players reset @e[type=#arrows,tag=!arrow.patched] temp_store.arrow_in
 tag @e[type=#arrows,tag=!arrow.patched] add arrow.patched
 ## arrow binding
 execute if entity @e[type=#arrows,tag=!arrow.has_uuid] run function tag:system/arrow/main
+execute as @e[type=arrow,tag=arrow.has_uuid,scores={cosmetic.arrow_trail=0..}] at @s run function tag:system/arrow/show_cosmetic
 
 # kill arrows
 execute as @e[type=#arrows,nbt={inGround:1b}] at @s run particle block gravel ~ ~ ~ 0 0 0 0 10
