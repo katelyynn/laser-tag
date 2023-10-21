@@ -68,6 +68,9 @@ scoreboard objectives add temp_store.ready_item dummy
 # return to lobby
 ## /trigger return_lobby
 scoreboard objectives add return_lobby trigger "Return to lobby (map dev)"
+## map dev
+team add map.leash
+team modify map.leash collisionRule never
 
 
 # open profile
