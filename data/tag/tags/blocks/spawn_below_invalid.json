@@ -1,0 +1,11 @@
+{
+    "values": [
+        "minecraft:water",
+        "#tag:spawn_valid",
+        "#minecraft:underwater_bonemeals",
+        "#minecraft:corals",
+        "minecraft:sea_pickle",
+        "minecraft:seagrass",
+        "minecraft:tall_seagrass"
+    ]
+}
