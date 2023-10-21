@@ -208,6 +208,13 @@ scoreboard objectives add temp_store.crossbow_poison dummy
 scoreboard objectives add temp_store.crossbow_glowing dummy
 scoreboard objectives add temp_store.knife dummy
 
+# arrows
+scoreboard objectives add temp_store.arrow.uuid.0 dummy
+scoreboard objectives add temp_store.arrow.uuid.1 dummy
+scoreboard objectives add temp_store.arrow.uuid.2 dummy
+scoreboard objectives add temp_store.arrow.uuid.3 dummy
+scoreboard objectives add temp_store.arrow.cosmetic_id dummy
+
 
 # health
 scoreboard objectives add health.apple minecraft.used:minecraft.apple

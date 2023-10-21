@@ -45,6 +45,8 @@ execute as @e[type=#arrows,tag=!arrow.patched] if score @s temp_store.arrow_inde
 execute as @e[type=#arrows,tag=!arrow.patched] if score @s temp_store.arrow_index = crossbow_glowing.index internal run data modify entity @s damage set value 0.2d
 scoreboard players reset @e[type=#arrows,tag=!arrow.patched] temp_store.arrow_index
 tag @e[type=#arrows,tag=!arrow.patched] add arrow.patched
+## arrow binding
+execute if entity @e[type=#arrows,tag=!arrow.has_uuid] run function tag:system/arrow/main
 
 # kill arrows
 execute as @e[type=#arrows,nbt={inGround:1b}] at @s run particle block gravel ~ ~ ~ 0 0 0 0 10
