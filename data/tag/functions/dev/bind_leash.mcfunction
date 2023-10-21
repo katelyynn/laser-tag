@@ -1,0 +1,1 @@
+execute as @e[type=pig,distance=..2.5] run tag @s add map.leash_entity
