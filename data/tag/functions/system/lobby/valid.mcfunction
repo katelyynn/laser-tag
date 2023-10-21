@@ -13,7 +13,8 @@ execute as @e[tag=lobby.game_rating] at @s run function tag:system/lobby/control
 execute as @e[tag=lobby.game_mode] at @s run function tag:system/lobby/controller/game_mode
 ## game map
 execute as @e[tag=lobby.game_map] at @s run function tag:system/lobby/controller/map
-execute as @e[tag=lobby.game_map.title] at @s unless score game_map_temp internal = game_map internal run function tag:system/lobby/title/map
+execute as @e[tag=lobby.game_map.title] at @s unless score game_map_temp internal = game_map global run function tag:system/lobby/title/map
+execute as @e[tag=lobby.game_map.dev_title] at @s unless score map_dev_mode_temp internal = map_dev_mode internal run function tag:system/lobby/title/map_dev
 ## win score
 execute as @e[tag=lobby.win_score] at @s run function tag:system/lobby/controller/win_score
 ## respawn time
@@ -100,10 +101,10 @@ execute unless score game_mode global = temp_game_mode internal run scoreboard p
 ## range check
 #execute if score game_map global matches 2.. run scoreboard players set game_map global -1
 ## spawn display
-#execute unless score game_map global = temp_game_map internal as @e[tag=lobby.game_map] at @s if score game_map global matches -1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"TEST","color":"light_purple"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
-#execute unless score game_map global = temp_game_map internal as @e[tag=lobby.game_map] at @s if score game_map global matches 0 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"TEST 2","color":"aqua"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
-#execute unless score game_map global = temp_game_map internal as @e[tag=lobby.game_map] at @s if score game_map global matches 1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"NEW WIP!","color":"green"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
-#execute unless score game_map global = temp_game_map internal run scoreboard players operation temp_game_map internal = game_map global
+#execute unless score game_map global = temp_game_map global as @e[tag=lobby.game_map] at @s if score game_map global matches -1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"TEST","color":"light_purple"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
+#execute unless score game_map global = temp_game_map global as @e[tag=lobby.game_map] at @s if score game_map global matches 0 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"TEST 2","color":"aqua"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
+#execute unless score game_map global = temp_game_map global as @e[tag=lobby.game_map] at @s if score game_map global matches 1 run data merge block ~ ~1 ~ {Color:"black",Text3:'{"text":"NEW WIP!","color":"green"}',Text2:'{"text":"MAP:"}',GlowingText:1b}
+#execute unless score game_map global = temp_game_map global run scoreboard players operation temp_game_map global = game_map global
 
 # win score
 ## range check
