@@ -21,3 +21,5 @@ execute if score @s temp_store.cosmetic_selector.selection matches 22 run scoreb
 execute if score @s temp_store.cosmetic_selector.selection matches 23 run scoreboard players set @s cosmetic.arrow_trail 14
 execute if score @s temp_store.cosmetic_selector.selection matches 24 run scoreboard players set @s cosmetic.arrow_trail 15
 execute if score @s temp_store.cosmetic_selector.selection matches 25 run scoreboard players set @s cosmetic.arrow_trail 16
+
+scoreboard players set @s temp_store.cosmetic_selector.selection -1

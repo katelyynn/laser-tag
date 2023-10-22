@@ -7,10 +7,6 @@
 function tag:system/player/cosmetic/selector/get/page
 function tag:system/player/cosmetic/selector/get/selection
 
-execute if score @s temp_store.cosmetic_selector.page matches 0 run function tag:system/player/cosmetic/selector/page/main/main
-execute if score @s temp_store.cosmetic_selector.page matches 50 run function tag:system/player/cosmetic/selector/page/trails_0/main
-execute if score @s temp_store.cosmetic_selector.page matches 51 run function tag:system/player/cosmetic/selector/page/trails_1/main
-
 function tag:system/player/cosmetic/selector/update
 clear @s #tag:map_selector{cosmeticItem: 1b}
-scoreboard players set @s temp_store.cosmetic_selector.selection -1
+#scoreboard players set @s temp_store.cosmetic_selector.selection -1

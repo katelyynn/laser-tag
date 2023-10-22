@@ -4,11 +4,6 @@
 
 function tag:system/player/cosmetic/selector/page/clear
 
-# fill container
-execute if score @s temp_store.cosmetic_selector.page matches 0 run function tag:system/player/cosmetic/selector/page/main/items
-execute if score @s temp_store.cosmetic_selector.page matches 50 run function tag:system/player/cosmetic/selector/page/trails_0/items
-execute if score @s temp_store.cosmetic_selector.page matches 51 run function tag:system/player/cosmetic/selector/page/trails_1/items
-
 # default selections
 execute if score @s temp_store.cosmetic_selector.selection matches 0 run scoreboard players set @s temp_store.cosmetic_selector.page 0
 ## arrows
@@ -23,6 +18,11 @@ execute if score @s temp_store.cosmetic_selector.selection matches 0.. run plays
 execute if score @s temp_store.cosmetic_selector.selection matches 0.. run particle minecraft:glow -10 150.5 0 0 0 0 1 6
 #execute if score @s temp_store.cosmetic_selector.selection matches 0.. run tellraw @a ["new map sel selection is ",{"score":{"name":"selection","objective":"temp_store.cosmetic_selector"}}]
 
-execute if score @s temp_store.cosmetic_selector.selection matches 0.. if score @s temp_store.cosmetic_selector.page matches 0 run function tag:system/player/cosmetic/selector/page/main/main
-execute if score @s temp_store.cosmetic_selector.selection matches 0.. if score @s temp_store.cosmetic_selector.page matches 50 run function tag:system/player/cosmetic/selector/page/trails_0/main
-execute if score @s temp_store.cosmetic_selector.selection matches 0.. if score @s temp_store.cosmetic_selector.page matches 51 run function tag:system/player/cosmetic/selector/page/trails_1/main
+# fill container
+execute if score @s temp_store.cosmetic_selector.selection matches 0.. if score @s temp_store.cosmetic_selector.page matches 0 run function tag:system/player/cosmetic/selector/page/main/items
+execute if score @s temp_store.cosmetic_selector.selection matches 0.. if score @s temp_store.cosmetic_selector.page matches 50 run function tag:system/player/cosmetic/selector/page/trails_0/items
+execute if score @s temp_store.cosmetic_selector.selection matches 0.. if score @s temp_store.cosmetic_selector.page matches 51 run function tag:system/player/cosmetic/selector/page/trails_1/items
+
+execute if score @s temp_store.cosmetic_selector.page matches 0 run function tag:system/player/cosmetic/selector/page/main/main
+execute if score @s temp_store.cosmetic_selector.page matches 50 run function tag:system/player/cosmetic/selector/page/trails_0/main
+execute if score @s temp_store.cosmetic_selector.page matches 51 run function tag:system/player/cosmetic/selector/page/trails_1/main
