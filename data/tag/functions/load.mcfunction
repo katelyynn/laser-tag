@@ -148,6 +148,9 @@ scoreboard objectives add leaderboard.deaths_player dummy
 scoreboard objectives add leaderboard.deaths_suicide dummy
 scoreboard objectives add leaderboard.kills dummy
 scoreboard objectives add leaderboard.killstreak_highest dummy
+## coins animation
+scoreboard objectives add temp_store.leaderboard.coins.display dummy
+scoreboard objectives add temp_store.leaderboard.coins.direction dummy
 
 
 # inventory

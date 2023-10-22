@@ -95,6 +95,10 @@ execute if score period internal matches 0..3 run scoreboard objectives setdispl
 execute as @a run function tag:system/team/main
 
 
+# coins
+execute as @a at @s unless score @s temp_store.leaderboard.coins.display = @s leaderboard.coins run function tag:system/coins/animation
+
+
 # range check
 ## gameplay
 execute as @a unless score @s temp_store.coins matches 0.. run scoreboard players set @s temp_store.coins 0
