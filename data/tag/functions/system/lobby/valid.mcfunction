@@ -29,8 +29,11 @@ execute as @e[tag=lobby.map_dev_mode] at @s run function tag:system/lobby/contro
 execute as @e[tag=lobby.open_profile] at @s run function tag:system/lobby/controller/open_profile
 
 # tags
-execute as @e[type=glow_item_frame] at @s unless data entity @s {Invulnerable:1b} run particle minecraft:glow ~ ~ ~ 0 0 0 0.1 7
-execute as @e[type=glow_item_frame] at @s unless data entity @s {Invulnerable:1b} run data merge entity @s {Invulnerable:1b}
+execute as @e[type=glow_item_frame,tag=!lobby.frame_patched] at @s run particle minecraft:glow ~ ~ ~ 0 0 0 0.1 7
+execute as @e[type=glow_item_frame,tag=!lobby.frame_patched] run data merge entity @s {Invulnerable:1b}
+execute as @e[type=glow_item_frame,tag=!lobby.frame_patched] run tag @s add lobby.frame_patched
+
+execute as @e[type=glow_item_frame] at @s if entity @e[type=#arrows,distance=..1.6] run kill @e[type=#arrows,distance=..1.6]
 
 # map selector
 execute unless score page temp_store.map_selector matches 0.. run scoreboard players set page temp_store.map_selector 0

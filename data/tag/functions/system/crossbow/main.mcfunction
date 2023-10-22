@@ -25,6 +25,6 @@ execute unless score period internal matches -1 if entity @s[nbt=!{SelectedItem:
 # lobby actionbar
 ## TODO: relocate this somewhere better
 ## ready
-execute if score period internal matches -1 if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{canReload:1b,weaponItem:1b}}}] if score @s player.ready matches 1.. run title @s actionbar ["",{"text":"Coins: "},{"score":{"name":"@s","objective":"leaderboard.coins"},"color":"#EEDA7A"},{"text":" \u0020 "},{"text":"Ready","color":"green"}]
+execute if score period internal matches -1 if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{canReload:1b,weaponItem:1b}}}] if score @s player.ready matches 1.. run title @s actionbar ["",{"text":"Coins: "},{"score":{"name":"@s","objective":"leaderboard.coins"},"color":"#EEDA7A"},{"text":" \u0020 "},{"text":"Ready","color":"#94FC94"}]
 ## unready
-execute if score period internal matches -1 if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{canReload:1b,weaponItem:1b}}}] unless score @s player.ready matches 1.. run title @s actionbar ["",{"text":"Coins: "},{"score":{"name":"@s","objective":"leaderboard.coins"},"color":"#EEDA7A"},{"text":" \u0020 "},{"text":"Not ready","color":"gray"}]
+execute if score period internal matches -1 if entity @s[nbt=!{SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{canReload:1b,weaponItem:1b}}}] unless score @s player.ready matches 1.. run title @s actionbar ["",{"text":"Coins: "},{"score":{"name":"@s","objective":"leaderboard.coins"},"color":"#EEDA7A"},{"text":" \u0020 "},{"text":"Not ready","color":"#565663"}]
