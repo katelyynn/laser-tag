@@ -58,4 +58,4 @@ execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 25 if s
 execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 26 unless score @s leaderboard.coins >= arrow_trail.26 cosmetic.prices run function tag:system/player/cosmetic/purchase_cancel
 execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 26 if score @s leaderboard.coins >= arrow_trail.26 cosmetic.prices run scoreboard players set @s temp_store.cosmetic_selector.page 70
 
-scoreboard players reset @s temp_store.cosmetic_selector.buy_arrow_trail
+#scoreboard players reset @s temp_store.cosmetic_selector.buy_arrow_trail
