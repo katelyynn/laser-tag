@@ -2,12 +2,12 @@
 ## main
 
 
-item replace entity @s enderchest.0 with carrot_on_a_stick{page: 0, selection: 0, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"Back","color":"green","italic":false}'}}
+item replace entity @s enderchest.0 with carrot_on_a_stick{page: 0, selection: 0, cosmeticItem: 1b, CustomModelData:35, display:{Name:'{"text":"Back","color":"gray","italic":false}'}}
 item replace entity @s enderchest.1 with carrot_on_a_stick{page: 0, selection: 1, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
 item replace entity @s enderchest.8 with carrot_on_a_stick{page: 0, selection: 8, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
 item replace entity @s enderchest.9 with carrot_on_a_stick{page: 0, selection: 9, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
-item replace entity @s enderchest.10 with carrot_on_a_stick{page: 0, selection: 10, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
-item replace entity @s enderchest.17 with carrot_on_a_stick{page: 0, selection: 17, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.10 with carrot_on_a_stick{page: 0, selection: 10, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.17 with carrot_on_a_stick{page: 0, selection: 17, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
 item replace entity @s enderchest.18 with carrot_on_a_stick{page: 0, selection: 18, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
 item replace entity @s enderchest.19 with carrot_on_a_stick{page: 0, selection: 19, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
 item replace entity @s enderchest.26 with carrot_on_a_stick{page: 0, selection: 26, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}

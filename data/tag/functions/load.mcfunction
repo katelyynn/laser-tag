@@ -230,9 +230,10 @@ scoreboard objectives add temp_store.arrow.cosmetic_id dummy
 
 
 # cosmetics
+scoreboard objectives add cosmetic.prices dummy
 ## arrow trail
+scoreboard objectives add temp_store.cosmetic_selector.buy_arrow_trail dummy
 scoreboard objectives add cosmetic.arrow_trail dummy
-## full list
 scoreboard objectives add cosmetic.arrow_trail.0 dummy
 scoreboard objectives add cosmetic.arrow_trail.1 dummy
 scoreboard objectives add cosmetic.arrow_trail.2 dummy
@@ -260,6 +261,34 @@ scoreboard objectives add cosmetic.arrow_trail.23 dummy
 scoreboard objectives add cosmetic.arrow_trail.24 dummy
 scoreboard objectives add cosmetic.arrow_trail.25 dummy
 scoreboard objectives add cosmetic.arrow_trail.26 dummy
+## prices
+scoreboard players set arrow_trail.0 cosmetic.prices 120
+scoreboard players set arrow_trail.1 cosmetic.prices 1000
+scoreboard players set arrow_trail.2 cosmetic.prices 750
+scoreboard players set arrow_trail.3 cosmetic.prices 500
+scoreboard players set arrow_trail.4 cosmetic.prices 0
+scoreboard players set arrow_trail.5 cosmetic.prices 0
+scoreboard players set arrow_trail.6 cosmetic.prices 0
+scoreboard players set arrow_trail.7 cosmetic.prices 0
+scoreboard players set arrow_trail.8 cosmetic.prices 0
+scoreboard players set arrow_trail.9 cosmetic.prices 0
+scoreboard players set arrow_trail.10 cosmetic.prices 0
+scoreboard players set arrow_trail.11 cosmetic.prices 0
+scoreboard players set arrow_trail.12 cosmetic.prices 0
+scoreboard players set arrow_trail.13 cosmetic.prices 0
+scoreboard players set arrow_trail.14 cosmetic.prices 0
+scoreboard players set arrow_trail.15 cosmetic.prices 0
+scoreboard players set arrow_trail.16 cosmetic.prices 0
+scoreboard players set arrow_trail.17 cosmetic.prices 0
+scoreboard players set arrow_trail.18 cosmetic.prices 0
+scoreboard players set arrow_trail.19 cosmetic.prices 0
+scoreboard players set arrow_trail.20 cosmetic.prices 0
+scoreboard players set arrow_trail.21 cosmetic.prices 0
+scoreboard players set arrow_trail.22 cosmetic.prices 0
+scoreboard players set arrow_trail.23 cosmetic.prices 0
+scoreboard players set arrow_trail.24 cosmetic.prices 0
+scoreboard players set arrow_trail.25 cosmetic.prices 0
+scoreboard players set arrow_trail.26 cosmetic.prices 0
 
 
 # health
