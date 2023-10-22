@@ -33,8 +33,13 @@ execute as @e[type=glow_item_frame] at @s unless data entity @s {Invulnerable:1b
 execute as @e[type=glow_item_frame] at @s unless data entity @s {Invulnerable:1b} run data merge entity @s {Invulnerable:1b}
 
 # map selector
-execute as @a unless score page temp_store.map_selector matches 0.. run scoreboard players set page temp_store.map_selector 0
+execute unless score page temp_store.map_selector matches 0.. run scoreboard players set page temp_store.map_selector 0
 execute as @a run function tag:system/lobby/map_selector/check
+
+# cosmetic selector
+execute as @a unless score @s temp_store.cosmetic_selector.page matches 0.. run function tag:system/player/cosmetic/selector/page/main/main
+execute as @a unless score @s temp_store.cosmetic_selector.page matches 0.. run scoreboard players set @s temp_store.cosmetic_selector.page 0
+execute as @a run function tag:system/player/cosmetic/selector/check
 
 
 # player items

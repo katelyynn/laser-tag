@@ -62,6 +62,12 @@ scoreboard objectives add lobby_controls dummy
 scoreboard objectives add temp_store.map_selector dummy
 scoreboard objectives add temp_store.is_spawn_valid dummy
 
+# cosmetic selector
+scoreboard objectives add temp_store.cosmetic_selector.bool dummy
+scoreboard objectives add temp_store.cosmetic_selector.page dummy
+scoreboard objectives add temp_store.cosmetic_selector.selection dummy
+scoreboard objectives add temp_store.cosmetic_selector.has_item dummy
+
 # lobby items
 scoreboard objectives add temp_store.ready_item dummy
 
