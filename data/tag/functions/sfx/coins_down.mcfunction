@@ -3,4 +3,4 @@
 #playsound minecraft:entity.arrow.hit_player player @s
 
 # custom
-playsound tag:coin.poll player @s ~ ~ ~ 100 0.7
+playsound tag:coin.poll player @s ~ ~ ~ 100 0.9

@@ -151,6 +151,10 @@ scoreboard objectives add leaderboard.killstreak_highest dummy
 ## coins animation
 scoreboard objectives add temp_store.leaderboard.coins.display dummy
 scoreboard objectives add temp_store.leaderboard.coins.direction dummy
+scoreboard objectives add temp_store.leaderboard.coins.time dummy
+
+scoreboard objectives add temp_store.leaderboard.coins.difference dummy
+scoreboard objectives add temp_store.leaderboard.coins.difference_amount dummy
 
 
 # inventory
@@ -228,6 +232,34 @@ scoreboard objectives add temp_store.arrow.cosmetic_id dummy
 # cosmetics
 ## arrow trail
 scoreboard objectives add cosmetic.arrow_trail dummy
+## full list
+scoreboard objectives add cosmetic.arrow_trail.0 dummy
+scoreboard objectives add cosmetic.arrow_trail.1 dummy
+scoreboard objectives add cosmetic.arrow_trail.2 dummy
+scoreboard objectives add cosmetic.arrow_trail.3 dummy
+scoreboard objectives add cosmetic.arrow_trail.4 dummy
+scoreboard objectives add cosmetic.arrow_trail.5 dummy
+scoreboard objectives add cosmetic.arrow_trail.6 dummy
+scoreboard objectives add cosmetic.arrow_trail.7 dummy
+scoreboard objectives add cosmetic.arrow_trail.8 dummy
+scoreboard objectives add cosmetic.arrow_trail.9 dummy
+scoreboard objectives add cosmetic.arrow_trail.10 dummy
+scoreboard objectives add cosmetic.arrow_trail.11 dummy
+scoreboard objectives add cosmetic.arrow_trail.12 dummy
+scoreboard objectives add cosmetic.arrow_trail.13 dummy
+scoreboard objectives add cosmetic.arrow_trail.14 dummy
+scoreboard objectives add cosmetic.arrow_trail.15 dummy
+scoreboard objectives add cosmetic.arrow_trail.16 dummy
+scoreboard objectives add cosmetic.arrow_trail.17 dummy
+scoreboard objectives add cosmetic.arrow_trail.18 dummy
+scoreboard objectives add cosmetic.arrow_trail.19 dummy
+scoreboard objectives add cosmetic.arrow_trail.20 dummy
+scoreboard objectives add cosmetic.arrow_trail.21 dummy
+scoreboard objectives add cosmetic.arrow_trail.22 dummy
+scoreboard objectives add cosmetic.arrow_trail.23 dummy
+scoreboard objectives add cosmetic.arrow_trail.24 dummy
+scoreboard objectives add cosmetic.arrow_trail.25 dummy
+scoreboard objectives add cosmetic.arrow_trail.26 dummy
 
 
 # health
