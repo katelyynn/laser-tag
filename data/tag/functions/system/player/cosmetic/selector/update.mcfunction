@@ -14,7 +14,10 @@ execute if score @s temp_store.cosmetic_selector.page matches 52..60 run scorebo
 execute if score @s temp_store.cosmetic_selector.page matches 40..49 run scoreboard players set @s temp_store.cosmetic_selector.page 50
 
 # reset
-execute if score @s temp_store.cosmetic_selector.selection matches 0.. run playsound tag:menu.tick player @s ~ ~ ~
+execute if score @s temp_store.cosmetic_selector.selection matches 0 run playsound tag:menu.back player @s ~ ~ ~
+execute if score @s temp_store.cosmetic_selector.selection matches 10 run playsound tag:menu.scroll player @s ~ ~ ~
+execute if score @s temp_store.cosmetic_selector.selection matches 17 run playsound tag:menu.scroll player @s ~ ~ ~
+execute if score @s temp_store.cosmetic_selector.selection matches 1.. unless score @s temp_store.cosmetic_selector.selection matches 10 unless score @s temp_store.cosmetic_selector.selection matches 17 run playsound tag:menu.tick player @s ~ ~ ~
 execute if score @s temp_store.cosmetic_selector.selection matches 0.. run particle minecraft:glow ~ ~ ~ 0 0 0 1 6
 #execute if score @s temp_store.cosmetic_selector.selection matches 0.. run tellraw @a ["new map sel selection is ",{"score":{"name":"selection","objective":"temp_store.cosmetic_selector"}}]
 
