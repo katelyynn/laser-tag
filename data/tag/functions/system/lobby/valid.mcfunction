@@ -39,7 +39,7 @@ execute as @a run function tag:system/lobby/map_selector/check
 # cosmetic selector
 execute as @a unless score @s temp_store.cosmetic_selector.page matches 0.. run function tag:system/player/cosmetic/selector/page/main/main
 execute as @a unless score @s temp_store.cosmetic_selector.page matches 0.. run scoreboard players set @s temp_store.cosmetic_selector.page 0
-execute as @a run function tag:system/player/cosmetic/selector/check
+execute as @a at @s run function tag:system/player/cosmetic/selector/check
 
 
 # player items
