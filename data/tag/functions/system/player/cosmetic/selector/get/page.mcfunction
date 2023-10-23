@@ -15,6 +15,8 @@ execute if score @s temp_store.cosmetic_selector.bool matches 1.. run scoreboard
 
 execute store success score @s temp_store.cosmetic_selector.bool run clear @s #tag:map_selector{page: 70} 0
 execute if score @s temp_store.cosmetic_selector.bool matches 1.. run scoreboard players set @s temp_store.cosmetic_selector.page 70
+execute store success score @s temp_store.cosmetic_selector.bool run clear @s #tag:map_selector{page: 71} 0
+execute if score @s temp_store.cosmetic_selector.bool matches 1.. run scoreboard players set @s temp_store.cosmetic_selector.page 71
 
 execute store success score @s temp_store.cosmetic_selector.bool run clear @s #tag:map_selector{page: 100} 0
 execute if score @s temp_store.cosmetic_selector.bool matches 1.. run scoreboard players set @s temp_store.cosmetic_selector.page 100
