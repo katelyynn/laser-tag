@@ -41,7 +41,7 @@ item replace entity @s enderchest.15 with carrot_on_a_stick{page: 70, selection:
 
 # item
 ## particle 0 - anger
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 0 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:600, display:{Name:'{"text":"Anger","italic":false}',Lore:['{"text":"Fueled with rage","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 120 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 0 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:600, display:{Name:'{"text":"Anger","italic":false}',Lore:['{"text":"Fueled with rage","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 850 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 1 - hearts
 execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 1 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:601, display:{Name:'{"text":"Hearts","italic":false}',Lore:['{"text":"Arrows sharp as a broken heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑫ 1000 Coins","italic":false,"color":"#A8B5B5"}']}}
@@ -53,40 +53,40 @@ execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 2 run i
 execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 3 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:603, display:{Name:'{"text":"Witch","italic":false}',Lore:['{"text":"","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 500 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 4 - dragon breath
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 4 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:604, display:{Name:'{"text":"Dragon breath","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 750 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 4 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:604, display:{Name:'{"text":"Dragon breath","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 560 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 5 - soul
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 5 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:605, display:{Name:'{"text":"Soul","italic":false}',Lore:['{"text":"","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 500 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 5 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:605, display:{Name:'{"text":"Soul","italic":false}',Lore:['{"text":"","italic":false,"color":"gray"}','{"text":""}','{"text":"⑫ 1100 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 6 - sculk soul
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 6 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:606, display:{Name:'{"text":"Sculk Soul","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 750 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 6 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:606, display:{Name:'{"text":"Sculk Soul","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑫ 1500 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 7 - flame
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 7 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:607, display:{Name:'{"text":"Flame","italic":false}',Lore:['{"text":"","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 500 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 7 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:607, display:{Name:'{"text":"Flame","italic":false}',Lore:['{"text":"","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 180 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 8 - soul flame
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 8 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:608, display:{Name:'{"text":"Soul Flame","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 750 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 8 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:608, display:{Name:'{"text":"Soul Flame","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 300 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 9 - slime
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 9 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:609, display:{Name:'{"text":"Slime","italic":false}',Lore:['{"text":"","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 500 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 9 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:609, display:{Name:'{"text":"Slime","italic":false}',Lore:['{"text":"","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 150 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 10 - snowball
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 10 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:610, display:{Name:'{"text":"Snowball","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 750 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 10 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:610, display:{Name:'{"text":"Snowball","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 170 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 11 - sonic boom
 execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 11 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:611, display:{Name:'{"text":"Sonic boom","italic":false}',Lore:['{"text":"Remove this one","italic":false,"color":"gray"}','{"text":""}','{"text":"⑭ Locked","italic":false,"color":"#FF9696"}']}}
 
 ## particle 12 - glow
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 12 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:612, display:{Name:'{"text":"Glow","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 750 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 12 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:612, display:{Name:'{"text":"Glow","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 650 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 13 - end rod
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 13 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:613, display:{Name:'{"text":"End rod","italic":false}',Lore:['{"text":"","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 500 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 13 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:613, display:{Name:'{"text":"End rod","italic":false}',Lore:['{"text":"","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 650 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 14 - electric spark
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 14 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:614, display:{Name:'{"text":"Electric spark","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 750 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 14 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:614, display:{Name:'{"text":"Electric spark","italic":false}',Lore:['{"text":"Arrows sharp as a withered heart","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 500 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 15 - composter
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 15 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:615, display:{Name:'{"text":"Composter","italic":false}',Lore:['{"text":"Remove this one","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 500 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 15 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:615, display:{Name:'{"text":"Composter","italic":false}',Lore:['{"text":"Remove this one","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 450 Coins","italic":false,"color":"#CC692C"}']}}
 
 ## particle 16 - ash
-execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 16 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:616, display:{Name:'{"text":"Ash","italic":false}',Lore:['{"text":"","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 500 Coins","italic":false,"color":"#CC692C"}']}}
+execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 16 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 70, selection: 11, cosmeticItem: 1b, CustomModelData:616, display:{Name:'{"text":"Ash","italic":false}',Lore:['{"text":"","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 100 Coins","italic":false,"color":"#CC692C"}']}}

@@ -262,33 +262,33 @@ scoreboard objectives add cosmetic.arrow_trail.24 dummy
 scoreboard objectives add cosmetic.arrow_trail.25 dummy
 scoreboard objectives add cosmetic.arrow_trail.26 dummy
 ## prices
-scoreboard players set arrow_trail.0 cosmetic.prices 120
+scoreboard players set arrow_trail.0 cosmetic.prices 850
 scoreboard players set arrow_trail.1 cosmetic.prices 1000
 scoreboard players set arrow_trail.2 cosmetic.prices 750
 scoreboard players set arrow_trail.3 cosmetic.prices 500
-scoreboard players set arrow_trail.4 cosmetic.prices 50
-scoreboard players set arrow_trail.5 cosmetic.prices 50
-scoreboard players set arrow_trail.6 cosmetic.prices 50
-scoreboard players set arrow_trail.7 cosmetic.prices 50
-scoreboard players set arrow_trail.8 cosmetic.prices 50
-scoreboard players set arrow_trail.9 cosmetic.prices 50
-scoreboard players set arrow_trail.10 cosmetic.prices 50
-scoreboard players set arrow_trail.11 cosmetic.prices 50
-scoreboard players set arrow_trail.12 cosmetic.prices 50
-scoreboard players set arrow_trail.13 cosmetic.prices 50
-scoreboard players set arrow_trail.14 cosmetic.prices 50
-scoreboard players set arrow_trail.15 cosmetic.prices 50
-scoreboard players set arrow_trail.16 cosmetic.prices 50
-scoreboard players set arrow_trail.17 cosmetic.prices 50
-scoreboard players set arrow_trail.18 cosmetic.prices 50
-scoreboard players set arrow_trail.19 cosmetic.prices 50
-scoreboard players set arrow_trail.20 cosmetic.prices 50
-scoreboard players set arrow_trail.21 cosmetic.prices 50
-scoreboard players set arrow_trail.22 cosmetic.prices 50
-scoreboard players set arrow_trail.23 cosmetic.prices 50
-scoreboard players set arrow_trail.24 cosmetic.prices 50
-scoreboard players set arrow_trail.25 cosmetic.prices 50
-scoreboard players set arrow_trail.26 cosmetic.prices 50
+scoreboard players set arrow_trail.4 cosmetic.prices 560
+scoreboard players set arrow_trail.5 cosmetic.prices 1100
+scoreboard players set arrow_trail.6 cosmetic.prices 1500
+scoreboard players set arrow_trail.7 cosmetic.prices 180
+scoreboard players set arrow_trail.8 cosmetic.prices 300
+scoreboard players set arrow_trail.9 cosmetic.prices 150
+scoreboard players set arrow_trail.10 cosmetic.prices 170
+scoreboard players set arrow_trail.11 cosmetic.prices 1000000000
+scoreboard players set arrow_trail.12 cosmetic.prices 600
+scoreboard players set arrow_trail.13 cosmetic.prices 650
+scoreboard players set arrow_trail.14 cosmetic.prices 500
+scoreboard players set arrow_trail.15 cosmetic.prices 450
+scoreboard players set arrow_trail.16 cosmetic.prices 100
+scoreboard players set arrow_trail.17 cosmetic.prices 200
+scoreboard players set arrow_trail.18 cosmetic.prices 130
+scoreboard players set arrow_trail.19 cosmetic.prices 200
+scoreboard players set arrow_trail.20 cosmetic.prices 170
+scoreboard players set arrow_trail.21 cosmetic.prices 200
+scoreboard players set arrow_trail.22 cosmetic.prices 180
+scoreboard players set arrow_trail.23 cosmetic.prices 110
+scoreboard players set arrow_trail.24 cosmetic.prices 180
+scoreboard players set arrow_trail.25 cosmetic.prices 210
+scoreboard players set arrow_trail.26 cosmetic.prices 340
 
 
 # health
