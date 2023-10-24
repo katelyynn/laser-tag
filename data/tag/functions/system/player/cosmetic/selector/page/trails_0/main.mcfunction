@@ -17,7 +17,7 @@ item replace entity @s enderchest.26 with carrot_on_a_stick{page: 50, selection:
 
 ## particle -1 - none
 execute if score @s cosmetic.arrow_trail matches 0.. run item replace entity @s enderchest.2 with carrot_on_a_stick{page: 50, selection: 2, cosmeticItem: 1b, CustomModelData:11, display:{Name:'{"translate":"lobby.cosmetic_selector.trails.-1","italic":false}'}}
-execute unless score @s cosmetic.arrow_trail matches 0.. run item replace entity @s enderchest.2 with carrot_on_a_stick{page: 50, selection: 2, cosmeticItem: 1b, CustomModelData:71, display:{Name:'{"translate":"lobby.cosmetic_selector.trails.-1","italic":false}',Lore:['{"text":""}','{"translate":"lobby.cosmetic_selector.item.selected","italic":false,"color":"#96FF96"}']}}
+execute unless score @s cosmetic.arrow_trail matches 0.. run item replace entity @s enderchest.2 with carrot_on_a_stick{page: 50, selection: 2, cosmeticItem: 1b, CustomModelData:489, display:{Name:'{"translate":"lobby.cosmetic_selector.trails.-1","italic":false}',Lore:['{"text":""}','{"translate":"lobby.cosmetic_selector.item.selected","italic":false,"color":"#96FF96"}']}}
 
 ## particle 0 - anger
 execute unless score @s cosmetic.arrow_trail.0 matches 1 unless score @s cosmetic.arrow_trail matches 0 run item replace entity @s enderchest.3 with carrot_on_a_stick{page: 50, selection: 3, cosmeticItem: 1b, CustomModelData:500, display:{Name:'{"translate":"lobby.cosmetic_selector.trails.0","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.trails.0.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.trails.0.cost","italic":false,"color":"#CC692C"}']}}
