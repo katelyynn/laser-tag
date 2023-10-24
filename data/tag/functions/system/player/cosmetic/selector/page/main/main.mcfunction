@@ -14,5 +14,5 @@ item replace entity @s enderchest.26 with carrot_on_a_stick{page: 0, selection: 
 
 
 # fill container
-item replace entity @s enderchest.13 with carrot_on_a_stick{page: 0, selection: 13, cosmeticItem: 1b, CustomModelData:490, display:{Name:'{"text":"Arrow trails","italic":false}',Lore:['{"text":"Customise particles for your arrows","italic":false,"color":"gray"}']}}
+item replace entity @s enderchest.13 with carrot_on_a_stick{page: 0, selection: 13, cosmeticItem: 1b, CustomModelData:490, display:{Name:'{"translate":"lobby.cosmetic_selector.home.trails","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.home.trails.bio","italic":false,"color":"gray"}']}}
 item replace entity @s enderchest.14 with carrot_on_a_stick{page: 0, selection: 14, cosmeticItem: 1b, CustomModelData:491, display:{Name:'{"text":"???","italic":false}',Lore:['{"text":"do something bla bla bla","italic":false,"color":"gray"}']}}
