@@ -35,8 +35,8 @@ item replace entity @s enderchest.25 with carrot_on_a_stick{page: 71, selection:
 
 
 # fill container
-item replace entity @s enderchest.13 with carrot_on_a_stick{page: 71, selection: 13, cosmeticItem: 1b, CustomModelData:33, display:{Name:'{"text":"Purchase","color":"#96FF96","italic":false}'}}
-item replace entity @s enderchest.15 with carrot_on_a_stick{page: 71, selection: 15, cosmeticItem: 1b, CustomModelData:34, display:{Name:'{"text":"Cancel","color":"#F76565","italic":false}'}}
+item replace entity @s enderchest.13 with carrot_on_a_stick{page: 71, selection: 13, cosmeticItem: 1b, CustomModelData:33, display:{Name:'{"translate":"lobby.cosmetic_selector.buy.purchase","color":"#96FF96","italic":false}'}}
+item replace entity @s enderchest.15 with carrot_on_a_stick{page: 71, selection: 15, cosmeticItem: 1b, CustomModelData:34, display:{Name:'{"translate":"lobby.cosmetic_selector.buy.cancel","color":"#F76565","italic":false}'}}
 
 
 # item

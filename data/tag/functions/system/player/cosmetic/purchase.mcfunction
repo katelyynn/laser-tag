@@ -58,4 +58,6 @@ execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 25 run 
 execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 26 run scoreboard players set @s cosmetic.arrow_trail.26 1
 execute if score @s temp_store.cosmetic_selector.buy_arrow_trail matches 26 run scoreboard players operation @s leaderboard.coins -= arrow_trail.26 cosmetic.prices
 
+playsound entity.arrow.hit_player player @a
+
 scoreboard players reset @s temp_store.cosmetic_selector.buy_arrow_trail
