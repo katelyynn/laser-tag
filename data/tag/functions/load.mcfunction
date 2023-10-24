@@ -322,33 +322,33 @@ scoreboard objectives add cosmetic.hat.24 dummy
 scoreboard objectives add cosmetic.hat.25 dummy
 scoreboard objectives add cosmetic.hat.26 dummy
 ## prices
-scoreboard players set hat.0 cosmetic.prices 800
-scoreboard players set hat.1 cosmetic.prices 800
-scoreboard players set hat.2 cosmetic.prices 800
-scoreboard players set hat.3 cosmetic.prices 800
-scoreboard players set hat.4 cosmetic.prices 800
-scoreboard players set hat.5 cosmetic.prices 800
-scoreboard players set hat.6 cosmetic.prices 800
-scoreboard players set hat.7 cosmetic.prices 800
-scoreboard players set hat.8 cosmetic.prices 800
-scoreboard players set hat.9 cosmetic.prices 800
-scoreboard players set hat.10 cosmetic.prices 800
-scoreboard players set hat.11 cosmetic.prices 800
-scoreboard players set hat.12 cosmetic.prices 800
-scoreboard players set hat.13 cosmetic.prices 800
-scoreboard players set hat.14 cosmetic.prices 800
-scoreboard players set hat.15 cosmetic.prices 800
-scoreboard players set hat.16 cosmetic.prices 800
-scoreboard players set hat.17 cosmetic.prices 800
-scoreboard players set hat.18 cosmetic.prices 800
-scoreboard players set hat.19 cosmetic.prices 800
-scoreboard players set hat.20 cosmetic.prices 800
-scoreboard players set hat.21 cosmetic.prices 800
-scoreboard players set hat.22 cosmetic.prices 800
-scoreboard players set hat.23 cosmetic.prices 800
-scoreboard players set hat.24 cosmetic.prices 800
-scoreboard players set hat.25 cosmetic.prices 800
-scoreboard players set hat.26 cosmetic.prices 800
+scoreboard players set hat.0 cosmetic.prices 700
+scoreboard players set hat.1 cosmetic.prices 700
+scoreboard players set hat.2 cosmetic.prices 700
+scoreboard players set hat.3 cosmetic.prices 700
+scoreboard players set hat.4 cosmetic.prices 700
+scoreboard players set hat.5 cosmetic.prices 700
+scoreboard players set hat.6 cosmetic.prices 700
+scoreboard players set hat.7 cosmetic.prices 700
+scoreboard players set hat.8 cosmetic.prices 700
+scoreboard players set hat.9 cosmetic.prices 700
+scoreboard players set hat.10 cosmetic.prices 700
+scoreboard players set hat.11 cosmetic.prices 700
+scoreboard players set hat.12 cosmetic.prices 700
+scoreboard players set hat.13 cosmetic.prices 700
+scoreboard players set hat.14 cosmetic.prices 700
+scoreboard players set hat.15 cosmetic.prices 700
+scoreboard players set hat.16 cosmetic.prices 700
+scoreboard players set hat.17 cosmetic.prices 700
+scoreboard players set hat.18 cosmetic.prices 700
+scoreboard players set hat.19 cosmetic.prices 700
+scoreboard players set hat.20 cosmetic.prices 700
+scoreboard players set hat.21 cosmetic.prices 700
+scoreboard players set hat.22 cosmetic.prices 700
+scoreboard players set hat.23 cosmetic.prices 700
+scoreboard players set hat.24 cosmetic.prices 700
+scoreboard players set hat.25 cosmetic.prices 700
+scoreboard players set hat.26 cosmetic.prices 700
 
 
 # health

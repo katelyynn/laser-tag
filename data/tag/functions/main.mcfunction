@@ -177,3 +177,7 @@ execute as @a at @s run function tag:system/loadout/main
 
 # item spawner
 execute as @e[tag=item_spawner.generic] at @s run function tag:system/spawner/main
+
+
+# cosmetics
+execute as @a run function tag:system/player/cosmetic/hat
