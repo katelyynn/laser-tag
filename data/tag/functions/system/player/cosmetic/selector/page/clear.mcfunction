@@ -11,7 +11,7 @@ item replace entity @s enderchest.4 with air
 item replace entity @s enderchest.5 with air
 item replace entity @s enderchest.6 with air
 item replace entity @s enderchest.7 with air
-item replace entity @s enderchest.8 with carrot_on_a_stick{page: 0, selection: 8, cosmeticItem: 1b, CustomModelData:35, display:{Name:'{"text":"Back","color":"gray","italic":false}'}}
+item replace entity @s enderchest.8 with carrot_on_a_stick{page: 0, selection: 8, cosmeticItem: 1b, CustomModelData:35, display:{Name:'{"translate":"action.back","color":"gray","italic":false}'}}
 item replace entity @s enderchest.9 with carrot_on_a_stick{page: 0, selection: 9, cosmeticItem: 1b, CustomModelData:37, display:{Name:'{"text":"","color":"green","italic":false}'}}
 item replace entity @s enderchest.10 with air
 item replace entity @s enderchest.11 with air

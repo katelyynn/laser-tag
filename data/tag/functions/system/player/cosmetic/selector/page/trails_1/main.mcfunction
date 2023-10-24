@@ -4,7 +4,7 @@
 
 item replace entity @s enderchest.0 with carrot_on_a_stick{page: 51, selection: 0, cosmeticItem: 1b, CustomModelData:44, display:{Name:'{"text":"","color":"gray","italic":false}'}}
 item replace entity @s enderchest.1 with carrot_on_a_stick{page: 51, selection: 1, cosmeticItem: 1b, CustomModelData:45, display:{Name:'{"text":"","color":"green","italic":false}'}}
-item replace entity @s enderchest.8 with carrot_on_a_stick{page: 51, selection: 8, cosmeticItem: 1b, CustomModelData:35, display:{Name:'{"text":"Back","color":"gray","italic":false}'}}
+item replace entity @s enderchest.8 with carrot_on_a_stick{page: 51, selection: 8, cosmeticItem: 1b, CustomModelData:35, display:{Name:'{"translate":"action.back","color":"gray","italic":false}'}}
 item replace entity @s enderchest.9 with carrot_on_a_stick{page: 51, selection: 9, cosmeticItem: 1b, CustomModelData:46, display:{Name:'{"translate":"lobby.cosmetic_selector.home.help","color":"#EBD779","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.home.help.bio.0","italic":false,"color":"gray"}','{"translate":"lobby.cosmetic_selector.home.help.bio.1","italic":false,"color":"gray"}']}}
 item replace entity @s enderchest.10 with carrot_on_a_stick{page: 51, selection: 10, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
 item replace entity @s enderchest.17 with carrot_on_a_stick{page: 51, selection: 17, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
