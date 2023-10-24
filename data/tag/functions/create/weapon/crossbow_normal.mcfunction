@@ -1,1 +1,1 @@
-give @s crossbow{ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomPotionColor:16711680}}],Charged:1b,canReload:1b,weaponItem:1b,crossbow_type:"normal"}
+give @s crossbow{display:{Name:'[{"translate":"item.weapon.crossbow_normal","italic":false}]'},ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomPotionColor:16711680}}],Charged:1b,canReload:1b,weaponItem:1b,crossbow_type:"normal"}

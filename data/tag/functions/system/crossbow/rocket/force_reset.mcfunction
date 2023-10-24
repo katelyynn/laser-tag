@@ -4,7 +4,7 @@
 
 
 # replace item
-item replace entity @s weapon.mainhand with minecraft:crossbow{display:{Name:'[{"text":"Rocket Crossbow","italic":false}]'},ChargedProjectiles:[],Charged:0b,canReload:1b,weaponItem:1b,crossbow_type:"rocket"}
+item replace entity @s weapon.mainhand with minecraft:crossbow{display:{Name:'[{"translate":"item.weapon.crossbow_rocket","italic":false}]'},ChargedProjectiles:[],Charged:0b,canReload:1b,weaponItem:1b,crossbow_type:"rocket"}
 
 
 scoreboard players set @s crossbow_rocket.time 0

@@ -1,1 +1,1 @@
-give @s crossbow{display:{Name:'[{"text":"Machine Crossbow","italic":false}]'},ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomPotionColor:16741120}}],Charged:1b,canReload:1b,weaponItem:1b,CustomModelData:2,crossbow_type:"machine"}
+give @s crossbow{display:{Name:'[{"translate":"item.weapon.crossbow_machine","italic":false}]'},ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomPotionColor:16741120}}],Charged:1b,canReload:1b,weaponItem:1b,CustomModelData:2,crossbow_type:"machine"}
