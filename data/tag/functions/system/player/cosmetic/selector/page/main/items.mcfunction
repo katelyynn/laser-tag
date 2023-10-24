@@ -4,7 +4,7 @@
 
 # selection
 execute if score @s temp_store.cosmetic_selector.selection matches 13 run scoreboard players set @s temp_store.cosmetic_selector.page 50
-execute if score @s temp_store.cosmetic_selector.selection matches 14 run scoreboard players set @s temp_store.cosmetic_selector.page 100
+execute if score @s temp_store.cosmetic_selector.selection matches 14 run scoreboard players set @s temp_store.cosmetic_selector.page 80
 
 
 # notify

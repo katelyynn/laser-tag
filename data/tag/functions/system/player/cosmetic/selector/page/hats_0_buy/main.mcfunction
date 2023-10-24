@@ -1,0 +1,92 @@
+# LASERTAG cosmetic selector
+## main
+
+
+item replace entity @s enderchest.0 with carrot_on_a_stick{page: 100, selection: 0, cosmeticItem: 1b, CustomModelData:38, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.1 with carrot_on_a_stick{page: 100, selection: 1, cosmeticItem: 1b, CustomModelData:40, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.8 with carrot_on_a_stick{page: 100, selection: 8, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.9 with carrot_on_a_stick{page: 100, selection: 9, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.10 with carrot_on_a_stick{page: 100, selection: 10, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.17 with carrot_on_a_stick{page: 100, selection: 17, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.18 with carrot_on_a_stick{page: 100, selection: 18, cosmeticItem: 1b, CustomModelData:37, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.19 with carrot_on_a_stick{page: 100, selection: 19, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.26 with carrot_on_a_stick{page: 100, selection: 26, cosmeticItem: 1b, CustomModelData:7, display:{Name:'{"text":"","color":"green","italic":false}'}}
+
+
+# blank slots
+## around item
+item replace entity @s enderchest.2 with carrot_on_a_stick{page: 100, selection: 2, cosmeticItem: 1b, CustomModelData:41, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.3 with carrot_on_a_stick{page: 100, selection: 3, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.12 with carrot_on_a_stick{page: 100, selection: 12, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.20 with carrot_on_a_stick{page: 100, selection: 20, cosmeticItem: 1b, CustomModelData:39, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.21 with carrot_on_a_stick{page: 100, selection: 21, cosmeticItem: 1b, CustomModelData:37, display:{Name:'{"text":"","color":"green","italic":false}'}}
+
+## around buttons
+item replace entity @s enderchest.4 with carrot_on_a_stick{page: 100, selection: 4, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.5 with carrot_on_a_stick{page: 100, selection: 5, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.6 with carrot_on_a_stick{page: 100, selection: 6, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.7 with carrot_on_a_stick{page: 100, selection: 7, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.14 with carrot_on_a_stick{page: 100, selection: 14, cosmeticItem: 1b, CustomModelData:36, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.16 with carrot_on_a_stick{page: 100, selection: 16, cosmeticItem: 1b, CustomModelData:31, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.22 with carrot_on_a_stick{page: 100, selection: 22, cosmeticItem: 1b, CustomModelData:37, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.23 with carrot_on_a_stick{page: 100, selection: 23, cosmeticItem: 1b, CustomModelData:37, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.24 with carrot_on_a_stick{page: 100, selection: 24, cosmeticItem: 1b, CustomModelData:37, display:{Name:'{"text":"","color":"green","italic":false}'}}
+item replace entity @s enderchest.25 with carrot_on_a_stick{page: 100, selection: 25, cosmeticItem: 1b, CustomModelData:37, display:{Name:'{"text":"","color":"green","italic":false}'}}
+
+
+# fill container
+item replace entity @s enderchest.13 with carrot_on_a_stick{page: 100, selection: 13, cosmeticItem: 1b, CustomModelData:33, display:{Name:'{"translate":"lobby.cosmetic_selector.buy.purchase","color":"#96FF96","italic":false}'}}
+item replace entity @s enderchest.15 with carrot_on_a_stick{page: 100, selection: 15, cosmeticItem: 1b, CustomModelData:34, display:{Name:'{"translate":"lobby.cosmetic_selector.buy.cancel","color":"#F76565","italic":false}'}}
+
+
+# item
+## particle 0 - anger
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 0 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:900, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.0","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.0.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.0.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 1 - hearts
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 1 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:901, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.1","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.1.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.1.cost","italic":false,"color":"#A8B5B5"}']}}
+
+## particle 2 - withered hearts
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 2 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:902, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.2","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.2.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.2.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 3 - witch
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 3 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:903, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.3","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.3.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.3.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 4 - dragon breath
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 4 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:904, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.4","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.4.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.4.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 5 - soul
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 5 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:905, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.5","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.5.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.5.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 6 - sculk soul
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 6 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:906, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.6","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.6.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.6.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 7 - flame
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 7 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:907, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.7","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.7.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.7.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 8 - soul flame
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 8 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:908, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.8","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.8.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.8.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 9 - slime
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 9 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:909, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.9","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.9.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.9.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 10 - snowball
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 10 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:910, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.10","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.10.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.10.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 11 - sonic boom
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 11 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:911, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.11","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.11.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.11.cost","italic":false,"color":"#FF9696"}']}}
+
+## particle 12 - glow
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 12 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:912, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.12","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.12.bio","italic":false,"color":"gray"}','{"text":""}','{"text":"⑪ 650 Coins","italic":false,"color":"#CC692C"}']}}
+
+## particle 13 - end rod
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 13 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:913, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.13","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.13.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.13.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 14 - electric spark
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 14 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:914, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.14","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.14.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.14.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 15 - composter
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 15 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:915, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.15","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.15.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.15.cost","italic":false,"color":"#CC692C"}']}}
+
+## particle 16 - ash
+execute if score @s temp_store.cosmetic_selector.buy_hat matches 16 run item replace entity @s enderchest.11 with carrot_on_a_stick{page: 100, selection: 11, cosmeticItem: 1b, CustomModelData:916, display:{Name:'{"translate":"lobby.cosmetic_selector.hats.16","italic":false}',Lore:['{"translate":"lobby.cosmetic_selector.hats.16.bio","italic":false,"color":"gray"}','{"text":""}','{"translate":"lobby.cosmetic_selector.hats.16.cost","italic":false,"color":"#CC692C"}']}}
