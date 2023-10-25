@@ -60,6 +60,7 @@ scoreboard players set @s crossbow_poison.shots 0
 function tag:system/health/reset
 
 # find a new spawn point
-execute as @a positioned as @e[tag=spawn_point,sort=random,limit=1,distance=..150] run spawnpoint @s ~ ~ ~
+execute as @a at @s positioned as @e[tag=spawn_point,sort=random,limit=1,distance=..200] run spawnpoint @s ~ ~ ~
+execute if score dev_mode internal matches 77 as @a run tellraw @a [{"selector":"@s","color":"dark_gray"}," new spawn at ",{"nbt":"SpawnX","entity":"@s","color":"gold"}," ",{"nbt":"SpawnY","entity":"@s","color":"gold"}," ",{"nbt":"SpawnZ","entity":"@s","color":"gold"}]
 
 tag @s remove self
