@@ -338,17 +338,17 @@ scoreboard players set hat.12 cosmetic.prices 700
 scoreboard players set hat.13 cosmetic.prices 700
 scoreboard players set hat.14 cosmetic.prices 700
 scoreboard players set hat.15 cosmetic.prices 700
-scoreboard players set hat.16 cosmetic.prices 700
-scoreboard players set hat.17 cosmetic.prices 700
-scoreboard players set hat.18 cosmetic.prices 700
-scoreboard players set hat.19 cosmetic.prices 700
-scoreboard players set hat.20 cosmetic.prices 700
-scoreboard players set hat.21 cosmetic.prices 700
-scoreboard players set hat.22 cosmetic.prices 700
-scoreboard players set hat.23 cosmetic.prices 700
-scoreboard players set hat.24 cosmetic.prices 700
-scoreboard players set hat.25 cosmetic.prices 700
-scoreboard players set hat.26 cosmetic.prices 700
+scoreboard players set hat.16 cosmetic.prices 1100
+scoreboard players set hat.17 cosmetic.prices 1100
+scoreboard players set hat.18 cosmetic.prices 1100
+scoreboard players set hat.19 cosmetic.prices 1100
+scoreboard players set hat.20 cosmetic.prices 1100
+scoreboard players set hat.21 cosmetic.prices 1100
+scoreboard players set hat.22 cosmetic.prices 1100
+scoreboard players set hat.23 cosmetic.prices 1100
+scoreboard players set hat.24 cosmetic.prices 1100
+scoreboard players set hat.25 cosmetic.prices 1100
+scoreboard players set hat.26 cosmetic.prices 1100
 
 
 # health
