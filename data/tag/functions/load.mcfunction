@@ -34,6 +34,10 @@ gamerule keepInventory true
 
 # player location
 scoreboard objectives add player.y dummy
+## temporary
+scoreboard objectives add temp_store.player_alive.x dummy
+scoreboard objectives add temp_store.player_alive.y dummy
+scoreboard objectives add temp_store.player_alive.z dummy
 
 # bossbars
 bossbar add tag:ver ""

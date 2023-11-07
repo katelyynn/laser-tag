@@ -2,8 +2,13 @@
 
 
 tag @s add self
+summon area_effect_cloud ~ ~ ~ {Particle:"block air",Radius:0f,Age:2147483647,Tags:["self_pos"]}
 
-particle minecraft:item gold_ingot ~ ~0.7 ~ 0 0.3 0 0.025 40
+execute as @e[tag=self_pos,limit=1] store result entity @s Pos[0] double 1 run scoreboard players get @a[tag=self,limit=1] temp_store.player_alive.x
+execute as @e[tag=self_pos,limit=1] store result entity @s Pos[1] double 1 run scoreboard players get @a[tag=self,limit=1] temp_store.player_alive.y
+execute as @e[tag=self_pos,limit=1] store result entity @s Pos[2] double 1 run scoreboard players get @a[tag=self,limit=1] temp_store.player_alive.z
+execute as @e[tag=self_pos,limit=1] at @s run particle minecraft:item gold_ingot ~ ~0.7 ~ 0 0.3 0 0.025 40
+kill @e[tag=self_pos,limit=1]
 
 # clear items
 ## only necessary if `keepInventory` is enabled

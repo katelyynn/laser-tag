@@ -23,6 +23,10 @@ kill @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick"}}]
 # player location
 ## y
 execute as @a store result score @s player.y run data get entity @s Pos[1]
+## temporary
+execute as @a if score @s player.time_since_death matches 40.. store result score @s temp_store.player_alive.x run data get entity @s Pos[0]
+execute as @a if score @s player.time_since_death matches 40.. store result score @s temp_store.player_alive.y run data get entity @s Pos[1]
+execute as @a if score @s player.time_since_death matches 40.. store result score @s temp_store.player_alive.z run data get entity @s Pos[2]
 
 # win
 ## win score
