@@ -172,6 +172,10 @@ execute as @e[type=leash_knot,tag=!map.leash_knot] run effect give @s resistance
 execute as @e[type=leash_knot,tag=!map.leash_knot] run tag @s add map.leash_knot
 
 
+# map specifics
+function tag:system/map/main
+
+
 # loadout
 execute as @a at @s run function tag:system/loadout/main
 

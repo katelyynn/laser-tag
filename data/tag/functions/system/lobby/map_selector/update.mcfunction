@@ -18,7 +18,7 @@ execute if score page temp_store.map_selector matches 2.. run scoreboard players
 execute if score page temp_store.map_selector matches ..-1 run scoreboard players set page temp_store.map_selector 0
 
 # reset
-execute if score selection temp_store.map_selector matches 0.. run playsound tag:menu.tick player @a ~ ~ ~
+execute if score selection temp_store.map_selector matches 0.. run playsound tag:menu.tick player @a -10 150.5 0
 execute if score selection temp_store.map_selector matches 0.. run particle minecraft:glow -10 150.5 0 0 0 0 1 6
 #execute if score selection temp_store.map_selector matches 0.. run tellraw @a ["new map sel selection is ",{"score":{"name":"selection","objective":"temp_store.map_selector"}}]
 

@@ -3,6 +3,8 @@
 
 tag @s add self
 
+particle minecraft:item gold_ingot ~ ~0.7 ~ 0 0.3 0 0.025 40
+
 # clear items
 ## only necessary if `keepInventory` is enabled
 clear @s
@@ -62,5 +64,8 @@ function tag:system/health/reset
 # find a new spawn point
 execute as @a at @s positioned as @e[tag=spawn_point,sort=random,limit=1,distance=..200] run spawnpoint @s ~ ~ ~
 execute if score dev_mode internal matches 77 as @a run tellraw @a [{"selector":"@s","color":"dark_gray"}," new spawn at ",{"nbt":"SpawnX","entity":"@s","color":"gold"}," ",{"nbt":"SpawnY","entity":"@s","color":"gold"}," ",{"nbt":"SpawnZ","entity":"@s","color":"gold"}]
+
+# effects
+effect give @s minecraft:resistance 2 255 true
 
 tag @s remove self

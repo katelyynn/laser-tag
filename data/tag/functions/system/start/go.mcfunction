@@ -33,6 +33,12 @@ execute as @a[tag=playing] run function tag:system/map/spawn
 ## TODO: create stands that mark random locations
 ## then run loop to teleport players
 
+# effects
+effect give @a[tag=playing] slowness 7 255 true
+effect give @a[tag=playing] jump_boost 7 129 true
+effect give @a[tag=playing] weakness 7 255 true
+effect give @a[tag=playing] invisibility 7 255 true
+
 
 # countdown
 title @a[tag=!playing] times 20 60 20

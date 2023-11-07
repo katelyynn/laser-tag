@@ -382,5 +382,13 @@ scoreboard objectives add mode.mystery.murderer_index dummy
 scoreboard objectives add mode.mystery.detective_index dummy
 
 
+# maps
+## current
+scoreboard objectives add map dummy
+## map 5
+scoreboard objectives add map.5 dummy
+scoreboard players set max_height map.5 169
+
+
 # defaults
 execute unless score defaults internal matches 1.. run function tag:defaults
