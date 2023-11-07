@@ -9,5 +9,9 @@ execute unless score period internal matches -1 as @e[tag=lobby.controller] at @
 execute unless score period internal matches -1 as @e[tag=lobby.controller] at @s if score @s lobby_controls matches 1.. run data merge entity @s {ItemRotation:0b}
 execute unless score period internal matches -1 as @e[tag=lobby.controller] at @s if score @s lobby_controls matches 1.. run scoreboard players reset @s lobby_controls
 
+# display
+execute as @a[tag=lobby.looking_at_frame] at @s unless predicate tag:looking_at_frame run tag @s remove lobby.looking_at_frame
+execute as @a at @s if predicate tag:looking_at_frame run tag @s add lobby.looking_at_frame
+
 # if in lobby
 execute if score period internal matches -1 run function tag:system/lobby/valid
