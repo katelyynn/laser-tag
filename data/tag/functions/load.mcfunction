@@ -168,9 +168,9 @@ scoreboard objectives add crossbow_normal.slot dummy
 scoreboard objectives add crossbow_normal.slot_temp dummy
 scoreboard objectives add crossbow_normal.shots dummy
 scoreboard objectives add crossbow_normal.shots_remaining dummy
-scoreboard players set crossbow_normal.delay internal 16
-scoreboard players set crossbow_normal.ammo internal 12
-scoreboard players set crossbow_normal.recharge internal 46
+scoreboard players set crossbow_normal.delay internal 12
+scoreboard players set crossbow_normal.ammo internal 14
+scoreboard players set crossbow_normal.recharge internal 44
 scoreboard players set crossbow_normal.index internal 16711680
 ## MACHINE
 scoreboard objectives add crossbow_machine.time dummy
@@ -178,8 +178,8 @@ scoreboard objectives add crossbow_machine.slot dummy
 scoreboard objectives add crossbow_machine.slot_temp dummy
 scoreboard objectives add crossbow_machine.shots dummy
 scoreboard objectives add crossbow_machine.shots_remaining dummy
-scoreboard players set crossbow_machine.delay internal 1
-scoreboard players set crossbow_machine.ammo internal 8
+scoreboard players set crossbow_machine.delay internal 2
+scoreboard players set crossbow_machine.ammo internal 10
 scoreboard players set crossbow_machine.recharge internal 96
 scoreboard players set crossbow_machine.index internal 16741120
 ## ROCKET
