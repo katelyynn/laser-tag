@@ -41,7 +41,7 @@ effect give @a[tag=playing] invisibility 7 255 true
 
 
 # countdown
-title @a[tag=!playing] times 20 60 20
+title @a[tag=!playing] times 10 40 40
 title @a[tag=playing] times 20 100 5
 ## delayed to account for map & spawn locations
 schedule function tag:system/start/count/5 1s
