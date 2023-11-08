@@ -36,3 +36,25 @@ execute as @a store result score @s temp_store.map_dev_main_item run clear @s ca
 
 execute as @a if score @s temp_store.map_dev_alt_item matches 2.. run clear @s carrot_on_a_stick{map_dev_alt_action:1b}
 execute as @a if score @s temp_store.map_dev_main_item matches 2.. run clear @s carrot_on_a_stick{map_dev_main_action:1b}
+
+
+# title
+execute as @a[nbt={SelectedItem:{tag:{map_dev_alt_action:1b}}},scores={temp_store.map_dev_alt_player_state=0}] run title @s actionbar ["",{"text":"Selecting: ","color":"gray"},{"translate":"spawn_point"},{"text":" - ","color":"gray"},{"keybind":"key.use"},{"text":" to get a spawner","color":"gray"}]
+execute as @a[nbt={SelectedItem:{tag:{map_dev_alt_action:1b}}},scores={temp_store.map_dev_alt_player_state=1}] run title @s actionbar ["",{"text":"Selecting: ","color":"gray"},{"translate":"item_spawner"},{"text":" - ","color":"gray"},{"keybind":"key.use"},{"text":" to get a spawner","color":"gray"}]
+execute as @a[nbt={SelectedItem:{tag:{map_dev_alt_action:1b}}},scores={temp_store.map_dev_alt_player_state=2}] run title @s actionbar ["",{"text":"Selecting: ","color":"gray"},{"translate":"something"},{"text":" - ","color":"gray"},{"keybind":"key.use"},{"text":" to get a spawner","color":"gray"}]
+
+## main
+
+## spawn point
+execute as @a[nbt={SelectedItem:{tag:{map_dev_main_action:1b}}},scores={temp_store.map_dev_alt_player_state=0,temp_store.map_dev_player_state=0}] at @s if entity @e[tag=spawn_point,sort=nearest,limit=1,distance=..2.5] run title @s actionbar ["",{"text":"Press ","color":"gray"},{"keybind":"key.use","color":"red"},{"text":" to kill ","color":"gray"},{"selector":"@e[tag=spawn_point,sort=nearest,limit=1,distance=..2.5]","color":"red"}]
+execute as @a[nbt={SelectedItem:{tag:{map_dev_main_action:1b}}},scores={temp_store.map_dev_alt_player_state=0,temp_store.map_dev_player_state=1}] at @s if entity @e[tag=spawn_point,sort=nearest,limit=1,distance=..2.5] run title @s actionbar ["",{"text":"Press ","color":"gray"},{"keybind":"key.use"},{"text":" to move up ","color":"gray"},{"selector":"@e[tag=spawn_point,sort=nearest,limit=1,distance=..2.5]"}]
+execute as @a[nbt={SelectedItem:{tag:{map_dev_main_action:1b}}},scores={temp_store.map_dev_alt_player_state=0,temp_store.map_dev_player_state=2}] at @s if entity @e[tag=spawn_point,sort=nearest,limit=1,distance=..2.5] run title @s actionbar ["",{"text":"Press ","color":"gray"},{"keybind":"key.use"},{"text":" to move down ","color":"gray"},{"selector":"@e[tag=spawn_point,sort=nearest,limit=1,distance=..2.5]"}]
+
+execute as @a[nbt={SelectedItem:{tag:{map_dev_main_action:1b}}},scores={temp_store.map_dev_alt_player_state=0}] at @s unless entity @e[tag=spawn_point,sort=nearest,limit=1,distance=..2.5] run title @s actionbar {"text":"No spawn_point close enough","color":"gray"}
+
+## item spawner
+execute as @a[nbt={SelectedItem:{tag:{map_dev_main_action:1b}}},scores={temp_store.map_dev_alt_player_state=1,temp_store.map_dev_player_state=0}] at @s if entity @e[tag=item_spawner.generic,sort=nearest,limit=1,distance=..2.5] run title @s actionbar ["",{"text":"Press ","color":"gray"},{"keybind":"key.use","color":"red"},{"text":" to kill ","color":"gray"},{"selector":"@e[tag=item_spawner.generic,sort=nearest,limit=1,distance=..2.5]","color":"red"}]
+execute as @a[nbt={SelectedItem:{tag:{map_dev_main_action:1b}}},scores={temp_store.map_dev_alt_player_state=1,temp_store.map_dev_player_state=1}] at @s if entity @e[tag=item_spawner.generic,sort=nearest,limit=1,distance=..2.5] run title @s actionbar ["",{"text":"Press ","color":"gray"},{"keybind":"key.use"},{"text":" to move up ","color":"gray"},{"selector":"@e[tag=item_spawner.generic,sort=nearest,limit=1,distance=..2.5]"}]
+execute as @a[nbt={SelectedItem:{tag:{map_dev_main_action:1b}}},scores={temp_store.map_dev_alt_player_state=1,temp_store.map_dev_player_state=2}] at @s if entity @e[tag=item_spawner.generic,sort=nearest,limit=1,distance=..2.5] run title @s actionbar ["",{"text":"Press ","color":"gray"},{"keybind":"key.use"},{"text":" to move down ","color":"gray"},{"selector":"@e[tag=item_spawner.generic,sort=nearest,limit=1,distance=..2.5]"}]
+
+execute as @a[nbt={SelectedItem:{tag:{map_dev_main_action:1b}}},scores={temp_store.map_dev_alt_player_state=1}] at @s unless entity @e[tag=item_spawner.generic,sort=nearest,limit=1,distance=..2.5] run title @s actionbar {"text":"No item_spawner.generic close enough","color":"gray"}

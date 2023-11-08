@@ -1,0 +1,2 @@
+execute unless entity @e[tag=item_spawner.generic,sort=nearest,limit=1,distance=..2.5] run tellraw @s {"text":"No item spawner available to destroy","color":"red"}
+execute as @e[tag=item_spawner.generic,sort=nearest,limit=1,distance=..2.5] at @s run kill @s

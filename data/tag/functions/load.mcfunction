@@ -79,7 +79,7 @@ scoreboard objectives add temp_store.crouch_action.time dummy
 
 scoreboard objectives add temp_store.map_dev_player_state dummy
 scoreboard players set min_map_dev_player_state internal 0
-scoreboard players set max_map_dev_player_state internal 1
+scoreboard players set max_map_dev_player_state internal 2
 
 scoreboard objectives add temp_store.map_dev_alt_player_state dummy
 scoreboard players set min_map_dev_alt_player_state internal 0

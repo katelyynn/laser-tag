@@ -29,7 +29,7 @@ execute unless entity @s[tag=lobby.looking_at_frame] if entity @s[scores={player
 execute if entity @s[tag=lobby.looking_at_frame] run title @s actionbar ["",{"keybind":"key.use"},{"text":" to change","color":"gray"}]
 
 # map dev
-execute if score map_dev_mode internal matches 1.. as @a[nbt=!{SelectedItem:{id:"minecraft:debug_stick"}}] at @s run title @s actionbar ["",{"text":"Nearby: ","color":"gray"},{"nbt":"CustomName","entity":"@e[distance=..3,type=!player,sort=nearest]","interpret":true}]
+execute if score map_dev_mode internal matches 1.. as @a[nbt=!{SelectedItem:{id:"minecraft:debug_stick"}},nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] at @s run title @s actionbar ["",{"text":"Nearby: ","color":"gray"},{"nbt":"CustomName","entity":"@e[distance=..3,type=!player,sort=nearest]","interpret":true}]
 
 # coins
 ## copper
