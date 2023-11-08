@@ -25,3 +25,14 @@ execute as @a at @s run data merge entity @e[tag=spawn_point,nbt=!{CustomName:'{
 # display
 execute as @e[type=area_effect_cloud,nbt=!{CustomNameVisible:1b}] at @s if entity @a[distance=..5] run data merge entity @s {CustomNameVisible:1b}
 execute as @e[type=area_effect_cloud,nbt={CustomNameVisible:1b}] at @s unless entity @a[distance=..5] run data merge entity @s {CustomNameVisible:0b}
+
+
+# items
+execute as @a run item replace entity @s hotbar.7 with carrot_on_a_stick{CustomModelData:11,map_dev_alt_action:1b,display:{Name:'[{"text":"","italic":false}]'}}
+execute as @a run item replace entity @s hotbar.8 with carrot_on_a_stick{CustomModelData:10,map_dev_main_action:1b,display:{Name:'[{"text":"","italic":false}]'}}
+
+execute as @a store result score @s temp_store.map_dev_alt_item run clear @s carrot_on_a_stick{map_dev_alt_action:1b} 0
+execute as @a store result score @s temp_store.map_dev_main_item run clear @s carrot_on_a_stick{map_dev_main_action:1b} 0
+
+execute as @a if score @s temp_store.map_dev_alt_item matches 2.. run clear @s carrot_on_a_stick{map_dev_alt_action:1b}
+execute as @a if score @s temp_store.map_dev_main_item matches 2.. run clear @s carrot_on_a_stick{map_dev_main_action:1b}

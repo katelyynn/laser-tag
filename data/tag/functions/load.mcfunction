@@ -81,6 +81,13 @@ scoreboard objectives add temp_store.map_dev_player_state dummy
 scoreboard players set min_map_dev_player_state internal 0
 scoreboard players set max_map_dev_player_state internal 1
 
+scoreboard objectives add temp_store.map_dev_alt_player_state dummy
+scoreboard players set min_map_dev_alt_player_state internal 0
+scoreboard players set max_map_dev_alt_player_state internal 2
+
+scoreboard objectives add temp_store.map_dev_alt_item dummy
+scoreboard objectives add temp_store.map_dev_main_item dummy
+
 # return to lobby
 ## /trigger return_lobby
 scoreboard objectives add return_lobby trigger "Return to lobby (map dev)"

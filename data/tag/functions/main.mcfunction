@@ -143,14 +143,14 @@ tag @a[scores={player.ready=1..},tag=!playing] add playing
 execute as @a[tag=playing] unless score @s player.ready matches 1.. run tag @s remove playing
 
 # toggle ready status
-execute as @a unless score @s player.ingame matches 1.. unless score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{CustomModelData:11,readyItem:1b,display:{Name:'[{"translate":"item.ready_status","italic":false}]'}}
-execute as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{CustomModelData:10,unreadyItem:1b,display:{Name:'[{"translate":"item.ready_status","italic":false}]'}}
+execute unless score map_dev_mode internal matches 1.. as @a unless score @s player.ingame matches 1.. unless score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{CustomModelData:11,readyItem:1b,display:{Name:'[{"translate":"item.ready_status","italic":false}]'}}
+execute unless score map_dev_mode internal matches 1.. as @a unless score @s player.ingame matches 1.. if score @s player.ready matches 1.. run item replace entity @s hotbar.8 with carrot_on_a_stick{CustomModelData:10,unreadyItem:1b,display:{Name:'[{"translate":"item.ready_status","italic":false}]'}}
 
-execute as @a unless score @s player.ingame matches 1.. store result score @s temp_store.ready_item run clear @s carrot_on_a_stick{readyItem:1b} 0
-execute as @a unless score @s player.ingame matches 1.. store result score @s temp_store.unready_item run clear @s carrot_on_a_stick{unreadyItem:1b} 0
+execute unless score map_dev_mode internal matches 1.. as @a unless score @s player.ingame matches 1.. store result score @s temp_store.ready_item run clear @s carrot_on_a_stick{readyItem:1b} 0
+execute unless score map_dev_mode internal matches 1.. as @a unless score @s player.ingame matches 1.. store result score @s temp_store.unready_item run clear @s carrot_on_a_stick{unreadyItem:1b} 0
 
-execute as @a unless score @s player.ingame matches 1.. if score @s temp_store.ready_item matches 2.. run clear @s carrot_on_a_stick{readyItem:1b}
-execute as @a unless score @s player.ingame matches 1.. if score @s temp_store.unready_item matches 2.. run clear @s carrot_on_a_stick{unreadyItem:1b}
+execute unless score map_dev_mode internal matches 1.. as @a unless score @s player.ingame matches 1.. if score @s temp_store.ready_item matches 2.. run clear @s carrot_on_a_stick{readyItem:1b}
+execute unless score map_dev_mode internal matches 1.. as @a unless score @s player.ingame matches 1.. if score @s temp_store.unready_item matches 2.. run clear @s carrot_on_a_stick{unreadyItem:1b}
 
 
 # carrot on a stick trigger
