@@ -74,6 +74,12 @@ scoreboard objectives add temp_store.cosmetic_selector.has_item dummy
 
 # lobby items
 scoreboard objectives add temp_store.ready_item dummy
+scoreboard objectives add temp_store.crouch_action minecraft.custom:minecraft.sneak_time
+scoreboard objectives add temp_store.crouch_action.time dummy
+
+scoreboard objectives add temp_store.map_dev_player_state dummy
+scoreboard players set min_map_dev_player_state internal 0
+scoreboard players set max_map_dev_player_state internal 1
 
 # return to lobby
 ## /trigger return_lobby

@@ -157,6 +157,11 @@ execute as @a unless score @s player.ingame matches 1.. if score @s temp_store.u
 execute as @a at @s if score @s temp_store.use_trigger_item matches 1.. run function tag:system/inventory/trigger/go
 scoreboard players reset @a temp_store.use_trigger_item
 
+# crouch trigger
+execute as @a[tag=!temp_store.crouch_cooldown] at @s if score @s temp_store.crouch_action matches 1 run function tag:system/player/crouch/go
+execute as @a[tag=temp_store.crouch_cooldown] at @s if score @s temp_store.crouch_action matches 1.. run function tag:system/player/crouch/main
+scoreboard players reset @a temp_store.crouch_action
+
 # patch items
 execute as @e[type=item,tag=!item.patched] at @s run function tag:system/item/patch
 
