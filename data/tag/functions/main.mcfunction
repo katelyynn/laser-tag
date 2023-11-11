@@ -72,6 +72,9 @@ scoreboard players enable @a profile
 execute as @a[tag=!playing] at @s if score @s profile matches 1.. run function tag:system/usercard/go
 execute as @a[tag=playing] at @s if score @s profile matches 1.. run function tag:system/usercard/deny
 
+# health differences
+execute as @a at @s unless score @s temp_store.health.hp = @s health.hp run function tag:system/health/player/go
+
 # kill
 execute as @a at @s if score @s player.kill matches 1.. run function tag:system/kill/go
 

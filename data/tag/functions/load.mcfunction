@@ -103,6 +103,8 @@ scoreboard objectives add profile trigger "Open profile"
 # track player health
 scoreboard objectives add health.hp health {"text":"❤","color":"red"}
 scoreboard objectives add health.hunger food
+## track differences
+scoreboard objectives add temp_store.health.hp dummy
 
 # track deaths
 scoreboard objectives add player.death deathCount
