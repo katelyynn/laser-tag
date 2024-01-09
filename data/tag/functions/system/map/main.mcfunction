@@ -13,7 +13,7 @@ execute if score game_map global matches 5 unless score max_height map = max_hei
 
 
 # max height
-execute unless score map_dev_mode internal matches 1.. as @a at @s if score @s player.y >= max_height map run function tag:system/player/at_max_height
+execute if score period internal matches 0.. unless score map_dev_mode internal matches 1.. as @a at @s if score @s player.y >= max_height map run function tag:system/player/at_max_height
 
 scoreboard players remove max_height map 1
-execute unless score map_dev_mode internal matches 1.. as @a at @s if score @s player.y >= max_height map run fill ~ ~2 ~ ~ ~2 ~ barrier replace air
+execute if score period internal matches 0.. unless score map_dev_mode internal matches 1.. as @a at @s if score @s player.y >= max_height map run fill ~ ~2 ~ ~ ~2 ~ barrier replace air
