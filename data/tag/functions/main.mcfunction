@@ -56,6 +56,9 @@ tag @e[type=#arrows,tag=!arrow.patched] add arrow.patched
 execute if entity @e[type=#arrows,tag=!arrow.has_uuid] run function tag:system/arrow/main
 execute as @e[type=arrow,tag=arrow.has_uuid,scores={cosmetic.arrow_trail=0..}] at @s run function tag:system/arrow/show_cosmetic
 
+# breakable glass
+execute as @e[type=minecraft:area_effect_cloud,tag=map.break_glass] at @s if block ~ ~ ~ minecraft:glass if entity @a[distance=..100] if entity @e[type=arrow,nbt={inGround:1b},distance=..1.1] run function tag:system/map/glass/break
+
 # kill arrows
 execute as @e[type=#arrows,nbt={inGround:1b}] at @s run particle block gravel ~ ~ ~ 0 0 0 0 10
 kill @e[type=#arrows,nbt={inGround:1b}]

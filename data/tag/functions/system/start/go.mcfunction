@@ -52,6 +52,10 @@ schedule function tag:system/start/count/1 5s
 schedule function tag:system/start/done 6s
 
 
+# map essentials
+schedule function tag:system/map/start 2s
+
+
 # game mode
 ## 0: classic
 ## 1: oitc
