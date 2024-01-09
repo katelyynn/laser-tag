@@ -5,7 +5,7 @@
 ## ver.year = 2022
 ## ver.month = 11
 ## ver.day = 16
-bossbar set tag:ver name ["",{"text":"LASER ","color":"red","bold":true},{"text":"TAG ","color":"blue","bold":true},{"text":"(beta) ","color":"white"},{"score":{"name":"ver.year","objective":"internal"},"color":"yellow"},{"text":".","color":"yellow"},{"score":{"name":"ver.month","objective":"internal"},"color":"yellow"},{"score":{"name":"ver.day","objective":"internal"},"color":"yellow"}]
+bossbar set tag:ver name ["",{"text":"LASER TAG","bold":true},{"text":" Closed Beta ","color":"gray"},{"text":" \u0020 [","color":"dark_gray"},{"score":{"name":"ver.year","objective":"internal"}},{"text":"."},{"score":{"name":"ver.month","objective":"internal"}},{"score":{"name":"ver.day","objective":"internal"}},{"text":"]","color":"dark_gray"}]
 # display @a
 bossbar set tag:ver players @a[tag=!ignore_ver]
 # set fill
