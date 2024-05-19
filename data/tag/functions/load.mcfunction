@@ -404,6 +404,24 @@ scoreboard objectives add mode.mystery.detective_index dummy
 # maps
 ## current
 scoreboard objectives add map dummy
+## map -1
+scoreboard objectives add map.-1 dummy
+scoreboard players set max_height map.-1 320
+## map 0
+scoreboard objectives add map.0 dummy
+scoreboard players set max_height map.0 320
+## map 1
+scoreboard objectives add map.1 dummy
+scoreboard players set max_height map.1 320
+## map 2
+scoreboard objectives add map.2 dummy
+scoreboard players set max_height map.2 320
+## map 3
+scoreboard objectives add map.3 dummy
+scoreboard players set max_height map.3 320
+## map 4
+scoreboard objectives add map.4 dummy
+scoreboard players set max_height map.4 320
 ## map 5
 scoreboard objectives add map.5 dummy
 scoreboard players set max_height map.5 169
